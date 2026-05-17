@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-17 14:28 UTC",
+  "updatedAt": "2026-05-17 14:32 UTC",
   "season": "2026",
   "leagueAvgPoints": 175.3,
   "leagueAvgPace": 82.2,
@@ -989,6 +989,649 @@
         "pace": 82.9,
         "oppPace": 80.7,
         "adjPace": 84.4
+      }
+    ]
+  },
+  "league_avg": {
+    "ortg": 106.5,
+    "drtg": 106.6
+  },
+  "ratings": {
+    "Atlanta Dream": {
+      "season": {
+        "ortg": 104.7,
+        "drtg": 101.0,
+        "net": 3.7,
+        "adj_ortg": 102.0,
+        "adj_drtg": 98.1,
+        "adj_net": 3.9,
+        "pace": 80.2,
+        "games": 2
+      },
+      "l14": {
+        "ortg": 104.7,
+        "drtg": 101.0,
+        "net": 3.7,
+        "adj_ortg": 102.0,
+        "adj_drtg": 98.1,
+        "adj_net": 3.9,
+        "pace": 80.2,
+        "games": 2
+      },
+      "l7": {
+        "ortg": 104.7,
+        "drtg": 101.0,
+        "net": 3.7,
+        "adj_ortg": 102.0,
+        "adj_drtg": 98.1,
+        "adj_net": 3.9,
+        "pace": 80.2,
+        "games": 2
+      }
+    },
+    "Chicago Sky": {
+      "season": {
+        "ortg": 104.6,
+        "drtg": 99.1,
+        "net": 5.5,
+        "adj_ortg": 103.2,
+        "adj_drtg": 96.8,
+        "adj_net": 6.4,
+        "pace": 79.7,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 104.6,
+        "drtg": 99.1,
+        "net": 5.5,
+        "adj_ortg": 103.2,
+        "adj_drtg": 96.8,
+        "adj_net": 6.4,
+        "pace": 79.7,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 104.6,
+        "drtg": 99.1,
+        "net": 5.5,
+        "adj_ortg": 103.2,
+        "adj_drtg": 96.8,
+        "adj_net": 6.4,
+        "pace": 79.7,
+        "games": 3
+      }
+    },
+    "Connecticut Sun": {
+      "season": {
+        "ortg": 93.4,
+        "drtg": 115.0,
+        "net": -21.6,
+        "adj_ortg": 96.2,
+        "adj_drtg": 111.4,
+        "adj_net": -15.2,
+        "pace": 85.6,
+        "games": 4
+      },
+      "l14": {
+        "ortg": 93.4,
+        "drtg": 115.0,
+        "net": -21.6,
+        "adj_ortg": 96.2,
+        "adj_drtg": 111.4,
+        "adj_net": -15.2,
+        "pace": 85.6,
+        "games": 4
+      },
+      "l7": {
+        "ortg": 93.4,
+        "drtg": 115.0,
+        "net": -21.6,
+        "adj_ortg": 96.2,
+        "adj_drtg": 111.4,
+        "adj_net": -15.2,
+        "pace": 85.6,
+        "games": 4
+      }
+    },
+    "Dallas Wings": {
+      "season": {
+        "ortg": 109.7,
+        "drtg": 112.2,
+        "net": -2.5,
+        "adj_ortg": 110.6,
+        "adj_drtg": 110.1,
+        "adj_net": 0.5,
+        "pace": 80.5,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 109.7,
+        "drtg": 112.2,
+        "net": -2.5,
+        "adj_ortg": 110.6,
+        "adj_drtg": 110.1,
+        "adj_net": 0.5,
+        "pace": 80.5,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 109.7,
+        "drtg": 112.2,
+        "net": -2.5,
+        "adj_ortg": 110.6,
+        "adj_drtg": 110.1,
+        "adj_net": 0.5,
+        "pace": 80.5,
+        "games": 3
+      }
+    },
+    "Golden State Valkyries": {
+      "season": {
+        "ortg": 109.7,
+        "drtg": 100.4,
+        "net": 9.3,
+        "adj_ortg": 113.3,
+        "adj_drtg": 102.0,
+        "adj_net": 11.3,
+        "pace": 75.7,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 109.7,
+        "drtg": 100.4,
+        "net": 9.3,
+        "adj_ortg": 113.3,
+        "adj_drtg": 102.0,
+        "adj_net": 11.3,
+        "pace": 75.7,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 109.7,
+        "drtg": 100.4,
+        "net": 9.3,
+        "adj_ortg": 113.3,
+        "adj_drtg": 102.0,
+        "adj_net": 11.3,
+        "pace": 75.7,
+        "games": 3
+      }
+    },
+    "Indiana Fever": {
+      "season": {
+        "ortg": 111.2,
+        "drtg": 109.6,
+        "net": 1.6,
+        "adj_ortg": 107.5,
+        "adj_drtg": 111.1,
+        "adj_net": -3.6,
+        "pace": 87.9,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 111.2,
+        "drtg": 109.6,
+        "net": 1.6,
+        "adj_ortg": 107.5,
+        "adj_drtg": 111.1,
+        "adj_net": -3.6,
+        "pace": 87.9,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 111.2,
+        "drtg": 109.6,
+        "net": 1.6,
+        "adj_ortg": 107.5,
+        "adj_drtg": 111.1,
+        "adj_net": -3.6,
+        "pace": 87.9,
+        "games": 3
+      }
+    },
+    "Las Vegas Aces": {
+      "season": {
+        "ortg": 109.9,
+        "drtg": 101.0,
+        "net": 8.9,
+        "adj_ortg": 104.1,
+        "adj_drtg": 107.5,
+        "adj_net": -3.4,
+        "pace": 84.2,
+        "games": 4
+      },
+      "l14": {
+        "ortg": 109.9,
+        "drtg": 101.0,
+        "net": 8.9,
+        "adj_ortg": 104.1,
+        "adj_drtg": 107.5,
+        "adj_net": -3.4,
+        "pace": 84.2,
+        "games": 4
+      },
+      "l7": {
+        "ortg": 109.9,
+        "drtg": 101.0,
+        "net": 8.9,
+        "adj_ortg": 104.1,
+        "adj_drtg": 107.5,
+        "adj_net": -3.4,
+        "pace": 84.2,
+        "games": 4
+      }
+    },
+    "Los Angeles Sparks": {
+      "season": {
+        "ortg": 104.6,
+        "drtg": 117.7,
+        "net": -13.1,
+        "adj_ortg": 108.0,
+        "adj_drtg": 116.5,
+        "adj_net": -8.5,
+        "pace": 81.3,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 104.6,
+        "drtg": 117.7,
+        "net": -13.1,
+        "adj_ortg": 108.0,
+        "adj_drtg": 116.5,
+        "adj_net": -8.5,
+        "pace": 81.3,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 104.6,
+        "drtg": 117.7,
+        "net": -13.1,
+        "adj_ortg": 108.0,
+        "adj_drtg": 116.5,
+        "adj_net": -8.5,
+        "pace": 81.3,
+        "games": 3
+      }
+    },
+    "Minnesota Lynx": {
+      "season": {
+        "ortg": 109.6,
+        "drtg": 106.7,
+        "net": 2.9,
+        "adj_ortg": 111.1,
+        "adj_drtg": 105.5,
+        "adj_net": 5.6,
+        "pace": 81.5,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 109.6,
+        "drtg": 106.7,
+        "net": 2.9,
+        "adj_ortg": 111.1,
+        "adj_drtg": 105.5,
+        "adj_net": 5.6,
+        "pace": 81.5,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 109.6,
+        "drtg": 106.7,
+        "net": 2.9,
+        "adj_ortg": 111.1,
+        "adj_drtg": 105.5,
+        "adj_net": 5.6,
+        "pace": 81.5,
+        "games": 3
+      }
+    },
+    "New York Liberty": {
+      "season": {
+        "ortg": 119.0,
+        "drtg": 103.6,
+        "net": 15.4,
+        "adj_ortg": 110.6,
+        "adj_drtg": 107.2,
+        "adj_net": 3.4,
+        "pace": 84.0,
+        "games": 4
+      },
+      "l14": {
+        "ortg": 119.0,
+        "drtg": 103.6,
+        "net": 15.4,
+        "adj_ortg": 110.6,
+        "adj_drtg": 107.2,
+        "adj_net": 3.4,
+        "pace": 84.0,
+        "games": 4
+      },
+      "l7": {
+        "ortg": 119.0,
+        "drtg": 103.6,
+        "net": 15.4,
+        "adj_ortg": 110.6,
+        "adj_drtg": 107.2,
+        "adj_net": 3.4,
+        "pace": 84.0,
+        "games": 4
+      }
+    },
+    "Phoenix Mercury": {
+      "season": {
+        "ortg": 108.8,
+        "drtg": 102.4,
+        "net": 6.4,
+        "adj_ortg": 113.9,
+        "adj_drtg": 100.6,
+        "adj_net": 13.3,
+        "pace": 81.1,
+        "games": 4
+      },
+      "l14": {
+        "ortg": 108.8,
+        "drtg": 102.4,
+        "net": 6.4,
+        "adj_ortg": 113.9,
+        "adj_drtg": 100.6,
+        "adj_net": 13.3,
+        "pace": 81.1,
+        "games": 4
+      },
+      "l7": {
+        "ortg": 108.8,
+        "drtg": 102.4,
+        "net": 6.4,
+        "adj_ortg": 113.9,
+        "adj_drtg": 100.6,
+        "adj_net": 13.3,
+        "pace": 81.1,
+        "games": 4
+      }
+    },
+    "Portland Fire": {
+      "season": {
+        "ortg": 108.6,
+        "drtg": 121.4,
+        "net": -12.8,
+        "adj_ortg": 113.4,
+        "adj_drtg": 113.2,
+        "adj_net": 0.2,
+        "pace": 80.7,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 108.6,
+        "drtg": 121.4,
+        "net": -12.8,
+        "adj_ortg": 113.4,
+        "adj_drtg": 113.2,
+        "adj_net": 0.2,
+        "pace": 80.7,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 108.6,
+        "drtg": 121.4,
+        "net": -12.8,
+        "adj_ortg": 113.4,
+        "adj_drtg": 113.2,
+        "adj_net": 0.2,
+        "pace": 80.7,
+        "games": 3
+      }
+    },
+    "Seattle Storm": {
+      "season": {
+        "ortg": 101.1,
+        "drtg": 108.2,
+        "net": -7.1,
+        "adj_ortg": 102.8,
+        "adj_drtg": 113.5,
+        "adj_net": -10.7,
+        "pace": 79.8,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 101.1,
+        "drtg": 108.2,
+        "net": -7.1,
+        "adj_ortg": 102.8,
+        "adj_drtg": 113.5,
+        "adj_net": -10.7,
+        "pace": 79.8,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 101.1,
+        "drtg": 108.2,
+        "net": -7.1,
+        "adj_ortg": 102.8,
+        "adj_drtg": 113.5,
+        "adj_net": -10.7,
+        "pace": 79.8,
+        "games": 3
+      }
+    },
+    "Toronto Tempo": {
+      "season": {
+        "ortg": 101.6,
+        "drtg": 99.1,
+        "net": 2.5,
+        "adj_ortg": 99.4,
+        "adj_drtg": 103.2,
+        "adj_net": -3.8,
+        "pace": 80.7,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 101.6,
+        "drtg": 99.1,
+        "net": 2.5,
+        "adj_ortg": 99.4,
+        "adj_drtg": 103.2,
+        "adj_net": -3.8,
+        "pace": 80.7,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 101.6,
+        "drtg": 99.1,
+        "net": 2.5,
+        "adj_ortg": 99.4,
+        "adj_drtg": 103.2,
+        "adj_net": -3.8,
+        "pace": 80.7,
+        "games": 3
+      }
+    },
+    "Washington Mystics": {
+      "season": {
+        "ortg": 101.0,
+        "drtg": 101.0,
+        "net": 0.0,
+        "adj_ortg": 103.4,
+        "adj_drtg": 97.3,
+        "adj_net": 6.1,
+        "pace": 87.5,
+        "games": 3
+      },
+      "l14": {
+        "ortg": 101.0,
+        "drtg": 101.0,
+        "net": 0.0,
+        "adj_ortg": 103.4,
+        "adj_drtg": 97.3,
+        "adj_net": 6.1,
+        "pace": 87.5,
+        "games": 3
+      },
+      "l7": {
+        "ortg": 101.0,
+        "drtg": 101.0,
+        "net": 0.0,
+        "adj_ortg": 103.4,
+        "adj_drtg": 97.3,
+        "adj_net": 6.1,
+        "pace": 87.5,
+        "games": 3
+      }
+    }
+  },
+  "fouls": {
+    "stretches": [
+      {
+        "stretch": "1-24",
+        "games": 24,
+        "fouls_per_game": 38.46,
+        "fta_per_game": 35.0,
+        "fta_foul_ratio": 0.91
+      }
+    ],
+    "games": [
+      {
+        "game_id": "401856890",
+        "date": "2026-05-08",
+        "total_pf": 40,
+        "total_fta": 36
+      },
+      {
+        "game_id": "401856891",
+        "date": "2026-05-08",
+        "total_pf": 30,
+        "total_fta": 27
+      },
+      {
+        "game_id": "401856892",
+        "date": "2026-05-09",
+        "total_pf": 37,
+        "total_fta": 34
+      },
+      {
+        "game_id": "401856893",
+        "date": "2026-05-09",
+        "total_pf": 46,
+        "total_fta": 42
+      },
+      {
+        "game_id": "401856894",
+        "date": "2026-05-09",
+        "total_pf": 36,
+        "total_fta": 33
+      },
+      {
+        "game_id": "401856899",
+        "date": "2026-05-10",
+        "total_pf": 40,
+        "total_fta": 36
+      },
+      {
+        "game_id": "401856895",
+        "date": "2026-05-10",
+        "total_pf": 40,
+        "total_fta": 36
+      },
+      {
+        "game_id": "401856896",
+        "date": "2026-05-10",
+        "total_pf": 37,
+        "total_fta": 34
+      },
+      {
+        "game_id": "401856897",
+        "date": "2026-05-10",
+        "total_pf": 42,
+        "total_fta": 38
+      },
+      {
+        "game_id": "401856898",
+        "date": "2026-05-10",
+        "total_pf": 41,
+        "total_fta": 37
+      },
+      {
+        "game_id": "401856900",
+        "date": "2026-05-11",
+        "total_pf": 38,
+        "total_fta": 35
+      },
+      {
+        "game_id": "401856901",
+        "date": "2026-05-13",
+        "total_pf": 33,
+        "total_fta": 30
+      },
+      {
+        "game_id": "401856902",
+        "date": "2026-05-13",
+        "total_pf": 37,
+        "total_fta": 34
+      },
+      {
+        "game_id": "401856903",
+        "date": "2026-05-13",
+        "total_pf": 43,
+        "total_fta": 39
+      },
+      {
+        "game_id": "401856904",
+        "date": "2026-05-13",
+        "total_pf": 35,
+        "total_fta": 32
+      },
+      {
+        "game_id": "401856905",
+        "date": "2026-05-14",
+        "total_pf": 36,
+        "total_fta": 33
+      },
+      {
+        "game_id": "401856906",
+        "date": "2026-05-14",
+        "total_pf": 29,
+        "total_fta": 26
+      },
+      {
+        "game_id": "401856907",
+        "date": "2026-05-14",
+        "total_pf": 36,
+        "total_fta": 33
+      },
+      {
+        "game_id": "401856908",
+        "date": "2026-05-15",
+        "total_pf": 38,
+        "total_fta": 35
+      },
+      {
+        "game_id": "401856909",
+        "date": "2026-05-15",
+        "total_pf": 40,
+        "total_fta": 36
+      },
+      {
+        "game_id": "401856910",
+        "date": "2026-05-15",
+        "total_pf": 43,
+        "total_fta": 39
+      },
+      {
+        "game_id": "401856911",
+        "date": "2026-05-15",
+        "total_pf": 45,
+        "total_fta": 41
+      },
+      {
+        "game_id": "401856912",
+        "date": "2026-05-16",
+        "total_pf": 43,
+        "total_fta": 39
+      },
+      {
+        "game_id": "401856913",
+        "date": "2026-05-16",
+        "total_pf": 38,
+        "total_fta": 35
       }
     ]
   }
