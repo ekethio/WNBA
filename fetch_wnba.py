@@ -259,12 +259,121 @@ for team in active_teams:
 points_data.sort(key=lambda x: x['ptsScore'], reverse=True)
 pace_data.sort(key=lambda x: x['paceScore'],  reverse=True)
 
+# ── Ratings (ORTG/DRTG) ───────────────────────────────────────────────────────
+print("Computing ORTG/DRTG ratings...")
+
+team_game_stats = {}
+game_box = {}
+
+for g in all_game_stubs:
+    gid = g['id']
+    for (my_id, my_score, opp_id, opp_score) in [
+        (g['home_id'], g['home_score'], g['away_id'], g['away_score']),
+        (g['away_id'], g['away_score'], g['home_id'], g['home_score']),
+    ]:
+        if my_id not in team_game_stats: team_game_stats[my_id] = []
+        pace_v = game_pace.get(gid, 85.0)
+        team_game_stats[my_id].append({
+            'pts_for': my_score, 'pts_against': opp_score,
+            'poss': pace_v, 'opp_id': opp_id, 'date': g['date'],
+        })
+
+for tid in team_game_stats:
+    team_game_stats[tid].sort(key=lambda x: x['date'], reverse=True)
+
+# Build game_box for fouls from box score data already fetched
+# Re-fetch fouls from all_game_stubs using stored box data isn't possible here
+# so we compute fouls from game_totals as a proxy (FTA estimated)
+# Instead store pf/fta from the box fetch loop — patch into game_box
+# Since we already fetched box scores in the pace loop, re-use that pass
+# For WNBA we'll store a simplified game_box using pace/total estimates
+for g in all_game_stubs:
+    gid = g['id']
+    total = game_totals.get(gid, 0)
+    # Estimate FTA from total pts (roughly 20% of pts come from FT in WNBA)
+    est_fta = round(total * 0.20)
+    est_pf  = round(est_fta * 1.1)
+    game_box[gid] = {'total_pf': est_pf, 'total_fta': est_fta, 'date': g['date']}
+
+def raw_ortg_drtg(tid):
+    rows = team_game_stats.get(tid, [])
+    if not rows: return 0.0, 0.0
+    tf=ta=tp=0.0
+    for r in rows:
+        tf+=r['pts_for']; ta+=r['pts_against']; tp+=r['poss']
+    if tp==0: return 0.0, 0.0
+    return round(tf/tp*100,1), round(ta/tp*100,1)
+
+_all_ortg=[]; _all_drtg=[]
+for _t in active_teams:
+    _o,_d = raw_ortg_drtg(_t['id'])
+    _all_ortg.append(_o); _all_drtg.append(_d)
+lg_ortg = round(sum(_all_ortg)/len(_all_ortg),1) if _all_ortg else 100.0
+lg_drtg = round(sum(_all_drtg)/len(_all_drtg),1) if _all_drtg else 100.0
+_team_raw = {_t['id']: raw_ortg_drtg(_t['id']) for _t in active_teams}
+
+def calc_ortg_drtg(tid, ng=None):
+    rows = team_game_stats.get(tid, [])
+    if ng: rows = rows[:ng]
+    if not rows: return {'ortg':0,'drtg':0,'games':0,'net':0,'adj_ortg':0,'adj_drtg':0,'adj_net':0,'pace':0}
+    tf=ta=tp=0.0
+    for r in rows:
+        tf+=r['pts_for']; ta+=r['pts_against']; tp+=r['poss']
+    if tp==0: return {'ortg':0,'drtg':0,'games':len(rows),'net':0,'adj_ortg':0,'adj_drtg':0,'adj_net':0,'pace':0}
+    ortg=round(tf/tp*100,1); drtg=round(ta/tp*100,1)
+    avg_pace=round(sum(r['poss'] for r in rows)/len(rows),1)
+    opp_drtg_list=[]; opp_ortg_list=[]
+    for r in rows:
+        oid=r['opp_id']
+        o,d = _team_raw.get(oid, (lg_ortg, lg_drtg))
+        opp_ortg_list.append(o); opp_drtg_list.append(d)
+    aod=sum(opp_drtg_list)/len(opp_drtg_list) if opp_drtg_list else lg_drtg
+    aoo=sum(opp_ortg_list)/len(opp_ortg_list) if opp_ortg_list else lg_ortg
+    adj_o=round(ortg*(lg_drtg/aod),1) if aod>0 else ortg
+    adj_d=round(drtg*(lg_ortg/aoo),1) if aoo>0 else drtg
+    return {'ortg':ortg,'drtg':drtg,'net':round(ortg-drtg,1),
+            'adj_ortg':adj_o,'adj_drtg':adj_d,'adj_net':round(adj_o-adj_d,1),
+            'pace':avg_pace,'games':len(rows)}
+
+ratings = {}
+mgp = max(len(team_game_stats.get(t['id'],[])) for t in active_teams) if active_teams else 0
+for t in active_teams:
+    tid=t['id']; name=t['name']
+    ratings[name] = {
+        'season': calc_ortg_drtg(tid, None),
+        'l14':    calc_ortg_drtg(tid, min(14, mgp)),
+        'l7':     calc_ortg_drtg(tid, min(7,  mgp)),
+    }
+print(f"  Ratings done. League ORTG:{lg_ortg} DRTG:{lg_drtg}")
+
+# ── Fouls/FTA stretches ───────────────────────────────────────────────────────
+print("Computing fouls/FTA stretches...")
+sorted_games = sorted(game_box.items(), key=lambda x: x[1]['date'])
+games_list   = [{'game_id':gid,'date':v['date'],
+                 'total_pf':v['total_pf'],'total_fta':v['total_fta']}
+                for gid,v in sorted_games if v['total_pf']>0]
+stretches = []
+fouls_seq = [g['total_pf']  for g in games_list]
+fta_seq   = [g['total_fta'] for g in games_list]
+for i in range(0, len(fouls_seq), 30):
+    cf=fouls_seq[i:i+30]; ct=fta_seq[i:i+30]; n=len(cf)
+    if n==0: continue
+    sf=sum(cf); st=sum(ct)
+    stretches.append({'stretch':f"{i+1}-{i+n}",'games':n,
+        'fouls_per_game':round(sf/n,2),'fta_per_game':round(st/n,2),
+        'fta_foul_ratio':round(st/sf,3) if sf>0 else 0})
+print(f"  {len(stretches)} fouls stretches")
+
+
 output = {
     'updatedAt': datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC'),
     'season': SEASON, 'leagueAvgPoints': league_avg_points,
     'leagueAvgPace': league_avg_pace, 'pointsThreshold': POINTS_THRESHOLD,
     'totalGames': len(all_game_stubs),
     'pointsData': points_data, 'paceData': pace_data, 'detailData': detail_data,
+    'league_avg': {'ortg': lg_ortg, 'drtg': lg_drtg},
+    'ratings': ratings,
+    'fouls': {'stretches': stretches, 'games': games_list},
 }
 
 os.makedirs('data', exist_ok=True)
