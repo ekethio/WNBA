@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>NBA Team Analytics</title>
+<title>WNBA Team Analytics</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
   :root {
@@ -176,8 +176,8 @@
   <header>
     <div class="header-inner">
       <div>
-        <div class="eyebrow">Automated Analytics Dashboard</div>
-        <h1>NBA Team <span>Analytics</span></h1>
+        <div class="eyebrow">WNBA Automated Analytics Dashboard</div>
+        <h1>WNBA Team <span>Analytics</span></h1>
       </div>
     </div>
   </header>
@@ -221,7 +221,7 @@
           <th onclick="sortTable('points-table',7,'num')">L3</th>
           <th onclick="sortTable('points-table',8,'num')">Adj L3</th>
           <th onclick="sortTable('points-table',9,'num')">Pts Score</th>
-          <th onclick="sortTable('points-table',10,'num')">O/228</th>
+          <th onclick="sortTable('points-table',10,'num')">O/160</th>
           <th onclick="sortTable('points-table',11,'num')">GP</th>
         </tr></thead>
         <tbody id="points-body"></tbody>
@@ -268,9 +268,9 @@
     <div class="tab-panel" id="tab-ratings">
       <div class="section-header"><h2>Team Ratings</h2><div class="line"></div><div class="tag">ORTG / DRTG / Net</div></div>
       <div class="tabs-row" style="margin-bottom:16px;border-bottom:1px solid var(--border)">
-        <button class="view-tab active" id="ratings-season-btn" onclick="switchRatingsWindow('season',this)">Season</button>
-        <button class="view-tab" id="ratings-l14-btn" onclick="switchRatingsWindow('l14',this)">Last 14</button>
-        <button class="view-tab" id="ratings-l7-btn" onclick="switchRatingsWindow('l7',this)">Last 7</button>
+        <button class="view-tab active" onclick="switchRatingsWindow('season',this)">Season</button>
+        <button class="view-tab" onclick="switchRatingsWindow('l14',this)">Last 14</button>
+        <button class="view-tab" onclick="switchRatingsWindow('l7',this)">Last 7</button>
       </div>
       <div class="table-wrap"><table id="ratings-table">
         <thead><tr>
@@ -306,7 +306,7 @@
         <tbody id="fouls-body"></tbody>
       </table></div>
       <div style="font-size:11px;color:var(--muted);padding:8px 0;border-top:1px solid var(--border);margin-top:8px">
-        Higher FTA/Foul ratio = more whistles converting to free throws = higher scoring environment
+        Note: WNBA fouls/FTA estimated from scoring data — actual box score values when available.
       </div>
     </div>
 
@@ -317,13 +317,13 @@
 <script>
 let statsData = null;
 let sortState = {};
-const THRESHOLD = 228;
+const THRESHOLD = 160;
 
 async function loadData() {
   try {
     // Cache-bust so we always get the latest JSON
-    const res = await fetch(`data/nba_stats.json?t=${Date.now()}`);
-    if (!res.ok) throw new Error(`Could not load data/nba_stats.json (${res.status}). Have you run the GitHub Action yet?`);
+    const res = await fetch(`data/wnba_stats.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error(`Could not load data/wnba_stats.json (${res.status}). Have you run the GitHub Action yet?`);
     statsData = await res.json();
     document.getElementById('loading').style.display = 'none';
     document.getElementById('main').style.display = 'block';
@@ -390,13 +390,13 @@ function renderPointsTable() {
       <td class="${heat(r.l3Pts,avg,20)}">${fmt(r.l3Pts)}</td>
       <td class="${heat(r.adjL3Pts,avg,20)}">${fmt(r.adjL3Pts)}</td>
       <td style="color:var(--gold);font-weight:500">${fmt(r.ptsScore)}</td>
-      <td>${r.over228}</td><td style="color:var(--muted)">${r.games}</td></tr>`).join('') +
+      <td>${r.over160}</td><td style="color:var(--muted)">${r.games}</td></tr>`).join('') +
     `<tr class="avg-row"><td></td><td>League Average</td>
       <td>${fmt(colAvg(data,'avgPts'))}</td><td>${fmt(colAvg(data,'l20Pts'))}</td><td>${fmt(colAvg(data,'l14Pts'))}</td>
       <td>${fmt(colAvg(data,'l7Pts'))}</td><td>${fmt(colAvg(data,'adjL7Pts'))}</td>
       <td>${fmt(colAvg(data,'l3Pts'))}</td><td>${fmt(colAvg(data,'adjL3Pts'))}</td>
       <td>${fmt(colAvg(data,'ptsScore'))}</td>
-      <td>${Math.round(colAvg(data,'over228'))}</td><td>${Math.round(colAvg(data,'games'))}</td></tr>`;
+      <td>${Math.round(colAvg(data,'over160'))}</td><td>${Math.round(colAvg(data,'games'))}</td></tr>`;
 }
 
 function renderPaceTable() {
@@ -632,68 +632,48 @@ function showSplits(name, btn) {
 buildSplitsGrid();
 
 
-// ── RATINGS ───────────────────────────────────────────────────────────────────
 let currentRatingsWindow = 'season';
-
-function switchRatingsWindow(window, btn) {
-  currentRatingsWindow = window;
+function switchRatingsWindow(w, btn) {
+  currentRatingsWindow = w;
   document.querySelectorAll('#tab-ratings .view-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
   renderRatingsTable();
 }
-
 function renderRatingsTable() {
   if (!statsData || !statsData.ratings) return;
-  const w   = currentRatingsWindow;
-  const lg  = statsData.league_avg || {};
+  const w = currentRatingsWindow;
+  const lg = statsData.league_avg || {};
   document.getElementById('lg-ortg').textContent = lg.ortg || '—';
   document.getElementById('lg-drtg').textContent = lg.drtg || '—';
-
   const rows = Object.entries(statsData.ratings)
     .map(([name, d]) => ({ name, ...d[w] }))
     .filter(r => r.games > 0)
     .sort((a, b) => b.adj_net - a.adj_net);
-
-  const lgOrtg = lg.ortg || 115;
-  const lgDrtg = lg.drtg || 115;
-
+  const lgO = lg.ortg || 100, lgD = lg.drtg || 100;
+  const fmtNet = v => `<span style="font-weight:700;color:${v>0?'var(--green)':v<0?'var(--red)':'var(--muted)'}">${v>0?'+':''}${v.toFixed(1)}</span>`;
   document.getElementById('ratings-body').innerHTML =
-    rows.map((r, i) => {
-      const netC  = r.adj_net > 5 ? 'hot' : r.adj_net > 2 ? 'warm' : r.adj_net < -5 ? 'cold' : r.adj_net < -2 ? 'cool' : '';
-      const ortgC = r.adj_ortg > lgOrtg + 3 ? 'hot' : r.adj_ortg > lgOrtg + 1 ? 'warm' : r.adj_ortg < lgOrtg - 3 ? 'cold' : r.adj_ortg < lgOrtg - 1 ? 'cool' : '';
-      const drtgC = r.adj_drtg < lgDrtg - 3 ? 'hot' : r.adj_drtg < lgDrtg - 1 ? 'warm' : r.adj_drtg > lgDrtg + 3 ? 'cold' : r.adj_drtg > lgDrtg + 1 ? 'cool' : '';
-      const fmtNet = v => `<span class="${v > 0 ? 'pos' : v < 0 ? 'neg' : 'neu'}" style="font-weight:700">${v > 0 ? '+' : ''}${v.toFixed(1)}</span>`;
-      return `<tr>
-        <td>${i+1}</td><td>${r.name}</td>
-        <td class="${netC}">${fmtNet(r.net)}</td>
-        <td class="${ortgC}">${(r.ortg||0).toFixed(1)}</td>
-        <td class="${drtgC}">${(r.drtg||0).toFixed(1)}</td>
-        <td class="${netC}" style="font-weight:700">${fmtNet(r.adj_net)}</td>
-        <td class="${ortgC}">${(r.adj_ortg||0).toFixed(1)}</td>
-        <td class="${drtgC}">${(r.adj_drtg||0).toFixed(1)}</td>
-        <td style="color:var(--muted)">${(r.pace||0).toFixed(1)}</td>
-        <td style="color:var(--muted)">${r.games}</td>
-      </tr>`;
-    }).join('') +
-    `<tr class="avg-row"><td></td><td>League Average</td>
-      <td>—</td><td>${lgOrtg}</td><td>${lgDrtg}</td>
-      <td>—</td><td>${lgOrtg}</td><td>${lgDrtg}</td><td>—</td><td>—</td></tr>`;
+    rows.map((r,i) => `<tr>
+      <td>${i+1}</td><td>${r.name}</td>
+      <td>${fmtNet(r.net)}</td>
+      <td>${(r.ortg||0).toFixed(1)}</td><td>${(r.drtg||0).toFixed(1)}</td>
+      <td>${fmtNet(r.adj_net)}</td>
+      <td>${(r.adj_ortg||0).toFixed(1)}</td><td>${(r.adj_drtg||0).toFixed(1)}</td>
+      <td style="color:var(--muted)">${(r.pace||0).toFixed(1)}</td>
+      <td style="color:var(--muted)">${r.games}</td>
+    </tr>`).join('') +
+    `<tr class="avg-row"><td></td><td>League Average</td><td>—</td><td>${lgO}</td><td>${lgD}</td><td>—</td><td>${lgO}</td><td>${lgD}</td><td>—</td><td>—</td></tr>`;
 }
-
-// ── FOULS ─────────────────────────────────────────────────────────────────────
 function renderFoulsTable() {
   if (!statsData || !statsData.fouls) return;
   const stretches = statsData.fouls.stretches || [];
-  const avgFta = stretches.length ? stretches.reduce((a,b) => a + b.fta_per_game, 0) / stretches.length : 0;
-
-  document.getElementById('fouls-body').innerHTML = stretches.map((s, i) => {
-    const ftaC = s.fta_per_game > avgFta + 3 ? 'hot' : s.fta_per_game > avgFta + 1 ? 'warm' :
-                 s.fta_per_game < avgFta - 3 ? 'cold' : s.fta_per_game < avgFta - 1 ? 'cool' : '';
+  const avgFta = stretches.length ? stretches.reduce((a,b)=>a+b.fta_per_game,0)/stretches.length : 0;
+  document.getElementById('fouls-body').innerHTML = stretches.map(s => {
+    const c = s.fta_per_game > avgFta+2 ? 'hot' : s.fta_per_game > avgFta+0.5 ? 'warm' : s.fta_per_game < avgFta-2 ? 'cold' : s.fta_per_game < avgFta-0.5 ? 'cool' : '';
     return `<tr>
       <td style="color:var(--muted)">${s.games}</td>
       <td style="text-align:left;font-weight:600">Games ${s.stretch}</td>
       <td>${s.fouls_per_game.toFixed(1)}</td>
-      <td class="${ftaC}" style="font-weight:700">${s.fta_per_game.toFixed(1)}</td>
+      <td class="${c}" style="font-weight:700">${s.fta_per_game.toFixed(1)}</td>
       <td>${s.fta_foul_ratio.toFixed(3)}</td>
     </tr>`;
   }).join('');
