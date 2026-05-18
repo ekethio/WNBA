@@ -47,7 +47,8 @@ try:
 data   = get(f’{BASE}/scoreboard?dates={ds}’)
 events = data.get(‘events’, [])
 for ev in events:
-if ev.get(‘season’, {}).get(‘type’) != 2:
+season_type = ev.get(‘season’, {}).get(‘type’, 0)
+if season_type not in (2, 3):  # 2=regular, 3=some leagues use this
 continue
 if not ev.get(‘status’, {}).get(‘type’, {}).get(‘completed’):
 continue
