@@ -4,7 +4,7 @@ import os
 import time
 from datetime import datetime, date, timedelta
 
-SEASON           = ‘2026’
+SEASON           = '2026'
 POINTS_THRESHOLD = 160
 OUTPUT_FILE      = ‘data/wnba_stats.json’
 
