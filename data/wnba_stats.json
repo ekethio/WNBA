@@ -1,23 +1,36 @@
 {
-  "updatedAt": "2026-07-12 08:59 UTC",
+  "updatedAt": "2026-07-13 10:18 UTC",
   "season": "2026",
-  "leagueAvgPoints": 172.4,
-  "leagueAvgPace": 80.6,
+  "leagueAvgPoints": 172.5,
+  "leagueAvgPace": 80.7,
   "pointsThreshold": 160,
-  "totalGames": 171,
+  "totalGames": 175,
   "pointsData": [
     {
       "team": "Indiana Fever",
       "avgPts": 183.0,
       "homePts": 190.6,
-      "awayPts": 173.9,
-      "l7Pts": 188.7,
-      "adjL7Pts": 186.8,
-      "l3Pts": 177.0,
-      "adjL3Pts": 173.7,
-      "over160": 18,
-      "games": 22,
-      "ptsScore": 182.7
+      "awayPts": 174.8,
+      "l7Pts": 185.1,
+      "adjL7Pts": 182.8,
+      "l3Pts": 187.7,
+      "adjL3Pts": 184.4,
+      "over160": 19,
+      "games": 23,
+      "ptsScore": 183.1
+    },
+    {
+      "team": "Toronto Tempo",
+      "avgPts": 181.8,
+      "homePts": 175.2,
+      "awayPts": 190.4,
+      "l7Pts": 183.1,
+      "adjL7Pts": 183.7,
+      "l3Pts": 181.7,
+      "adjL3Pts": 185.7,
+      "over160": 19,
+      "games": 23,
+      "ptsScore": 182.3
     },
     {
       "team": "Los Angeles Sparks",
@@ -25,25 +38,12 @@
       "homePts": 180.2,
       "awayPts": 185.0,
       "l7Pts": 190.0,
-      "adjL7Pts": 186.5,
+      "adjL7Pts": 186.4,
       "l3Pts": 177.7,
-      "adjL3Pts": 175.5,
+      "adjL3Pts": 175.4,
       "over160": 18,
       "games": 21,
-      "ptsScore": 182.3
-    },
-    {
-      "team": "Toronto Tempo",
-      "avgPts": 181.7,
-      "homePts": 174.4,
-      "awayPts": 190.4,
-      "l7Pts": 185.1,
-      "adjL7Pts": 186.7,
-      "l3Pts": 175.3,
-      "adjL3Pts": 178.8,
-      "over160": 18,
-      "games": 22,
-      "ptsScore": 182.1
+      "ptsScore": 182.2
     },
     {
       "team": "Portland Fire",
@@ -53,49 +53,49 @@
       "l7Pts": 191.1,
       "adjL7Pts": 192.8,
       "l3Pts": 170.3,
-      "adjL3Pts": 171.7,
+      "adjL3Pts": 171.8,
       "over160": 18,
       "games": 23,
       "ptsScore": 177.8
     },
     {
       "team": "Chicago Sky",
-      "avgPts": 175.6,
+      "avgPts": 176.1,
       "homePts": 181.6,
-      "awayPts": 170.6,
-      "l7Pts": 182.6,
-      "adjL7Pts": 180.6,
-      "l3Pts": 173.3,
-      "adjL3Pts": 170.0,
-      "over160": 16,
-      "games": 22,
-      "ptsScore": 175.8
+      "awayPts": 171.8,
+      "l7Pts": 187.1,
+      "adjL7Pts": 183.9,
+      "l3Pts": 173.0,
+      "adjL3Pts": 170.1,
+      "over160": 17,
+      "games": 23,
+      "ptsScore": 176.6
     },
     {
       "team": "Dallas Wings",
-      "avgPts": 174.3,
-      "homePts": 163.0,
+      "avgPts": 174.8,
+      "homePts": 165.4,
       "awayPts": 181.6,
-      "l7Pts": 181.3,
-      "adjL7Pts": 180.4,
-      "l3Pts": 177.7,
-      "adjL3Pts": 171.6,
-      "over160": 19,
-      "games": 23,
-      "ptsScore": 174.8
+      "l7Pts": 176.3,
+      "adjL7Pts": 173.8,
+      "l3Pts": 185.0,
+      "adjL3Pts": 180.7,
+      "over160": 20,
+      "games": 24,
+      "ptsScore": 175.2
     },
     {
       "team": "Las Vegas Aces",
-      "avgPts": 175.6,
-      "homePts": 175.3,
+      "avgPts": 175.9,
+      "homePts": 176.0,
       "awayPts": 175.8,
-      "l7Pts": 177.0,
-      "adjL7Pts": 174.3,
-      "l3Pts": 161.3,
-      "adjL3Pts": 157.6,
-      "over160": 22,
-      "games": 24,
-      "ptsScore": 174.0
+      "l7Pts": 177.1,
+      "adjL7Pts": 173.1,
+      "l3Pts": 172.0,
+      "adjL3Pts": 168.4,
+      "over160": 23,
+      "games": 25,
+      "ptsScore": 175.0
     },
     {
       "team": "Atlanta Dream",
@@ -103,25 +103,25 @@
       "homePts": 177.6,
       "awayPts": 167.2,
       "l7Pts": 168.6,
-      "adjL7Pts": 177.2,
+      "adjL7Pts": 177.3,
       "l3Pts": 177.3,
-      "adjL3Pts": 183.3,
+      "adjL3Pts": 183.4,
       "over160": 15,
       "games": 23,
       "ptsScore": 173.7
     },
     {
       "team": "New York Liberty",
-      "avgPts": 172.0,
+      "avgPts": 172.5,
       "homePts": 165.0,
-      "awayPts": 180.4,
-      "l7Pts": 170.9,
-      "adjL7Pts": 173.2,
-      "l3Pts": 175.0,
-      "adjL3Pts": 175.4,
-      "over160": 17,
-      "games": 24,
-      "ptsScore": 172.4
+      "awayPts": 180.7,
+      "l7Pts": 173.9,
+      "adjL7Pts": 175.3,
+      "l3Pts": 174.7,
+      "adjL3Pts": 171.3,
+      "over160": 18,
+      "games": 25,
+      "ptsScore": 172.7
     },
     {
       "team": "Minnesota Lynx",
@@ -129,9 +129,9 @@
       "homePts": 172.4,
       "awayPts": 169.6,
       "l7Pts": 169.1,
-      "adjL7Pts": 172.9,
+      "adjL7Pts": 172.8,
       "l3Pts": 173.3,
-      "adjL3Pts": 178.0,
+      "adjL3Pts": 177.9,
       "over160": 19,
       "games": 23,
       "ptsScore": 171.7
@@ -144,23 +144,10 @@
       "l7Pts": 171.0,
       "adjL7Pts": 165.2,
       "l3Pts": 162.7,
-      "adjL3Pts": 157.0,
+      "adjL3Pts": 156.8,
       "over160": 17,
       "games": 24,
       "ptsScore": 167.7
-    },
-    {
-      "team": "Washington Mystics",
-      "avgPts": 165.6,
-      "homePts": 169.6,
-      "awayPts": 162.4,
-      "l7Pts": 160.9,
-      "adjL7Pts": 163.9,
-      "l3Pts": 171.7,
-      "adjL3Pts": 175.3,
-      "over160": 12,
-      "games": 20,
-      "ptsScore": 166.2
     },
     {
       "team": "Connecticut Sun",
@@ -170,23 +157,36 @@
       "l7Pts": 162.1,
       "adjL7Pts": 163.5,
       "l3Pts": 162.7,
-      "adjL3Pts": 168.4,
+      "adjL3Pts": 168.5,
       "over160": 17,
       "games": 23,
       "ptsScore": 165.6
     },
     {
       "team": "Seattle Storm",
-      "avgPts": 165.2,
+      "avgPts": 165.1,
       "homePts": 166.8,
-      "awayPts": 163.7,
-      "l7Pts": 174.7,
-      "adjL7Pts": 173.1,
-      "l3Pts": 154.0,
-      "adjL3Pts": 149.5,
+      "awayPts": 163.6,
+      "l7Pts": 166.3,
+      "adjL7Pts": 165.9,
+      "l3Pts": 158.7,
+      "adjL3Pts": 157.8,
+      "over160": 14,
+      "games": 25,
+      "ptsScore": 164.6
+    },
+    {
+      "team": "Washington Mystics",
+      "avgPts": 165.5,
+      "homePts": 168.9,
+      "awayPts": 162.4,
+      "l7Pts": 160.0,
+      "adjL7Pts": 164.1,
+      "l3Pts": 143.7,
+      "adjL3Pts": 151.0,
       "over160": 13,
-      "games": 24,
-      "ptsScore": 164.9
+      "games": 21,
+      "ptsScore": 164.2
     },
     {
       "team": "Golden State Valkyries",
@@ -196,7 +196,7 @@
       "l7Pts": 146.0,
       "adjL7Pts": 146.8,
       "l3Pts": 137.3,
-      "adjL3Pts": 138.8,
+      "adjL3Pts": 138.9,
       "over160": 13,
       "games": 24,
       "ptsScore": 155.2
@@ -211,45 +211,45 @@
       "l7Pace": 86.3,
       "adjL7Pace": 85.4,
       "l3Pace": 87.3,
-      "adjL3Pace": 85.6,
+      "adjL3Pace": 85.8,
       "games": 21,
       "paceScore": 83.4
     },
     {
       "team": "Chicago Sky",
-      "avgPace": 83.1,
+      "avgPace": 82.9,
       "homePace": 82.0,
-      "awayPace": 84.0,
-      "l7Pace": 84.2,
-      "adjL7Pace": 83.9,
-      "l3Pace": 84.8,
-      "adjL3Pace": 84.4,
-      "games": 22,
-      "paceScore": 83.3
+      "awayPace": 83.6,
+      "l7Pace": 83.5,
+      "adjL7Pace": 83.4,
+      "l3Pace": 81.7,
+      "adjL3Pace": 81.6,
+      "games": 23,
+      "paceScore": 82.9
     },
     {
       "team": "Indiana Fever",
-      "avgPace": 83.5,
+      "avgPace": 83.3,
       "homePace": 85.5,
-      "awayPace": 81.0,
-      "l7Pace": 82.5,
-      "adjL7Pace": 82.2,
-      "l3Pace": 80.0,
-      "adjL3Pace": 79.6,
-      "games": 22,
-      "paceScore": 83.0
+      "awayPace": 80.8,
+      "l7Pace": 81.0,
+      "adjL7Pace": 80.9,
+      "l3Pace": 82.4,
+      "adjL3Pace": 82.0,
+      "games": 23,
+      "paceScore": 82.9
     },
     {
       "team": "Washington Mystics",
-      "avgPace": 81.6,
-      "homePace": 85.1,
+      "avgPace": 81.7,
+      "homePace": 84.9,
       "awayPace": 78.7,
-      "l7Pace": 83.7,
-      "adjL7Pace": 84.6,
-      "l3Pace": 88.9,
-      "adjL3Pace": 90.2,
-      "games": 20,
-      "paceScore": 82.6
+      "l7Pace": 84.1,
+      "adjL7Pace": 84.9,
+      "l3Pace": 77.7,
+      "adjL3Pace": 79.3,
+      "games": 21,
+      "paceScore": 81.9
     },
     {
       "team": "Atlanta Dream",
@@ -257,9 +257,9 @@
       "homePace": 82.8,
       "awayPace": 79.5,
       "l7Pace": 81.5,
-      "adjL7Pace": 83.3,
+      "adjL7Pace": 83.4,
       "l3Pace": 83.6,
-      "adjL3Pace": 85.1,
+      "adjL3Pace": 85.2,
       "games": 23,
       "paceScore": 81.6
     },
@@ -269,47 +269,47 @@
       "homePace": 78.2,
       "awayPace": 83.8,
       "l7Pace": 86.2,
-      "adjL7Pace": 85.3,
+      "adjL7Pace": 85.5,
       "l3Pace": 82.1,
-      "adjL3Pace": 82.0,
+      "adjL3Pace": 82.1,
       "games": 23,
       "paceScore": 81.5
     },
     {
+      "team": "Toronto Tempo",
+      "avgPace": 81.3,
+      "homePace": 81.0,
+      "awayPace": 81.7,
+      "l7Pace": 80.9,
+      "adjL7Pace": 81.7,
+      "l3Pace": 80.2,
+      "adjL3Pace": 82.3,
+      "games": 23,
+      "paceScore": 81.4
+    },
+    {
       "team": "Seattle Storm",
-      "avgPace": 80.3,
+      "avgPace": 80.4,
       "homePace": 80.0,
-      "awayPace": 80.6,
-      "l7Pace": 84.6,
-      "adjL7Pace": 84.5,
-      "l3Pace": 86.1,
-      "adjL3Pace": 85.1,
-      "games": 24,
-      "paceScore": 81.2
+      "awayPace": 80.8,
+      "l7Pace": 83.3,
+      "adjL7Pace": 83.1,
+      "l3Pace": 85.3,
+      "adjL3Pace": 84.1,
+      "games": 25,
+      "paceScore": 81.0
     },
     {
       "team": "Las Vegas Aces",
-      "avgPace": 80.8,
-      "homePace": 79.6,
+      "avgPace": 80.7,
+      "homePace": 79.5,
       "awayPace": 81.7,
-      "l7Pace": 81.6,
-      "adjL7Pace": 80.9,
-      "l3Pace": 77.1,
-      "adjL3Pace": 76.4,
-      "games": 24,
-      "paceScore": 80.5
-    },
-    {
-      "team": "Toronto Tempo",
-      "avgPace": 80.9,
-      "homePace": 80.2,
-      "awayPace": 81.7,
-      "l7Pace": 79.7,
-      "adjL7Pace": 80.3,
-      "l3Pace": 74.9,
-      "adjL3Pace": 76.8,
-      "games": 22,
-      "paceScore": 80.5
+      "l7Pace": 80.9,
+      "adjL7Pace": 79.8,
+      "l3Pace": 79.4,
+      "adjL3Pace": 78.9,
+      "games": 25,
+      "paceScore": 80.4
     },
     {
       "team": "Minnesota Lynx",
@@ -317,11 +317,11 @@
       "homePace": 79.9,
       "awayPace": 80.9,
       "l7Pace": 79.8,
-      "adjL7Pace": 80.2,
+      "adjL7Pace": 80.1,
       "l3Pace": 79.4,
       "adjL3Pace": 80.2,
       "games": 23,
-      "paceScore": 80.4
+      "paceScore": 80.3
     },
     {
       "team": "Connecticut Sun",
@@ -329,23 +329,35 @@
       "homePace": 80.3,
       "awayPace": 79.9,
       "l7Pace": 79.7,
-      "adjL7Pace": 79.9,
+      "adjL7Pace": 80.0,
       "l3Pace": 78.5,
-      "adjL3Pace": 80.1,
+      "adjL3Pace": 80.2,
       "games": 23,
       "paceScore": 80.1
     },
     {
+      "team": "New York Liberty",
+      "avgPace": 79.7,
+      "homePace": 78.8,
+      "awayPace": 80.6,
+      "l7Pace": 79.4,
+      "adjL7Pace": 80.2,
+      "l3Pace": 82.1,
+      "adjL3Pace": 82.2,
+      "games": 25,
+      "paceScore": 80.0
+    },
+    {
       "team": "Dallas Wings",
       "avgPace": 80.1,
-      "homePace": 78.5,
+      "homePace": 78.7,
       "awayPace": 81.1,
-      "l7Pace": 81.1,
-      "adjL7Pace": 81.3,
-      "l3Pace": 76.8,
-      "adjL3Pace": 77.1,
-      "games": 23,
-      "paceScore": 80.0
+      "l7Pace": 79.4,
+      "adjL7Pace": 79.2,
+      "l3Pace": 78.6,
+      "adjL3Pace": 78.0,
+      "games": 24,
+      "paceScore": 79.8
     },
     {
       "team": "Phoenix Mercury",
@@ -353,23 +365,11 @@
       "homePace": 80.3,
       "awayPace": 78.7,
       "l7Pace": 79.4,
-      "adjL7Pace": 77.8,
+      "adjL7Pace": 77.9,
       "l3Pace": 79.5,
-      "adjL3Pace": 77.7,
+      "adjL3Pace": 77.9,
       "games": 24,
       "paceScore": 79.2
-    },
-    {
-      "team": "New York Liberty",
-      "avgPace": 79.2,
-      "homePace": 78.8,
-      "awayPace": 79.8,
-      "l7Pace": 77.4,
-      "adjL7Pace": 78.2,
-      "l3Pace": 77.5,
-      "adjL3Pace": 77.8,
-      "games": 24,
-      "paceScore": 79.0
     },
     {
       "team": "Golden State Valkyries",
@@ -393,10 +393,10 @@
         "pts": 92,
         "total": 194.0,
         "oppAvg": 176.1,
-        "adjTotal": 190.3,
+        "adjTotal": 190.4,
         "pace": 82.3,
         "oppPace": 80.9,
-        "adjPace": 82.0
+        "adjPace": 82.1
       },
       {
         "date": "2026-07-10",
@@ -404,10 +404,10 @@
         "wl": "W",
         "pts": 89,
         "total": 167.0,
-        "oppAvg": 165.2,
-        "adjTotal": 174.2,
+        "oppAvg": 165.1,
+        "adjTotal": 174.4,
         "pace": 87.6,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 87.9
       },
       {
@@ -417,10 +417,10 @@
         "pts": 83,
         "total": 171.0,
         "oppAvg": 158.1,
-        "adjTotal": 185.3,
+        "adjTotal": 185.4,
         "pace": 80.8,
         "oppPace": 76.0,
-        "adjPace": 85.4
+        "adjPace": 85.5
       },
       {
         "date": "2026-07-02",
@@ -428,10 +428,10 @@
         "wl": "L",
         "pts": 76,
         "total": 157.0,
-        "oppAvg": 165.6,
-        "adjTotal": 163.8,
+        "oppAvg": 165.5,
+        "adjTotal": 164.0,
         "pace": 82.6,
-        "oppPace": 81.6,
+        "oppPace": 81.7,
         "adjPace": 81.6
       },
       {
@@ -440,10 +440,10 @@
         "wl": "L",
         "pts": 90,
         "total": 195.0,
-        "oppAvg": 165.2,
-        "adjTotal": 202.2,
+        "oppAvg": 165.1,
+        "adjTotal": 202.4,
         "pace": 83.8,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 84.1
       },
       {
@@ -453,10 +453,10 @@
         "pts": 75,
         "total": 153.0,
         "oppAvg": 158.1,
-        "adjTotal": 167.3,
+        "adjTotal": 167.4,
         "pace": 82.6,
         "oppPace": 76.0,
-        "adjPace": 87.2
+        "adjPace": 87.3
       },
       {
         "date": "2026-06-25",
@@ -465,13 +465,25 @@
         "pts": 66,
         "total": 143.0,
         "oppAvg": 158.1,
-        "adjTotal": 157.3,
+        "adjTotal": 157.4,
         "pace": 70.6,
         "oppPace": 76.0,
-        "adjPace": 75.2
+        "adjPace": 75.3
       }
     ],
     "Chicago Sky": [
+      {
+        "date": "2026-07-12",
+        "matchup": "CHI @ DAL",
+        "wl": "L",
+        "pts": 91,
+        "total": 187.0,
+        "oppAvg": 174.8,
+        "adjTotal": 184.7,
+        "pace": 79.7,
+        "oppPace": 80.1,
+        "adjPace": 80.3
+      },
       {
         "date": "2026-07-11",
         "matchup": "CHI @ LA",
@@ -479,10 +491,10 @@
         "pts": 87,
         "total": 189.0,
         "oppAvg": 182.3,
-        "adjTotal": 179.1,
+        "adjTotal": 179.2,
         "pace": 86.7,
         "oppPace": 82.9,
-        "adjPace": 84.4
+        "adjPace": 84.5
       },
       {
         "date": "2026-07-08",
@@ -491,10 +503,10 @@
         "pts": 77,
         "total": 143.0,
         "oppAvg": 169.2,
-        "adjTotal": 146.2,
+        "adjTotal": 146.3,
         "pace": 78.8,
         "oppPace": 79.5,
-        "adjPace": 79.9
+        "adjPace": 80.0
       },
       {
         "date": "2026-07-04",
@@ -502,11 +514,11 @@
         "wl": "L",
         "pts": 90,
         "total": 188.0,
-        "oppAvg": 175.6,
-        "adjTotal": 184.8,
+        "oppAvg": 175.9,
+        "adjTotal": 184.6,
         "pace": 89.0,
-        "oppPace": 80.8,
-        "adjPace": 88.8
+        "oppPace": 80.7,
+        "adjPace": 89.0
       },
       {
         "date": "2026-06-28",
@@ -514,11 +526,11 @@
         "wl": "L",
         "pts": 99,
         "total": 206.0,
-        "oppAvg": 175.6,
-        "adjTotal": 202.8,
+        "oppAvg": 175.9,
+        "adjTotal": 202.6,
         "pace": 86.2,
-        "oppPace": 80.8,
-        "adjPace": 86.0
+        "oppPace": 80.7,
+        "adjPace": 86.2
       },
       {
         "date": "2026-06-26",
@@ -527,10 +539,10 @@
         "pts": 124,
         "total": 218.0,
         "oppAvg": 176.1,
-        "adjTotal": 214.3,
+        "adjTotal": 214.4,
         "pace": 84.9,
         "oppPace": 80.9,
-        "adjPace": 84.6
+        "adjPace": 84.7
       },
       {
         "date": "2026-06-25",
@@ -539,22 +551,10 @@
         "pts": 101,
         "total": 179.0,
         "oppAvg": 176.1,
-        "adjTotal": 175.3,
+        "adjTotal": 175.4,
         "pace": 79.4,
         "oppPace": 80.9,
-        "adjPace": 79.1
-      },
-      {
-        "date": "2026-06-22",
-        "matchup": "CHI @ CON",
-        "wl": "L",
-        "pts": 63,
-        "total": 155.0,
-        "oppAvg": 165.6,
-        "adjTotal": 161.8,
-        "pace": 84.1,
-        "oppPace": 80.1,
-        "adjPace": 84.6
+        "adjPace": 79.2
       }
     ],
     "Connecticut Sun": [
@@ -565,10 +565,10 @@
         "pts": 64,
         "total": 143.0,
         "oppAvg": 158.1,
-        "adjTotal": 157.3,
+        "adjTotal": 157.4,
         "pace": 73.7,
         "oppPace": 76.0,
-        "adjPace": 78.3
+        "adjPace": 78.4
       },
       {
         "date": "2026-07-08",
@@ -577,10 +577,10 @@
         "pts": 80,
         "total": 166.0,
         "oppAvg": 170.9,
-        "adjTotal": 167.5,
+        "adjTotal": 167.6,
         "pace": 79.8,
         "oppPace": 80.4,
-        "adjPace": 80.0
+        "adjPace": 80.1
       },
       {
         "date": "2026-07-07",
@@ -589,10 +589,10 @@
         "pts": 90,
         "total": 179.0,
         "oppAvg": 170.9,
-        "adjTotal": 180.5,
+        "adjTotal": 180.6,
         "pace": 81.9,
         "oppPace": 80.4,
-        "adjPace": 82.1
+        "adjPace": 82.2
       },
       {
         "date": "2026-07-03",
@@ -600,11 +600,11 @@
         "wl": "L",
         "pts": 83,
         "total": 169.0,
-        "oppAvg": 174.3,
-        "adjTotal": 167.1,
+        "oppAvg": 174.8,
+        "adjTotal": 166.7,
         "pace": 82.3,
         "oppPace": 80.1,
-        "adjPace": 82.8
+        "adjPace": 82.9
       },
       {
         "date": "2026-06-26",
@@ -612,10 +612,10 @@
         "wl": "W",
         "pts": 68,
         "total": 125.0,
-        "oppAvg": 165.6,
-        "adjTotal": 131.8,
+        "oppAvg": 165.5,
+        "adjTotal": 132.0,
         "pace": 74.6,
-        "oppPace": 81.6,
+        "oppPace": 81.7,
         "adjPace": 73.6
       },
       {
@@ -624,11 +624,11 @@
         "wl": "W",
         "pts": 92,
         "total": 155.0,
-        "oppAvg": 175.6,
-        "adjTotal": 151.8,
+        "oppAvg": 176.1,
+        "adjTotal": 151.4,
         "pace": 84.1,
-        "oppPace": 83.1,
-        "adjPace": 81.6
+        "oppPace": 82.9,
+        "adjPace": 81.9
       },
       {
         "date": "2026-06-19",
@@ -636,25 +636,37 @@
         "wl": "L",
         "pts": 97,
         "total": 198.0,
-        "oppAvg": 181.7,
+        "oppAvg": 181.8,
         "adjTotal": 188.7,
         "pace": 81.4,
-        "oppPace": 80.9,
-        "adjPace": 81.1
+        "oppPace": 81.3,
+        "adjPace": 80.8
       }
     ],
     "Dallas Wings": [
+      {
+        "date": "2026-07-12",
+        "matchup": "DAL vs. CHI",
+        "wl": "W",
+        "pts": 96,
+        "total": 187.0,
+        "oppAvg": 176.1,
+        "adjTotal": 183.4,
+        "pace": 79.7,
+        "oppPace": 82.9,
+        "adjPace": 77.5
+      },
       {
         "date": "2026-07-10",
         "matchup": "DAL @ TOR",
         "wl": "W",
         "pts": 108,
         "total": 203.0,
-        "oppAvg": 181.7,
+        "oppAvg": 181.8,
         "adjTotal": 193.7,
         "pace": 76.6,
-        "oppPace": 80.9,
-        "adjPace": 76.3
+        "oppPace": 81.3,
+        "adjPace": 76.0
       },
       {
         "date": "2026-07-08",
@@ -662,11 +674,11 @@
         "wl": "W",
         "pts": 88,
         "total": 165.0,
-        "oppAvg": 172.0,
-        "adjTotal": 165.4,
+        "oppAvg": 172.5,
+        "adjTotal": 165.0,
         "pace": 79.4,
-        "oppPace": 79.2,
-        "adjPace": 80.8
+        "oppPace": 79.7,
+        "adjPace": 80.4
       },
       {
         "date": "2026-07-05",
@@ -674,11 +686,11 @@
         "wl": "W",
         "pts": 89,
         "total": 165.0,
-        "oppAvg": 181.7,
+        "oppAvg": 181.8,
         "adjTotal": 155.7,
         "pace": 74.4,
-        "oppPace": 80.9,
-        "adjPace": 74.1
+        "oppPace": 81.3,
+        "adjPace": 73.8
       },
       {
         "date": "2026-07-03",
@@ -687,10 +699,10 @@
         "pts": 86,
         "total": 169.0,
         "oppAvg": 165.6,
-        "adjTotal": 175.8,
+        "adjTotal": 175.9,
         "pace": 82.3,
         "oppPace": 80.1,
-        "adjPace": 82.8
+        "adjPace": 82.9
       },
       {
         "date": "2026-06-28",
@@ -699,10 +711,10 @@
         "pts": 77,
         "total": 162.0,
         "oppAvg": 170.9,
-        "adjTotal": 163.5,
+        "adjTotal": 163.6,
         "pace": 79.9,
         "oppPace": 80.4,
-        "adjPace": 80.1
+        "adjPace": 80.2
       },
       {
         "date": "2026-06-26",
@@ -710,23 +722,11 @@
         "wl": "L",
         "pts": 84,
         "total": 183.0,
-        "oppAvg": 175.6,
-        "adjTotal": 179.8,
+        "oppAvg": 175.9,
+        "adjTotal": 179.6,
         "pace": 83.7,
-        "oppPace": 80.8,
-        "adjPace": 83.5
-      },
-      {
-        "date": "2026-06-23",
-        "matchup": "DAL @ SEA",
-        "wl": "W",
-        "pts": 112,
-        "total": 222.0,
-        "oppAvg": 165.2,
-        "adjTotal": 229.2,
-        "pace": 91.5,
-        "oppPace": 80.3,
-        "adjPace": 91.8
+        "oppPace": 80.7,
+        "adjPace": 83.7
       }
     ],
     "Golden State Valkyries": [
@@ -737,10 +737,10 @@
         "pts": 79,
         "total": 143.0,
         "oppAvg": 165.6,
-        "adjTotal": 149.8,
+        "adjTotal": 149.9,
         "pace": 73.7,
         "oppPace": 80.1,
-        "adjPace": 74.2
+        "adjPace": 74.3
       },
       {
         "date": "2026-07-08",
@@ -748,11 +748,11 @@
         "wl": "W",
         "pts": 83,
         "total": 158.0,
-        "oppAvg": 181.7,
+        "oppAvg": 181.8,
         "adjTotal": 148.7,
         "pace": 73.7,
-        "oppPace": 80.9,
-        "adjPace": 73.4
+        "oppPace": 81.3,
+        "adjPace": 73.1
       },
       {
         "date": "2026-07-06",
@@ -760,10 +760,10 @@
         "wl": "W",
         "pts": 62,
         "total": 111.0,
-        "oppAvg": 165.6,
-        "adjTotal": 117.8,
+        "oppAvg": 165.5,
+        "adjTotal": 118.0,
         "pace": 67.7,
-        "oppPace": 81.6,
+        "oppPace": 81.7,
         "adjPace": 66.7
       },
       {
@@ -773,10 +773,10 @@
         "pts": 88,
         "total": 171.0,
         "oppAvg": 172.2,
-        "adjTotal": 171.2,
+        "adjTotal": 171.3,
         "pace": 80.8,
         "oppPace": 81.0,
-        "adjPace": 80.4
+        "adjPace": 80.5
       },
       {
         "date": "2026-06-28",
@@ -784,11 +784,11 @@
         "wl": "W",
         "pts": 76,
         "total": 143.0,
-        "oppAvg": 172.0,
-        "adjTotal": 143.4,
+        "oppAvg": 172.5,
+        "adjTotal": 143.0,
         "pace": 69.0,
-        "oppPace": 79.2,
-        "adjPace": 70.4
+        "oppPace": 79.7,
+        "adjPace": 70.0
       },
       {
         "date": "2026-06-27",
@@ -797,10 +797,10 @@
         "pts": 78,
         "total": 153.0,
         "oppAvg": 172.2,
-        "adjTotal": 153.2,
+        "adjTotal": 153.3,
         "pace": 82.6,
         "oppPace": 81.0,
-        "adjPace": 82.2
+        "adjPace": 82.3
       },
       {
         "date": "2026-06-25",
@@ -809,13 +809,25 @@
         "pts": 77,
         "total": 143.0,
         "oppAvg": 172.2,
-        "adjTotal": 143.2,
+        "adjTotal": 143.3,
         "pace": 70.6,
         "oppPace": 81.0,
-        "adjPace": 70.2
+        "adjPace": 70.3
       }
     ],
     "Indiana Fever": [
+      {
+        "date": "2026-07-13",
+        "matchup": "IND @ LV",
+        "wl": "W",
+        "pts": 109,
+        "total": 184.0,
+        "oppAvg": 175.9,
+        "adjTotal": 180.6,
+        "pace": 78.6,
+        "oppPace": 80.7,
+        "adjPace": 78.6
+      },
       {
         "date": "2026-07-10",
         "matchup": "IND @ PHX",
@@ -823,10 +835,10 @@
         "pts": 92,
         "total": 181.0,
         "oppAvg": 169.2,
-        "adjTotal": 184.2,
+        "adjTotal": 184.3,
         "pace": 78.8,
         "oppPace": 79.5,
-        "adjPace": 79.9
+        "adjPace": 80.0
       },
       {
         "date": "2026-07-09",
@@ -835,10 +847,10 @@
         "pts": 92,
         "total": 198.0,
         "oppAvg": 182.3,
-        "adjTotal": 188.1,
+        "adjTotal": 188.2,
         "pace": 89.7,
         "oppPace": 82.9,
-        "adjPace": 87.4
+        "adjPace": 87.5
       },
       {
         "date": "2026-07-05",
@@ -846,11 +858,11 @@
         "wl": "W",
         "pts": 84,
         "total": 152.0,
-        "oppAvg": 175.6,
-        "adjTotal": 148.8,
+        "oppAvg": 175.9,
+        "adjTotal": 148.6,
         "pace": 71.6,
-        "oppPace": 80.8,
-        "adjPace": 71.4
+        "oppPace": 80.7,
+        "adjPace": 71.6
       },
       {
         "date": "2026-06-28",
@@ -859,10 +871,10 @@
         "pts": 111,
         "total": 198.0,
         "oppAvg": 182.3,
-        "adjTotal": 188.1,
+        "adjTotal": 188.2,
         "pace": 86.2,
         "oppPace": 82.9,
-        "adjPace": 83.9
+        "adjPace": 84.0
       },
       {
         "date": "2026-06-24",
@@ -871,10 +883,10 @@
         "pts": 109,
         "total": 220.0,
         "oppAvg": 169.2,
-        "adjTotal": 223.2,
+        "adjTotal": 223.3,
         "pace": 84.3,
         "oppPace": 79.5,
-        "adjPace": 85.4
+        "adjPace": 85.5
       },
       {
         "date": "2026-06-23",
@@ -883,25 +895,25 @@
         "pts": 86,
         "total": 163.0,
         "oppAvg": 169.2,
-        "adjTotal": 166.2,
+        "adjTotal": 166.3,
         "pace": 77.9,
         "oppPace": 79.5,
-        "adjPace": 79.0
-      },
-      {
-        "date": "2026-06-20",
-        "matchup": "IND @ ATL",
-        "wl": "L",
-        "pts": 96,
-        "total": 209.0,
-        "oppAvg": 172.2,
-        "adjTotal": 209.2,
-        "pace": 89.0,
-        "oppPace": 81.0,
-        "adjPace": 88.6
+        "adjPace": 79.1
       }
     ],
     "Las Vegas Aces": [
+      {
+        "date": "2026-07-13",
+        "matchup": "LV vs. IND",
+        "wl": "L",
+        "pts": 75,
+        "total": 184.0,
+        "oppAvg": 183.0,
+        "adjTotal": 173.5,
+        "pace": 78.6,
+        "oppPace": 83.3,
+        "adjPace": 76.0
+      },
       {
         "date": "2026-07-11",
         "matchup": "LV vs. PHX",
@@ -909,10 +921,10 @@
         "pts": 106,
         "total": 164.0,
         "oppAvg": 169.2,
-        "adjTotal": 167.2,
+        "adjTotal": 167.3,
         "pace": 81.0,
         "oppPace": 79.5,
-        "adjPace": 82.1
+        "adjPace": 82.2
       },
       {
         "date": "2026-07-10",
@@ -921,10 +933,10 @@
         "pts": 88,
         "total": 168.0,
         "oppAvg": 176.1,
-        "adjTotal": 164.3,
+        "adjTotal": 164.4,
         "pace": 78.7,
         "oppPace": 80.9,
-        "adjPace": 78.4
+        "adjPace": 78.5
       },
       {
         "date": "2026-07-05",
@@ -933,10 +945,10 @@
         "pts": 68,
         "total": 152.0,
         "oppAvg": 183.0,
-        "adjTotal": 141.4,
+        "adjTotal": 141.5,
         "pace": 71.6,
-        "oppPace": 83.5,
-        "adjPace": 68.7
+        "oppPace": 83.3,
+        "adjPace": 69.0
       },
       {
         "date": "2026-07-04",
@@ -944,11 +956,11 @@
         "wl": "W",
         "pts": 98,
         "total": 188.0,
-        "oppAvg": 175.6,
-        "adjTotal": 184.8,
+        "oppAvg": 176.1,
+        "adjTotal": 184.4,
         "pace": 89.0,
-        "oppPace": 83.1,
-        "adjPace": 86.5
+        "oppPace": 82.9,
+        "adjPace": 86.8
       },
       {
         "date": "2026-06-30",
@@ -956,11 +968,11 @@
         "wl": "L",
         "pts": 85,
         "total": 178.0,
-        "oppAvg": 172.0,
-        "adjTotal": 178.4,
+        "oppAvg": 172.5,
+        "adjTotal": 178.0,
         "pace": 81.0,
-        "oppPace": 79.2,
-        "adjPace": 82.4
+        "oppPace": 79.7,
+        "adjPace": 82.0
       },
       {
         "date": "2026-06-28",
@@ -968,23 +980,11 @@
         "wl": "W",
         "pts": 107,
         "total": 206.0,
-        "oppAvg": 175.6,
-        "adjTotal": 202.8,
+        "oppAvg": 176.1,
+        "adjTotal": 202.4,
         "pace": 86.2,
-        "oppPace": 83.1,
-        "adjPace": 83.7
-      },
-      {
-        "date": "2026-06-26",
-        "matchup": "LV vs. DAL",
-        "wl": "W",
-        "pts": 99,
-        "total": 183.0,
-        "oppAvg": 174.3,
-        "adjTotal": 181.1,
-        "pace": 83.7,
-        "oppPace": 80.1,
-        "adjPace": 84.2
+        "oppPace": 82.9,
+        "adjPace": 84.0
       }
     ],
     "Los Angeles Sparks": [
@@ -994,11 +994,11 @@
         "wl": "W",
         "pts": 102,
         "total": 189.0,
-        "oppAvg": 175.6,
-        "adjTotal": 185.8,
+        "oppAvg": 176.1,
+        "adjTotal": 185.4,
         "pace": 86.7,
-        "oppPace": 83.1,
-        "adjPace": 84.2
+        "oppPace": 82.9,
+        "adjPace": 84.5
       },
       {
         "date": "2026-07-09",
@@ -1007,10 +1007,10 @@
         "pts": 106,
         "total": 198.0,
         "oppAvg": 183.0,
-        "adjTotal": 187.4,
+        "adjTotal": 187.5,
         "pace": 89.7,
-        "oppPace": 83.5,
-        "adjPace": 86.8
+        "oppPace": 83.3,
+        "adjPace": 87.1
       },
       {
         "date": "2026-07-07",
@@ -1018,10 +1018,10 @@
         "wl": "L",
         "pts": 64,
         "total": 146.0,
-        "oppAvg": 165.2,
-        "adjTotal": 153.2,
+        "oppAvg": 165.1,
+        "adjTotal": 153.4,
         "pace": 85.4,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 85.7
       },
       {
@@ -1031,10 +1031,10 @@
         "pts": 87,
         "total": 198.0,
         "oppAvg": 183.0,
-        "adjTotal": 187.4,
+        "adjTotal": 187.5,
         "pace": 86.2,
-        "oppPace": 83.5,
-        "adjPace": 83.3
+        "oppPace": 83.3,
+        "adjPace": 83.6
       },
       {
         "date": "2026-06-25",
@@ -1042,11 +1042,11 @@
         "wl": "L",
         "pts": 97,
         "total": 222.0,
-        "oppAvg": 181.7,
+        "oppAvg": 181.8,
         "adjTotal": 212.7,
         "pace": 86.5,
-        "oppPace": 80.9,
-        "adjPace": 86.2
+        "oppPace": 81.3,
+        "adjPace": 85.9
       },
       {
         "date": "2026-06-22",
@@ -1054,11 +1054,11 @@
         "wl": "W",
         "pts": 98,
         "total": 195.0,
-        "oppAvg": 172.0,
-        "adjTotal": 195.4,
+        "oppAvg": 172.5,
+        "adjTotal": 195.0,
         "pace": 82.5,
-        "oppPace": 79.2,
-        "adjPace": 83.9
+        "oppPace": 79.7,
+        "adjPace": 83.5
       },
       {
         "date": "2026-06-18",
@@ -1067,10 +1067,10 @@
         "pts": 83,
         "total": 182.0,
         "oppAvg": 170.9,
-        "adjTotal": 183.5,
+        "adjTotal": 183.6,
         "pace": 87.4,
         "oppPace": 80.4,
-        "adjPace": 87.6
+        "adjPace": 87.7
       }
     ],
     "Minnesota Lynx": [
@@ -1080,11 +1080,11 @@
         "wl": "W",
         "pts": 90,
         "total": 175.0,
-        "oppAvg": 172.0,
-        "adjTotal": 175.4,
+        "oppAvg": 172.5,
+        "adjTotal": 175.0,
         "pace": 76.6,
-        "oppPace": 79.2,
-        "adjPace": 78.0
+        "oppPace": 79.7,
+        "adjPace": 77.6
       },
       {
         "date": "2026-07-08",
@@ -1093,10 +1093,10 @@
         "pts": 86,
         "total": 166.0,
         "oppAvg": 165.6,
-        "adjTotal": 172.8,
+        "adjTotal": 172.9,
         "pace": 79.8,
         "oppPace": 80.1,
-        "adjPace": 80.3
+        "adjPace": 80.4
       },
       {
         "date": "2026-07-07",
@@ -1105,10 +1105,10 @@
         "pts": 89,
         "total": 179.0,
         "oppAvg": 165.6,
-        "adjTotal": 185.8,
+        "adjTotal": 185.9,
         "pace": 81.9,
         "oppPace": 80.1,
-        "adjPace": 82.4
+        "adjPace": 82.5
       },
       {
         "date": "2026-07-03",
@@ -1116,11 +1116,11 @@
         "wl": "L",
         "pts": 86,
         "total": 185.0,
-        "oppAvg": 172.0,
-        "adjTotal": 185.4,
+        "oppAvg": 172.5,
+        "adjTotal": 185.0,
         "pace": 76.4,
-        "oppPace": 79.2,
-        "adjPace": 77.8
+        "oppPace": 79.7,
+        "adjPace": 77.4
       },
       {
         "date": "2026-06-28",
@@ -1128,11 +1128,11 @@
         "wl": "W",
         "pts": 85,
         "total": 162.0,
-        "oppAvg": 174.3,
-        "adjTotal": 160.1,
+        "oppAvg": 174.8,
+        "adjTotal": 159.7,
         "pace": 79.9,
         "oppPace": 80.1,
-        "adjPace": 80.4
+        "adjPace": 80.5
       },
       {
         "date": "2026-06-24",
@@ -1140,10 +1140,10 @@
         "wl": "W",
         "pts": 78,
         "total": 154.0,
-        "oppAvg": 165.6,
-        "adjTotal": 160.8,
+        "oppAvg": 165.5,
+        "adjTotal": 161.0,
         "pace": 84.6,
-        "oppPace": 81.6,
+        "oppPace": 81.7,
         "adjPace": 83.6
       },
       {
@@ -1152,14 +1152,26 @@
         "wl": "L",
         "pts": 79,
         "total": 163.0,
-        "oppAvg": 165.6,
-        "adjTotal": 169.8,
+        "oppAvg": 165.5,
+        "adjTotal": 170.0,
         "pace": 79.7,
-        "oppPace": 81.6,
+        "oppPace": 81.7,
         "adjPace": 78.7
       }
     ],
     "New York Liberty": [
+      {
+        "date": "2026-07-12",
+        "matchup": "NY @ TOR",
+        "wl": "L",
+        "pts": 91,
+        "total": 184.0,
+        "oppAvg": 181.8,
+        "adjTotal": 174.7,
+        "pace": 90.2,
+        "oppPace": 81.3,
+        "adjPace": 89.6
+      },
       {
         "date": "2026-07-11",
         "matchup": "NY @ MIN",
@@ -1167,10 +1179,10 @@
         "pts": 85,
         "total": 175.0,
         "oppAvg": 170.9,
-        "adjTotal": 176.5,
+        "adjTotal": 176.6,
         "pace": 76.6,
         "oppPace": 80.4,
-        "adjPace": 76.8
+        "adjPace": 76.9
       },
       {
         "date": "2026-07-08",
@@ -1178,11 +1190,11 @@
         "wl": "L",
         "pts": 77,
         "total": 165.0,
-        "oppAvg": 174.3,
-        "adjTotal": 163.1,
+        "oppAvg": 174.8,
+        "adjTotal": 162.7,
         "pace": 79.4,
         "oppPace": 80.1,
-        "adjPace": 79.9
+        "adjPace": 80.0
       },
       {
         "date": "2026-07-03",
@@ -1191,10 +1203,10 @@
         "pts": 99,
         "total": 185.0,
         "oppAvg": 170.9,
-        "adjTotal": 186.5,
+        "adjTotal": 186.6,
         "pace": 76.4,
         "oppPace": 80.4,
-        "adjPace": 76.6
+        "adjPace": 76.7
       },
       {
         "date": "2026-06-30",
@@ -1202,11 +1214,11 @@
         "wl": "W",
         "pts": 93,
         "total": 178.0,
-        "oppAvg": 175.6,
-        "adjTotal": 174.8,
+        "oppAvg": 175.9,
+        "adjTotal": 174.6,
         "pace": 81.0,
-        "oppPace": 80.8,
-        "adjPace": 80.8
+        "oppPace": 80.7,
+        "adjPace": 81.0
       },
       {
         "date": "2026-06-28",
@@ -1215,10 +1227,10 @@
         "pts": 67,
         "total": 143.0,
         "oppAvg": 158.1,
-        "adjTotal": 157.3,
+        "adjTotal": 157.4,
         "pace": 69.0,
         "oppPace": 76.0,
-        "adjPace": 73.6
+        "adjPace": 73.7
       },
       {
         "date": "2026-06-26",
@@ -1226,23 +1238,11 @@
         "wl": "L",
         "pts": 88,
         "total": 187.0,
-        "oppAvg": 165.2,
-        "adjTotal": 194.2,
+        "oppAvg": 165.1,
+        "adjTotal": 194.4,
         "pace": 82.9,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 83.2
-      },
-      {
-        "date": "2026-06-24",
-        "matchup": "NY @ LV",
-        "wl": "W",
-        "pts": 87,
-        "total": 163.0,
-        "oppAvg": 175.6,
-        "adjTotal": 159.8,
-        "pace": 76.6,
-        "oppPace": 80.8,
-        "adjPace": 76.4
       }
     ],
     "Phoenix Mercury": [
@@ -1252,11 +1252,11 @@
         "wl": "L",
         "pts": 58,
         "total": 164.0,
-        "oppAvg": 175.6,
-        "adjTotal": 160.8,
+        "oppAvg": 175.9,
+        "adjTotal": 160.6,
         "pace": 81.0,
-        "oppPace": 80.8,
-        "adjPace": 80.8
+        "oppPace": 80.7,
+        "adjPace": 81.0
       },
       {
         "date": "2026-07-10",
@@ -1265,10 +1265,10 @@
         "pts": 89,
         "total": 181.0,
         "oppAvg": 183.0,
-        "adjTotal": 170.4,
+        "adjTotal": 170.5,
         "pace": 78.8,
-        "oppPace": 83.5,
-        "adjPace": 75.9
+        "oppPace": 83.3,
+        "adjPace": 76.2
       },
       {
         "date": "2026-07-08",
@@ -1276,11 +1276,11 @@
         "wl": "L",
         "pts": 66,
         "total": 143.0,
-        "oppAvg": 175.6,
-        "adjTotal": 139.8,
+        "oppAvg": 176.1,
+        "adjTotal": 139.4,
         "pace": 78.8,
-        "oppPace": 83.1,
-        "adjPace": 76.3
+        "oppPace": 82.9,
+        "adjPace": 76.6
       },
       {
         "date": "2026-07-03",
@@ -1288,10 +1288,10 @@
         "wl": "W",
         "pts": 90,
         "total": 157.0,
-        "oppAvg": 165.2,
-        "adjTotal": 164.2,
+        "oppAvg": 165.1,
+        "adjTotal": 164.4,
         "pace": 75.3,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 75.6
       },
       {
@@ -1300,11 +1300,11 @@
         "wl": "W",
         "pts": 89,
         "total": 169.0,
-        "oppAvg": 181.7,
+        "oppAvg": 181.8,
         "adjTotal": 159.7,
         "pace": 79.6,
-        "oppPace": 80.9,
-        "adjPace": 79.3
+        "oppPace": 81.3,
+        "adjPace": 79.0
       },
       {
         "date": "2026-06-24",
@@ -1313,10 +1313,10 @@
         "pts": 111,
         "total": 220.0,
         "oppAvg": 183.0,
-        "adjTotal": 209.4,
+        "adjTotal": 209.5,
         "pace": 84.3,
-        "oppPace": 83.5,
-        "adjPace": 81.4
+        "oppPace": 83.3,
+        "adjPace": 81.7
       },
       {
         "date": "2026-06-23",
@@ -1325,10 +1325,10 @@
         "pts": 77,
         "total": 163.0,
         "oppAvg": 183.0,
-        "adjTotal": 152.4,
+        "adjTotal": 152.5,
         "pace": 77.9,
-        "oppPace": 83.5,
-        "adjPace": 75.0
+        "oppPace": 83.3,
+        "adjPace": 75.3
       }
     ],
     "Portland Fire": [
@@ -1339,10 +1339,10 @@
         "pts": 102,
         "total": 194.0,
         "oppAvg": 172.2,
-        "adjTotal": 194.2,
+        "adjTotal": 194.3,
         "pace": 82.3,
         "oppPace": 81.0,
-        "adjPace": 81.9
+        "adjPace": 82.0
       },
       {
         "date": "2026-07-10",
@@ -1350,11 +1350,11 @@
         "wl": "L",
         "pts": 80,
         "total": 168.0,
-        "oppAvg": 175.6,
-        "adjTotal": 164.8,
+        "oppAvg": 175.9,
+        "adjTotal": 164.6,
         "pace": 78.7,
-        "oppPace": 80.8,
-        "adjPace": 78.5
+        "oppPace": 80.7,
+        "adjPace": 78.7
       },
       {
         "date": "2026-07-05",
@@ -1362,10 +1362,10 @@
         "wl": "W",
         "pts": 77,
         "total": 149.0,
-        "oppAvg": 165.2,
-        "adjTotal": 156.2,
+        "oppAvg": 165.1,
+        "adjTotal": 156.4,
         "pace": 85.4,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 85.7
       },
       {
@@ -1374,10 +1374,10 @@
         "wl": "L",
         "pts": 123,
         "total": 247.0,
-        "oppAvg": 165.6,
-        "adjTotal": 253.8,
+        "oppAvg": 165.5,
+        "adjTotal": 254.0,
         "pace": 116.5,
-        "oppPace": 81.6,
+        "oppPace": 81.7,
         "adjPace": 115.5
       },
       {
@@ -1386,11 +1386,11 @@
         "wl": "L",
         "pts": 94,
         "total": 218.0,
-        "oppAvg": 175.6,
-        "adjTotal": 214.8,
+        "oppAvg": 176.1,
+        "adjTotal": 214.4,
         "pace": 84.9,
-        "oppPace": 83.1,
-        "adjPace": 82.4
+        "oppPace": 82.9,
+        "adjPace": 82.7
       },
       {
         "date": "2026-06-25",
@@ -1398,11 +1398,11 @@
         "wl": "L",
         "pts": 78,
         "total": 179.0,
-        "oppAvg": 175.6,
-        "adjTotal": 175.8,
+        "oppAvg": 176.1,
+        "adjTotal": 175.4,
         "pace": 79.4,
-        "oppPace": 83.1,
-        "adjPace": 76.9
+        "oppPace": 82.9,
+        "adjPace": 77.2
       },
       {
         "date": "2026-06-18",
@@ -1410,14 +1410,26 @@
         "wl": "W",
         "pts": 94,
         "total": 183.0,
-        "oppAvg": 165.2,
-        "adjTotal": 190.2,
+        "oppAvg": 165.1,
+        "adjTotal": 190.4,
         "pace": 76.2,
-        "oppPace": 80.3,
+        "oppPace": 80.4,
         "adjPace": 76.5
       }
     ],
     "Seattle Storm": [
+      {
+        "date": "2026-07-12",
+        "matchup": "SEA @ WSH",
+        "wl": "L",
+        "pts": 79,
+        "total": 163.0,
+        "oppAvg": 165.5,
+        "adjTotal": 170.0,
+        "pace": 82.8,
+        "oppPace": 81.7,
+        "adjPace": 81.8
+      },
       {
         "date": "2026-07-10",
         "matchup": "SEA @ ATL",
@@ -1425,10 +1437,10 @@
         "pts": 78,
         "total": 167.0,
         "oppAvg": 172.2,
-        "adjTotal": 167.2,
+        "adjTotal": 167.3,
         "pace": 87.6,
         "oppPace": 81.0,
-        "adjPace": 87.2
+        "adjPace": 87.3
       },
       {
         "date": "2026-07-07",
@@ -1437,10 +1449,10 @@
         "pts": 82,
         "total": 146.0,
         "oppAvg": 182.3,
-        "adjTotal": 136.1,
+        "adjTotal": 136.2,
         "pace": 85.4,
         "oppPace": 82.9,
-        "adjPace": 83.1
+        "adjPace": 83.2
       },
       {
         "date": "2026-07-05",
@@ -1449,10 +1461,10 @@
         "pts": 72,
         "total": 149.0,
         "oppAvg": 176.1,
-        "adjTotal": 145.3,
+        "adjTotal": 145.4,
         "pace": 85.4,
         "oppPace": 80.9,
-        "adjPace": 85.1
+        "adjPace": 85.2
       },
       {
         "date": "2026-07-03",
@@ -1461,10 +1473,10 @@
         "pts": 67,
         "total": 157.0,
         "oppAvg": 169.2,
-        "adjTotal": 160.2,
+        "adjTotal": 160.3,
         "pace": 75.3,
         "oppPace": 79.5,
-        "adjPace": 76.4
+        "adjPace": 76.5
       },
       {
         "date": "2026-06-28",
@@ -1473,10 +1485,10 @@
         "pts": 105,
         "total": 195.0,
         "oppAvg": 172.2,
-        "adjTotal": 195.2,
+        "adjTotal": 195.3,
         "pace": 83.8,
         "oppPace": 81.0,
-        "adjPace": 83.4
+        "adjPace": 83.5
       },
       {
         "date": "2026-06-26",
@@ -1484,37 +1496,37 @@
         "wl": "W",
         "pts": 99,
         "total": 187.0,
-        "oppAvg": 172.0,
-        "adjTotal": 187.4,
+        "oppAvg": 172.5,
+        "adjTotal": 187.0,
         "pace": 82.9,
-        "oppPace": 79.2,
-        "adjPace": 84.3
-      },
-      {
-        "date": "2026-06-23",
-        "matchup": "SEA vs. DAL",
-        "wl": "L",
-        "pts": 110,
-        "total": 222.0,
-        "oppAvg": 174.3,
-        "adjTotal": 220.1,
-        "pace": 91.5,
-        "oppPace": 80.1,
-        "adjPace": 92.0
+        "oppPace": 79.7,
+        "adjPace": 83.9
       }
     ],
     "Toronto Tempo": [
+      {
+        "date": "2026-07-12",
+        "matchup": "TOR vs. NY",
+        "wl": "W",
+        "pts": 93,
+        "total": 184.0,
+        "oppAvg": 172.5,
+        "adjTotal": 184.0,
+        "pace": 90.2,
+        "oppPace": 79.7,
+        "adjPace": 91.2
+      },
       {
         "date": "2026-07-10",
         "matchup": "TOR vs. DAL",
         "wl": "L",
         "pts": 95,
         "total": 203.0,
-        "oppAvg": 174.3,
-        "adjTotal": 201.1,
+        "oppAvg": 174.8,
+        "adjTotal": 200.7,
         "pace": 76.6,
         "oppPace": 80.1,
-        "adjPace": 77.1
+        "adjPace": 77.2
       },
       {
         "date": "2026-07-08",
@@ -1523,10 +1535,10 @@
         "pts": 75,
         "total": 158.0,
         "oppAvg": 158.1,
-        "adjTotal": 172.3,
+        "adjTotal": 172.4,
         "pace": 73.7,
         "oppPace": 76.0,
-        "adjPace": 78.3
+        "adjPace": 78.4
       },
       {
         "date": "2026-07-05",
@@ -1534,11 +1546,11 @@
         "wl": "L",
         "pts": 76,
         "total": 165.0,
-        "oppAvg": 174.3,
-        "adjTotal": 163.1,
+        "oppAvg": 174.8,
+        "adjTotal": 162.7,
         "pace": 74.4,
         "oppPace": 80.1,
-        "adjPace": 74.9
+        "adjPace": 75.0
       },
       {
         "date": "2026-06-27",
@@ -1547,10 +1559,10 @@
         "pts": 80,
         "total": 169.0,
         "oppAvg": 169.2,
-        "adjTotal": 172.2,
+        "adjTotal": 172.3,
         "pace": 79.6,
         "oppPace": 79.5,
-        "adjPace": 80.7
+        "adjPace": 80.8
       },
       {
         "date": "2026-06-25",
@@ -1559,10 +1571,10 @@
         "pts": 125,
         "total": 222.0,
         "oppAvg": 182.3,
-        "adjTotal": 212.1,
+        "adjTotal": 212.2,
         "pace": 86.5,
         "oppPace": 82.9,
-        "adjPace": 84.2
+        "adjPace": 84.3
       },
       {
         "date": "2026-06-22",
@@ -1571,25 +1583,25 @@
         "pts": 87,
         "total": 181.0,
         "oppAvg": 172.2,
-        "adjTotal": 181.2,
+        "adjTotal": 181.3,
         "pace": 85.5,
         "oppPace": 81.0,
-        "adjPace": 85.1
-      },
-      {
-        "date": "2026-06-19",
-        "matchup": "TOR @ CON",
-        "wl": "W",
-        "pts": 101,
-        "total": 198.0,
-        "oppAvg": 165.6,
-        "adjTotal": 204.8,
-        "pace": 81.4,
-        "oppPace": 80.1,
-        "adjPace": 81.9
+        "adjPace": 85.2
       }
     ],
     "Washington Mystics": [
+      {
+        "date": "2026-07-12",
+        "matchup": "WSH vs. SEA",
+        "wl": "W",
+        "pts": 84,
+        "total": 163.0,
+        "oppAvg": 165.1,
+        "adjTotal": 170.4,
+        "pace": 82.8,
+        "oppPace": 80.4,
+        "adjPace": 83.1
+      },
       {
         "date": "2026-07-06",
         "matchup": "WSH vs. GS",
@@ -1597,10 +1609,10 @@
         "pts": 49,
         "total": 111.0,
         "oppAvg": 158.1,
-        "adjTotal": 125.3,
+        "adjTotal": 125.4,
         "pace": 67.7,
         "oppPace": 76.0,
-        "adjPace": 72.3
+        "adjPace": 72.4
       },
       {
         "date": "2026-07-02",
@@ -1609,10 +1621,10 @@
         "pts": 81,
         "total": 157.0,
         "oppAvg": 172.2,
-        "adjTotal": 157.2,
+        "adjTotal": 157.3,
         "pace": 82.6,
         "oppPace": 81.0,
-        "adjPace": 82.2
+        "adjPace": 82.3
       },
       {
         "date": "2026-06-28",
@@ -1621,10 +1633,10 @@
         "pts": 124,
         "total": 247.0,
         "oppAvg": 176.1,
-        "adjTotal": 243.3,
+        "adjTotal": 243.4,
         "pace": 116.5,
         "oppPace": 80.9,
-        "adjPace": 116.2
+        "adjPace": 116.3
       },
       {
         "date": "2026-06-26",
@@ -1633,10 +1645,10 @@
         "pts": 57,
         "total": 125.0,
         "oppAvg": 165.6,
-        "adjTotal": 131.8,
+        "adjTotal": 131.9,
         "pace": 74.6,
         "oppPace": 80.1,
-        "adjPace": 75.1
+        "adjPace": 75.2
       },
       {
         "date": "2026-06-24",
@@ -1645,10 +1657,10 @@
         "pts": 76,
         "total": 154.0,
         "oppAvg": 170.9,
-        "adjTotal": 155.5,
+        "adjTotal": 155.6,
         "pace": 84.6,
         "oppPace": 80.4,
-        "adjPace": 84.8
+        "adjPace": 84.9
       },
       {
         "date": "2026-06-21",
@@ -1657,27 +1669,15 @@
         "pts": 84,
         "total": 163.0,
         "oppAvg": 170.9,
-        "adjTotal": 164.5,
+        "adjTotal": 164.6,
         "pace": 79.7,
         "oppPace": 80.4,
-        "adjPace": 79.9
-      },
-      {
-        "date": "2026-06-19",
-        "matchup": "WSH @ NY",
-        "wl": "W",
-        "pts": 86,
-        "total": 169.0,
-        "oppAvg": 172.0,
-        "adjTotal": 169.4,
-        "pace": 80.3,
-        "oppPace": 79.2,
-        "adjPace": 81.7
+        "adjPace": 80.0
       }
     ]
   },
   "league_avg": {
-    "ortg": 106.8,
+    "ortg": 106.9,
     "drtg": 106.9
   },
   "ratings": {
@@ -1686,9 +1686,9 @@
         "ortg": 108.3,
         "drtg": 104.2,
         "net": 4.1,
-        "adj_ortg": 108.9,
+        "adj_ortg": 109.0,
         "adj_drtg": 103.9,
-        "adj_net": 5.0,
+        "adj_net": 5.1,
         "pace": 81.0,
         "games": 23
       },
@@ -1696,9 +1696,9 @@
         "ortg": 110.5,
         "drtg": 106.8,
         "net": 3.7,
-        "adj_ortg": 111.1,
+        "adj_ortg": 111.3,
         "adj_drtg": 107.4,
-        "adj_net": 3.7,
+        "adj_net": 3.9,
         "pace": 82.0,
         "games": 14
       },
@@ -1706,42 +1706,42 @@
         "ortg": 100.1,
         "drtg": 106.8,
         "net": -6.7,
-        "adj_ortg": 102.8,
-        "adj_drtg": 109.8,
-        "adj_net": -7.0,
+        "adj_ortg": 102.9,
+        "adj_drtg": 110.0,
+        "adj_net": -7.1,
         "pace": 81.5,
         "games": 7
       }
     },
     "Chicago Sky": {
       "season": {
-        "ortg": 103.8,
-        "drtg": 107.7,
-        "net": -3.9,
-        "adj_ortg": 103.5,
-        "adj_drtg": 106.8,
+        "ortg": 104.2,
+        "drtg": 108.2,
+        "net": -4.0,
+        "adj_ortg": 103.9,
+        "adj_drtg": 107.2,
         "adj_net": -3.3,
-        "pace": 83.1,
-        "games": 22
+        "pace": 82.9,
+        "games": 23
       },
       "l14": {
-        "ortg": 105.5,
-        "drtg": 109.2,
-        "net": -3.7,
-        "adj_ortg": 104.2,
-        "adj_drtg": 109.2,
-        "adj_net": -5.0,
-        "pace": 83.5,
+        "ortg": 107.6,
+        "drtg": 110.1,
+        "net": -2.5,
+        "adj_ortg": 106.0,
+        "adj_drtg": 109.4,
+        "adj_net": -3.4,
+        "pace": 83.2,
         "games": 14
       },
       "l7": {
-        "ortg": 108.8,
-        "drtg": 108.1,
-        "net": 0.7,
-        "adj_ortg": 106.3,
-        "adj_drtg": 108.7,
-        "adj_net": -2.4,
-        "pace": 84.2,
+        "ortg": 114.4,
+        "drtg": 109.6,
+        "net": 4.8,
+        "adj_ortg": 111.6,
+        "adj_drtg": 108.6,
+        "adj_net": 3.0,
+        "pace": 83.5,
         "games": 7
       }
     },
@@ -1751,8 +1751,8 @@
         "drtg": 107.7,
         "net": -8.8,
         "adj_ortg": 99.3,
-        "adj_drtg": 107.5,
-        "adj_net": -8.2,
+        "adj_drtg": 107.7,
+        "adj_net": -8.4,
         "pace": 80.1,
         "games": 23
       },
@@ -1760,9 +1760,9 @@
         "ortg": 103.1,
         "drtg": 106.2,
         "net": -3.1,
-        "adj_ortg": 103.7,
+        "adj_ortg": 103.8,
         "adj_drtg": 105.2,
-        "adj_net": -1.5,
+        "adj_net": -1.4,
         "pace": 79.7,
         "games": 14
       },
@@ -1779,33 +1779,33 @@
     },
     "Dallas Wings": {
       "season": {
-        "ortg": 111.3,
-        "drtg": 106.3,
-        "net": 5.0,
-        "adj_ortg": 111.8,
-        "adj_drtg": 105.6,
-        "adj_net": 6.2,
+        "ortg": 111.7,
+        "drtg": 106.6,
+        "net": 5.1,
+        "adj_ortg": 112.1,
+        "adj_drtg": 106.2,
+        "adj_net": 5.9,
         "pace": 80.1,
-        "games": 23
+        "games": 24
       },
       "l14": {
-        "ortg": 111.0,
-        "drtg": 107.7,
-        "net": 3.3,
-        "adj_ortg": 110.6,
-        "adj_drtg": 106.9,
-        "adj_net": 3.7,
-        "pace": 81.1,
+        "ortg": 110.6,
+        "drtg": 107.6,
+        "net": 3.0,
+        "adj_ortg": 110.4,
+        "adj_drtg": 107.3,
+        "adj_net": 3.1,
+        "pace": 80.9,
         "games": 14
       },
       "l7": {
-        "ortg": 113.4,
-        "drtg": 110.1,
-        "net": 3.3,
-        "adj_ortg": 112.6,
-        "adj_drtg": 109.0,
-        "adj_net": 3.6,
-        "pace": 81.1,
+        "ortg": 112.9,
+        "drtg": 109.0,
+        "net": 3.9,
+        "adj_ortg": 111.8,
+        "adj_drtg": 107.7,
+        "adj_net": 4.1,
+        "pace": 79.4,
         "games": 7
       }
     },
@@ -1815,8 +1815,8 @@
         "drtg": 100.2,
         "net": 7.6,
         "adj_ortg": 108.0,
-        "adj_drtg": 99.8,
-        "adj_net": 8.2,
+        "adj_drtg": 100.0,
+        "adj_net": 8.0,
         "pace": 76.0,
         "games": 24
       },
@@ -1824,9 +1824,9 @@
         "ortg": 105.4,
         "drtg": 98.2,
         "net": 7.2,
-        "adj_ortg": 105.9,
-        "adj_drtg": 97.7,
-        "adj_net": 8.2,
+        "adj_ortg": 105.8,
+        "adj_drtg": 97.9,
+        "adj_net": 7.9,
         "pace": 74.7,
         "games": 14
       },
@@ -1834,8 +1834,8 @@
         "ortg": 104.8,
         "drtg": 92.5,
         "net": 12.3,
-        "adj_ortg": 105.4,
-        "adj_drtg": 92.8,
+        "adj_ortg": 105.6,
+        "adj_drtg": 93.0,
         "adj_net": 12.6,
         "pace": 74.0,
         "games": 7
@@ -1843,65 +1843,65 @@
     },
     "Indiana Fever": {
       "season": {
-        "ortg": 111.8,
-        "drtg": 107.4,
-        "net": 4.4,
-        "adj_ortg": 111.3,
-        "adj_drtg": 108.3,
-        "adj_net": 3.0,
-        "pace": 83.5,
-        "games": 22
+        "ortg": 112.9,
+        "drtg": 106.9,
+        "net": 6.0,
+        "adj_ortg": 112.4,
+        "adj_drtg": 107.7,
+        "adj_net": 4.7,
+        "pace": 83.3,
+        "games": 23
       },
       "l14": {
-        "ortg": 113.4,
-        "drtg": 108.4,
-        "net": 5.0,
-        "adj_ortg": 112.5,
-        "adj_drtg": 109.0,
-        "adj_net": 3.5,
-        "pace": 83.1,
+        "ortg": 115.4,
+        "drtg": 108.6,
+        "net": 6.8,
+        "adj_ortg": 114.2,
+        "adj_drtg": 109.2,
+        "adj_net": 5.0,
+        "pace": 83.2,
         "games": 14
       },
       "l7": {
-        "ortg": 116.0,
-        "drtg": 112.7,
-        "net": 3.3,
-        "adj_ortg": 114.0,
-        "adj_drtg": 112.8,
-        "adj_net": 1.2,
-        "pace": 82.5,
+        "ortg": 120.4,
+        "drtg": 108.1,
+        "net": 12.3,
+        "adj_ortg": 117.7,
+        "adj_drtg": 108.0,
+        "adj_net": 9.7,
+        "pace": 81.0,
         "games": 7
       }
     },
     "Las Vegas Aces": {
       "season": {
-        "ortg": 111.9,
-        "drtg": 105.6,
-        "net": 6.3,
-        "adj_ortg": 111.7,
-        "adj_drtg": 105.7,
-        "adj_net": 6.0,
-        "pace": 80.8,
-        "games": 24
+        "ortg": 111.2,
+        "drtg": 106.8,
+        "net": 4.4,
+        "adj_ortg": 111.0,
+        "adj_drtg": 106.7,
+        "adj_net": 4.3,
+        "pace": 80.7,
+        "games": 25
       },
       "l14": {
-        "ortg": 114.8,
-        "drtg": 107.7,
-        "net": 7.1,
-        "adj_ortg": 114.7,
-        "adj_drtg": 107.3,
-        "adj_net": 7.4,
-        "pace": 79.4,
+        "ortg": 112.7,
+        "drtg": 109.5,
+        "net": 3.2,
+        "adj_ortg": 112.5,
+        "adj_drtg": 108.1,
+        "adj_net": 4.4,
+        "pace": 79.3,
         "games": 14
       },
       "l7": {
-        "ortg": 114.0,
-        "drtg": 102.9,
-        "net": 11.1,
-        "adj_ortg": 112.7,
-        "adj_drtg": 102.5,
-        "adj_net": 10.2,
-        "pace": 81.6,
+        "ortg": 110.8,
+        "drtg": 108.3,
+        "net": 2.5,
+        "adj_ortg": 109.4,
+        "adj_drtg": 107.6,
+        "adj_net": 1.8,
+        "pace": 80.9,
         "games": 7
       }
     },
@@ -1911,8 +1911,8 @@
         "drtg": 112.4,
         "net": -5.0,
         "adj_ortg": 106.9,
-        "adj_drtg": 111.6,
-        "adj_net": -4.7,
+        "adj_drtg": 111.7,
+        "adj_net": -4.8,
         "pace": 82.9,
         "games": 21
       },
@@ -1930,9 +1930,9 @@
         "ortg": 105.4,
         "drtg": 114.7,
         "net": -9.3,
-        "adj_ortg": 105.3,
-        "adj_drtg": 112.7,
-        "adj_net": -7.4,
+        "adj_ortg": 105.5,
+        "adj_drtg": 112.6,
+        "adj_net": -7.1,
         "pace": 86.3,
         "games": 7
       }
@@ -1942,9 +1942,9 @@
         "ortg": 111.9,
         "drtg": 100.6,
         "net": 11.3,
-        "adj_ortg": 112.1,
-        "adj_drtg": 101.3,
-        "adj_net": 10.8,
+        "adj_ortg": 112.0,
+        "adj_drtg": 101.4,
+        "adj_net": 10.6,
         "pace": 80.4,
         "games": 23
       },
@@ -1953,8 +1953,8 @@
         "drtg": 102.8,
         "net": 9.1,
         "adj_ortg": 112.8,
-        "adj_drtg": 103.8,
-        "adj_net": 9.0,
+        "adj_drtg": 104.0,
+        "adj_net": 8.8,
         "pace": 80.0,
         "games": 14
       },
@@ -1962,42 +1962,42 @@
         "ortg": 106.1,
         "drtg": 105.7,
         "net": 0.4,
-        "adj_ortg": 107.1,
-        "adj_drtg": 108.3,
-        "adj_net": -1.2,
+        "adj_ortg": 107.3,
+        "adj_drtg": 108.4,
+        "adj_net": -1.1,
         "pace": 79.8,
         "games": 7
       }
     },
     "New York Liberty": {
       "season": {
-        "ortg": 110.9,
-        "drtg": 106.2,
-        "net": 4.7,
-        "adj_ortg": 111.2,
-        "adj_drtg": 106.9,
-        "adj_net": 4.3,
-        "pace": 79.2,
-        "games": 24
+        "ortg": 110.5,
+        "drtg": 106.0,
+        "net": 4.5,
+        "adj_ortg": 110.5,
+        "adj_drtg": 106.6,
+        "adj_net": 3.9,
+        "pace": 79.7,
+        "games": 25
       },
       "l14": {
         "ortg": 111.4,
-        "drtg": 107.3,
-        "net": 4.1,
-        "adj_ortg": 113.3,
-        "adj_drtg": 107.3,
-        "adj_net": 6.0,
-        "pace": 79.1,
+        "drtg": 108.1,
+        "net": 3.3,
+        "adj_ortg": 112.7,
+        "adj_drtg": 108.3,
+        "adj_net": 4.4,
+        "pace": 79.7,
         "games": 14
       },
       "l7": {
-        "ortg": 110.0,
-        "drtg": 110.7,
-        "net": -0.7,
-        "adj_ortg": 113.6,
-        "adj_drtg": 108.0,
-        "adj_net": 5.6,
-        "pace": 77.4,
+        "ortg": 108.0,
+        "drtg": 111.1,
+        "net": -3.1,
+        "adj_ortg": 110.1,
+        "adj_drtg": 108.8,
+        "adj_net": 1.3,
+        "pace": 79.4,
         "games": 7
       }
     },
@@ -2007,8 +2007,8 @@
         "drtg": 109.0,
         "net": -5.1,
         "adj_ortg": 104.0,
-        "adj_drtg": 107.5,
-        "adj_net": -3.5,
+        "adj_drtg": 107.6,
+        "adj_net": -3.6,
         "pace": 79.5,
         "games": 24
       },
@@ -2026,9 +2026,9 @@
         "ortg": 104.4,
         "drtg": 111.0,
         "net": -6.6,
-        "adj_ortg": 103.4,
-        "adj_drtg": 109.0,
-        "adj_net": -5.6,
+        "adj_ortg": 103.5,
+        "adj_drtg": 108.7,
+        "adj_net": -5.2,
         "pace": 79.4,
         "games": 7
       }
@@ -2039,8 +2039,8 @@
         "drtg": 112.8,
         "net": -7.9,
         "adj_ortg": 105.3,
-        "adj_drtg": 112.7,
-        "adj_net": -7.4,
+        "adj_drtg": 112.8,
+        "adj_net": -7.5,
         "pace": 80.9,
         "games": 23
       },
@@ -2048,9 +2048,9 @@
         "ortg": 105.7,
         "drtg": 115.7,
         "net": -10.0,
-        "adj_ortg": 106.7,
-        "adj_drtg": 115.9,
-        "adj_net": -9.2,
+        "adj_ortg": 106.6,
+        "adj_drtg": 116.0,
+        "adj_net": -9.4,
         "pace": 82.2,
         "games": 14
       },
@@ -2058,106 +2058,106 @@
         "ortg": 107.4,
         "drtg": 114.4,
         "net": -7.0,
-        "adj_ortg": 108.5,
-        "adj_drtg": 117.7,
-        "adj_net": -9.2,
+        "adj_ortg": 108.3,
+        "adj_drtg": 117.8,
+        "adj_net": -9.5,
         "pace": 86.2,
         "games": 7
       }
     },
     "Seattle Storm": {
       "season": {
-        "ortg": 99.7,
-        "drtg": 106.0,
+        "ortg": 99.5,
+        "drtg": 105.8,
         "net": -6.3,
         "adj_ortg": 99.3,
-        "adj_drtg": 106.4,
-        "adj_net": -7.1,
-        "pace": 80.3,
-        "games": 24
+        "adj_drtg": 106.5,
+        "adj_net": -7.2,
+        "pace": 80.4,
+        "games": 25
       },
       "l14": {
-        "ortg": 101.3,
-        "drtg": 107.0,
-        "net": -5.7,
-        "adj_ortg": 100.8,
-        "adj_drtg": 106.2,
-        "adj_net": -5.4,
-        "pace": 81.6,
+        "ortg": 102.1,
+        "drtg": 107.9,
+        "net": -5.8,
+        "adj_ortg": 101.9,
+        "adj_drtg": 107.5,
+        "adj_net": -5.6,
+        "pace": 81.7,
         "games": 14
       },
       "l7": {
-        "ortg": 103.6,
-        "drtg": 103.1,
-        "net": 0.5,
-        "adj_ortg": 102.7,
-        "adj_drtg": 102.1,
-        "adj_net": 0.6,
-        "pace": 84.6,
+        "ortg": 99.8,
+        "drtg": 99.8,
+        "net": 0.0,
+        "adj_ortg": 99.3,
+        "adj_drtg": 100.5,
+        "adj_net": -1.2,
+        "pace": 83.3,
         "games": 7
       }
     },
     "Toronto Tempo": {
       "season": {
-        "ortg": 110.8,
-        "drtg": 113.9,
-        "net": -3.1,
-        "adj_ortg": 110.7,
-        "adj_drtg": 115.3,
-        "adj_net": -4.6,
-        "pace": 80.9,
-        "games": 22
+        "ortg": 110.4,
+        "drtg": 113.2,
+        "net": -2.8,
+        "adj_ortg": 110.4,
+        "adj_drtg": 114.4,
+        "adj_net": -4.0,
+        "pace": 81.3,
+        "games": 23
       },
       "l14": {
-        "ortg": 110.8,
-        "drtg": 114.2,
-        "net": -3.4,
-        "adj_ortg": 111.4,
-        "adj_drtg": 115.2,
-        "adj_net": -3.8,
-        "pace": 81.1,
+        "ortg": 109.8,
+        "drtg": 114.8,
+        "net": -5.0,
+        "adj_ortg": 110.4,
+        "adj_drtg": 115.0,
+        "adj_net": -4.6,
+        "pace": 81.9,
         "games": 14
       },
       "l7": {
-        "ortg": 114.6,
-        "drtg": 117.8,
-        "net": -3.2,
-        "adj_ortg": 114.9,
-        "adj_drtg": 117.6,
-        "adj_net": -2.7,
-        "pace": 79.7,
+        "ortg": 111.4,
+        "drtg": 114.9,
+        "net": -3.5,
+        "adj_ortg": 111.9,
+        "adj_drtg": 112.9,
+        "adj_net": -1.0,
+        "pace": 80.9,
         "games": 7
       }
     },
     "Washington Mystics": {
       "season": {
-        "ortg": 99.4,
-        "drtg": 103.5,
-        "net": -4.1,
-        "adj_ortg": 99.4,
+        "ortg": 99.5,
+        "drtg": 103.1,
+        "net": -3.6,
+        "adj_ortg": 99.7,
         "adj_drtg": 102.8,
-        "adj_net": -3.4,
-        "pace": 81.6,
-        "games": 20
+        "adj_net": -3.1,
+        "pace": 81.7,
+        "games": 21
       },
       "l14": {
-        "ortg": 98.1,
-        "drtg": 102.2,
-        "net": -4.1,
-        "adj_ortg": 98.4,
-        "adj_drtg": 101.4,
-        "adj_net": -3.0,
-        "pace": 81.9,
+        "ortg": 97.8,
+        "drtg": 101.0,
+        "net": -3.2,
+        "adj_ortg": 98.6,
+        "adj_drtg": 100.8,
+        "adj_net": -2.2,
+        "pace": 82.0,
         "games": 14
       },
       "l7": {
-        "ortg": 95.1,
-        "drtg": 97.1,
-        "net": -2.0,
-        "adj_ortg": 97.2,
-        "adj_drtg": 96.2,
-        "adj_net": 1.0,
-        "pace": 83.7,
+        "ortg": 94.3,
+        "drtg": 96.0,
+        "net": -1.7,
+        "adj_ortg": 96.4,
+        "adj_drtg": 96.7,
+        "adj_net": -0.3,
+        "pace": 84.1,
         "games": 7
       }
     }
@@ -2200,10 +2200,10 @@
         "fta_foul_ratio": 1.062
       },
       {
-        "stretch": "151-171",
-        "games": 21,
-        "fouls_per_game": 38.0,
-        "fta_per_game": 37.43,
+        "stretch": "151-175",
+        "games": 25,
+        "fouls_per_game": 38.08,
+        "fta_per_game": 37.52,
         "fta_foul_ratio": 0.985
       }
     ],
@@ -3233,6 +3233,30 @@
         "date": "2026-07-11",
         "total_pf": 30,
         "total_fta": 24
+      },
+      {
+        "game_id": "401857060",
+        "date": "2026-07-12",
+        "total_pf": 47,
+        "total_fta": 40
+      },
+      {
+        "game_id": "401857061",
+        "date": "2026-07-12",
+        "total_pf": 42,
+        "total_fta": 41
+      },
+      {
+        "game_id": "401857062",
+        "date": "2026-07-12",
+        "total_pf": 29,
+        "total_fta": 32
+      },
+      {
+        "game_id": "401857063",
+        "date": "2026-07-13",
+        "total_pf": 36,
+        "total_fta": 39
       }
     ]
   }
