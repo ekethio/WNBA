@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install dependencies
-        run: pip install requests
+        run: pip install nba_api
       - name: Run WNBA fetch script
         run: python fetch_wnba.py
       - name: Commit and push data

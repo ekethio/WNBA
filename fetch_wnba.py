@@ -1,18 +1,15 @@
-import requests
 import json
 import os
 import time
-from datetime import datetime, date, timedelta
+from datetime import datetime
+
+from nba_api.stats.endpoints import leaguegamelog
 
 SEASON = '2026'
 POINTS_THRESHOLD = 160
 OUTPUT_FILE = 'data/wnba_stats.json'
-SEASON_START = date(2026, 5, 8)
-SEASON_END = date(2026, 9, 24)
-
-BASE = 'https://site.api.espn.com/apis/site/v2/sports/basketball/wnba'
-SUMMARY = 'https://site.web.api.espn.com/apis/site/v2/sports/basketball/wnba/summary'
-HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+WNBA_LEAGUE_ID = '10'
+SEASON_TYPES = ('Regular Season', 'Playoffs')
 
 WNBA_TEAMS = {
     'Atlanta Dream', 'Chicago Sky', 'Connecticut Sun', 'Dallas Wings',
@@ -22,144 +19,82 @@ WNBA_TEAMS = {
     'Toronto Tempo', 'Washington Mystics',
 }
 
-def get(url, retries=4, delay=5):
+def fetch_team_logs(season_type, retries=4, delay=10):
     for i in range(retries):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=20)
-            r.raise_for_status()
-            return r.json()
+            return leaguegamelog.LeagueGameLog(
+                league_id=WNBA_LEAGUE_ID, season=SEASON, season_type_all_star=season_type,
+                player_or_team_abbreviation='T', timeout=60,
+            ).get_normalized_dict()['LeagueGameLog']
         except Exception as e:
             if i == retries - 1:
                 raise
-            print("  Retry " + str(i+1) + " waiting " + str(delay) + "s...")
+            print("  Retry " + str(i+1) + " (" + str(e) + ") waiting " + str(delay) + "s...")
             time.sleep(delay)
 
-print("Scanning WNBA scoreboard for completed games...")
+print("Fetching WNBA team game logs from stats.wnba.com (nba_api)...")
+team_logs = []
+for st in SEASON_TYPES:
+    rows = fetch_team_logs(st)
+    print("  " + st + ": " + str(len(rows)) + " team-game rows")
+    team_logs.extend(rows)
+
+# The log has one row per team per game; pair the two rows of each game
+by_game = {}
+for r in team_logs:
+    by_game.setdefault(str(r['GAME_ID']), []).append(r)
+
 all_game_stubs = []
-today = date.today()
-end = min(SEASON_END, today)
-cur = SEASON_START
-
-while cur <= end:
-    ds = cur.strftime('%Y%m%d')
-    try:
-        data = get(BASE + '/scoreboard?dates=' + ds)
-        events = data.get('events', [])
-        for ev in events:
-            season_type = ev.get('season', {}).get('type', 0)
-            if season_type not in (2, 3):
-                continue
-            if not ev.get('status', {}).get('type', {}).get('completed'):
-                continue
-            comps = ev.get('competitions', [{}])[0]
-            competitors = comps.get('competitors', [])
-            if len(competitors) != 2:
-                continue
-            home = next((c for c in competitors if c['homeAway'] == 'home'), None)
-            away = next((c for c in competitors if c['homeAway'] == 'away'), None)
-            if not home or not away:
-                continue
-            hs = int(home.get('score', 0))
-            as_ = int(away.get('score', 0))
-            if hs == 0 and as_ == 0:
-                continue
-            all_game_stubs.append({
-                'id': ev['id'],
-                'date': ev.get('date', '')[:10],
-                'home_id': home['team']['id'],
-                'home_name': home['team']['displayName'],
-                'home_abbr': home['team']['abbreviation'],
-                'home_score': hs,
-                'away_id': away['team']['id'],
-                'away_name': away['team']['displayName'],
-                'away_abbr': away['team']['abbreviation'],
-                'away_score': as_,
-            })
-    except Exception as e:
-        print("  Skipping " + ds + ": " + str(e))
-    cur += timedelta(days=1)
-
-print("  Found " + str(len(all_game_stubs)) + " completed games")
-if not all_game_stubs:
-    raise RuntimeError("No games found -- check SEASON_START date")
-
-print("Fetching box scores...")
 game_totals = {}
 game_pace = {}
 game_box = {}
 game_opponent = {}
 team_game_rows = {}
 
-def parse_stat(stats, name):
-    for s in stats:
-        if s.get('name') == name:
-            val = s.get('displayValue', '0')
-            if '-' in str(val):
-                parts = str(val).split('-')
-                try:
-                    return float(parts[0]), float(parts[1])
-                except:
-                    return 0.0
-            try:
-                return float(val)
-            except:
-                return 0.0
-    return 0.0
+def box(r):
+    return {
+        'fga': float(r['FGA'] or 0), 'fgm': float(r['FGM'] or 0), 'fta': float(r['FTA'] or 0),
+        'oreb': float(r['OREB'] or 0), 'dreb': float(r['DREB'] or 0), 'tov': float(r['TOV'] or 0),
+        'min': float(r['MIN'] or 200), 'pf': float(r['PF'] or 0),
+    }
 
-for i, g in enumerate(all_game_stubs):
-    gid = g['id']
-    game_totals[gid] = g['home_score'] + g['away_score']
+for gid, pair in sorted(by_game.items(), key=lambda kv: (str(kv[1][0]['GAME_DATE']), kv[0])):
+    home = next((r for r in pair if ' vs. ' in r['MATCHUP']), None)
+    away = next((r for r in pair if ' @ ' in r['MATCHUP']), None)
+    if len(pair) != 2 or not home or not away:
+        print("  Skipping " + gid + ": couldn't pair home and away rows")
+        continue
+    hs = int(home['PTS'] or 0)
+    as_ = int(away['PTS'] or 0)
+    if hs == 0 and as_ == 0:
+        continue
+    g = {
+        'id': gid,
+        'date': str(home['GAME_DATE'])[:10],
+        'home_id': str(home['TEAM_ID']),
+        'home_name': home['TEAM_NAME'],
+        'home_abbr': home['TEAM_ABBREVIATION'],
+        'home_score': hs,
+        'away_id': str(away['TEAM_ID']),
+        'away_name': away['TEAM_NAME'],
+        'away_abbr': away['TEAM_ABBREVIATION'],
+        'away_score': as_,
+    }
+    all_game_stubs.append(g)
+    game_totals[gid] = hs + as_
     game_opponent[(gid, g['home_id'])] = g['away_id']
     game_opponent[(gid, g['away_id'])] = g['home_id']
 
-    try:
-        data = get(SUMMARY + '?event=' + gid)
-        teams = data.get('boxscore', {}).get('teams', [])
-        if len(teams) < 2:
-            game_pace[gid] = round(game_totals[gid] * 0.50, 1)
-            game_box[gid] = {'total_pf': 0, 'total_fta': 0, 'date': g['date']}
-        else:
-            td = []
-            for t in teams:
-                stats = t.get('statistics', [])
-                fgm_fga = parse_stat(stats, 'fieldGoalsMade-fieldGoalsAttempted')
-                ftm_fta = parse_stat(stats, 'freeThrowsMade-freeThrowsAttempted')
-                fgm = fgm_fga[0] if isinstance(fgm_fga, tuple) else 0
-                fga = fgm_fga[1] if isinstance(fgm_fga, tuple) else 0
-                fta = ftm_fta[1] if isinstance(ftm_fta, tuple) else 0
-                pf = parse_stat(stats, 'fouls')
-                oreb = parse_stat(stats, 'offensiveRebounds')
-                dreb = parse_stat(stats, 'defensiveRebounds')
-                tov = parse_stat(stats, 'turnovers')
-                raw_min = parse_stat(stats, 'minutes')
-                if isinstance(raw_min, str) and ':' in raw_min:
-                    mparts = raw_min.split(':')
-                    team_min = float(mparts[0]) + float(mparts[1]) / 60
-                else:
-                    team_min = float(raw_min) if raw_min else 200.0
-                td.append({
-                    'fga': fga, 'fgm': fgm, 'fta': fta,
-                    'oreb': oreb, 'dreb': dreb, 'tov': tov,
-                    'min': team_min, 'pf': float(pf) if not isinstance(pf, tuple) else 0.0
-                })
-
-            t1 = td[0]
-            t2 = td[1]
-            eps = 1e-8
-            poss1 = t1['fga'] + 0.44*t1['fta'] - 1.07*(t1['oreb']/(t1['oreb']+t2['dreb']+eps))*(t1['fga']-t1['fgm']) + t1['tov']
-            poss2 = t2['fga'] + 0.44*t2['fta'] - 1.07*(t2['oreb']/(t2['oreb']+t1['dreb']+eps))*(t2['fga']-t2['fgm']) + t2['tov']
-            avg_poss = (poss1 + poss2) / 2
-            game_min = (t1['min'] / 5) if t1['min'] > 0 else 40.0
-            pace = (avg_poss / game_min) * 40 if game_min > 0 else avg_poss * 2
-            game_pace[gid] = round(float(pace), 1)
-            total_pf = int(t1['pf'] + t2['pf'])
-            total_fta = int(t1['fta'] + t2['fta'])
-            game_box[gid] = {'total_pf': total_pf, 'total_fta': total_fta, 'date': g['date']}
-
-    except Exception as e:
-        print("  Box score failed " + gid + ": " + str(e))
-        game_pace[gid] = round(game_totals[gid] * 0.50, 1)
-        game_box[gid] = {'total_pf': 0, 'total_fta': 0, 'date': g['date']}
+    t1 = box(away)
+    t2 = box(home)
+    eps = 1e-8
+    poss1 = t1['fga'] + 0.44*t1['fta'] - 1.07*(t1['oreb']/(t1['oreb']+t2['dreb']+eps))*(t1['fga']-t1['fgm']) + t1['tov']
+    poss2 = t2['fga'] + 0.44*t2['fta'] - 1.07*(t2['oreb']/(t2['oreb']+t1['dreb']+eps))*(t2['fga']-t2['fgm']) + t2['tov']
+    avg_poss = (poss1 + poss2) / 2
+    game_min = (t1['min'] / 5) if t1['min'] > 0 else 40.0
+    pace = (avg_poss / game_min) * 40 if game_min > 0 else avg_poss * 2
+    game_pace[gid] = round(float(pace), 1)
+    game_box[gid] = {'total_pf': int(t1['pf'] + t2['pf']), 'total_fta': int(t1['fta'] + t2['fta']), 'date': g['date']}
 
     for row in [
         (g['home_id'], g['home_name'], g['home_abbr'], g['home_score'], g['away_id'], g['away_abbr'], g['away_score'], True),
@@ -178,9 +113,9 @@ for i, g in enumerate(all_game_stubs):
             'opp_id': opp_id, 'matchup': matchup, 'wl': wl, 'is_home': is_home,
         })
 
-    if (i+1) % 5 == 0:
-        print("  Processed " + str(i+1) + "/" + str(len(all_game_stubs)) + " games...")
-        time.sleep(0.3)
+print("  Found " + str(len(all_game_stubs)) + " completed games")
+if not all_game_stubs:
+    raise RuntimeError("No games found -- check SEASON")
 
 for tid in team_game_rows:
     team_game_rows[tid].sort(key=lambda x: x['date'], reverse=True)
