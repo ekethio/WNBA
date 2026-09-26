@@ -5,6 +5,8 @@ from datetime import datetime, timezone
 
 from nba_api.stats.endpoints import leaguegamelog
 
+import quarter_tendencies
+
 SEASON = '2026'
 POINTS_THRESHOLD = 160
 OUTPUT_FILE = 'data/wnba_stats.json'
@@ -366,6 +368,15 @@ output = {
     'ratings': ratings,
     'fouls': {'stretches': stretches, 'games': games_list},
 }
+
+print("Computing quarter tendencies...")
+try:
+    output['quarters'] = quarter_tendencies.build(WNBA_LEAGUE_ID, SEASON, SEASON_TYPES)
+    q = output['quarters']
+    print("  " + str(q['games']) + " games, " + str(q['tests']) + " tests, " + str(len(q['standouts'])) + " standouts")
+except Exception as e:
+    print("  Quarter tendencies failed: " + str(e))
+    output['quarters'] = {'error': str(e)}
 
 os.makedirs('data', exist_ok=True)
 with open(OUTPUT_FILE, 'w') as f:

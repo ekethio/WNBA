@@ -168,6 +168,19 @@
   .final-margin-row .fm-item { text-align: right; }
   .final-margin-row .fm-item span { display: block; font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
   .hr-diff { font-size: 13px; color: var(--muted); }
+  .tend-table th { font-size: 12px; padding: 8px 10px; }
+  .tend-table td { font-size: 13px; padding: 7px 10px; }
+  .tend-table td:first-child { font-weight: 700; color: var(--text); font-size: 13px; width: auto; }
+  .tend-table td:nth-child(2) { font-weight: 400; font-size: 13px; text-align: right; }
+  .tend-table tr.grp th { text-align: center; color: var(--text); border-bottom: 1px solid var(--border); }
+  .tend-table .vsep { border-left: 1px solid var(--border); }
+  td.flag-watch { background: rgba(224,92,32,0.12); color: var(--accent2); font-weight: 700; }
+  td.flag-standout { background: rgba(224,92,32,0.25); color: var(--accent2); font-weight: 700; }
+  .tend-list { background: var(--surface); border: 1px solid var(--border); padding: 4px 20px; }
+  .tend-item { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 12px; line-height: 1.7; }
+  .tend-item:last-child { border-bottom: none; }
+  .tend-item b { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; letter-spacing: 0.5px; }
+  .tend-item .sig { color: var(--muted); font-size: 11px; }
   #splits-placeholder { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
 </style>
 </head>
@@ -205,6 +218,7 @@
       <button class="view-tab" onclick="switchTab('splits',this)">Splits</button>
       <button class="view-tab" onclick="switchTab('ratings',this)">Ratings</button>
       <button class="view-tab" onclick="switchTab('fouls',this)">Fouls</button>
+      <button class="view-tab" onclick="switchTab('tendencies',this)">Tendencies</button>
     </div>
 
     <div class="tab-panel active" id="tab-points">
@@ -310,6 +324,21 @@
       </div>
     </div>
 
+    <div class="tab-panel" id="tab-tendencies">
+      <div class="section-header"><h2>Quarter Tendencies</h2><div class="line"></div><div class="tag" id="tend-tag">—</div></div>
+      <div class="info-box" style="margin-bottom:20px">
+        <strong>How to read this:</strong> Each game, a team's quarter is compared with its own other three quarters in that game,
+        then the league's usual pattern for that quarter is subtracted (e.g. every team plays slower in Q4). What's left is the team's
+        <strong>tendency</strong>. Pace is possessions per 40 minutes. <strong>Over %</strong> counts games above the league-average total
+        for that quarter or half, not a betting line. Halves exclude overtime.
+        <span style="color:var(--accent2);font-weight:600">Orange cells</span> are unusual at the 1% level.
+      </div>
+      <div class="team-grid" id="tend-team-grid"></div>
+      <div id="tend-output"><div style="text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase">Select a team above to view its quarter tendencies</div></div>
+      <div class="section-header" style="margin-top:32px"><h2>Teams That Stand Out</h2><div class="line"></div></div>
+      <div id="tend-standouts"></div>
+    </div>
+
     <div class="league-footer" id="league-footer"></div>
   </div>
 </div>
@@ -359,6 +388,7 @@ function colAvg(data, f) {
 function renderAll() {
   renderRatingsTable();
   renderFoulsTable();
+  renderTendencies();
   const d = statsData;
   document.getElementById('updated-time').textContent = d.updatedAt;
   document.getElementById('status-bar').innerHTML = `
@@ -663,6 +693,117 @@ function renderRatingsTable() {
     </tr>`).join('') +
     `<tr class="avg-row"><td></td><td>League Average</td><td>—</td><td>${lgO}</td><td>${lgD}</td><td>—</td><td>${lgO}</td><td>${lgD}</td><td>—</td><td>—</td></tr>`;
 }
+// ── QUARTER TENDENCIES ───────────────────────────────────────────────────────
+const TEND_SEGS = ['Q1','Q2','Q3','Q4','1H','2H'];
+const TEND_COMPS = ['Q1','Q2','Q3','Q4','1H-2H'];
+const VENUE_TXT = { home: 'At home', away: 'On the road', all: 'All games' };
+const STAT_TXT = { margin: 'margin', total: 'total', pace: 'pace' };
+const sgn = (v, d=1) => (v > 0 ? '+' : '') + Number(v).toFixed(d);
+
+function renderTendencies() {
+  const Q = statsData && statsData.quarters;
+  const grid = document.getElementById('tend-team-grid');
+  if (!Q || Q.error || !Q.teams) {
+    grid.innerHTML = '';
+    document.getElementById('tend-output').innerHTML = `<div class="info-box">Quarter data isn't available${Q && Q.error ? ': ' + Q.error : ''}.</div>`;
+    document.getElementById('tend-standouts').innerHTML = '';
+    return;
+  }
+  document.getElementById('tend-tag').textContent = `${Q.games} games`;
+  const names = Object.keys(Q.teams).sort();
+  grid.innerHTML = names.map(n => `<button class="team-btn" title="${n}" onclick="showTendencies('${n}',this)">${n.split(' ').slice(-1)[0]}</button>`).join('');
+  renderStandouts();
+}
+
+function tendCell(c, stat, sep) {
+  if (!c) return `<td class="${sep ? 'vsep' : ''}">—</td>`;
+  const cls = (sep ? 'vsep ' : '') + (c.flag === 'standout' ? 'flag-standout' : c.flag === 'watch' ? 'flag-watch' : '');
+  const color = !c.flag && stat === 'margin' ? (c.delta > 0.05 ? 'pos' : c.delta < -0.05 ? 'neg' : '') : '';
+  const tip = `${c.n} games · p = ${c.p} · team ${c.mine} vs ${c.others} · league pattern ${sgn(c.league, 2)}`;
+  return `<td class="${cls}" title="${tip}"><span class="${color}">${sgn(c.delta)}</span></td>`;
+}
+
+function showTendencies(name, btn) {
+  document.querySelectorAll('#tend-team-grid .team-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const Q = statsData.quarters, T = Q.teams[name];
+  const segRow = s => {
+    const cells = ['home','away'].map((v, vi) => {
+      const x = T.segments[v][s];
+      if (!x) return `<td class="vsep">—</td><td>—</td><td>—</td><td>—</td><td>—</td>`;
+      return `<td class="vsep"><span class="${x.margin>0?'pos':x.margin<0?'neg':''}">${sgn(x.margin)}</span></td>
+        <td>${x.total.toFixed(1)}</td><td>${x.pace.toFixed(1)}</td><td>${x.win_pct}%</td><td>${x.over_pct}%</td>`;
+    }).join('');
+    const lg = Q.league[s];
+    return `<tr${s==='1H'?' style="border-top:2px solid var(--border)"':''}><td>${s}</td>${cells}
+      <td class="vsep" style="color:var(--muted)">${lg.total.toFixed(1)}</td><td style="color:var(--muted)">${lg.pace.toFixed(1)}</td></tr>`;
+  };
+  const tendRow = c => `<tr${c==='1H-2H'?' style="border-top:2px solid var(--border)"':''}><td>${c==='1H-2H'?'1H vs 2H':c+' vs rest'}</td>` +
+    ['home','away','all'].map(v => ['margin','total','pace'].map((st, i) => tendCell((T.tendencies[v][c]||{})[st], st, i===0)).join('')).join('') + '</tr>';
+  const hdr5 = '<th class="vsep">Margin</th><th>Total</th><th>Pace</th><th>Won</th><th>Over %</th>';
+  const hdr3 = '<th class="vsep">Margin</th><th>Total</th><th>Pace</th>';
+
+  document.getElementById('tend-output').innerHTML = `
+    <div class="splits-card">
+      <div class="splits-card-header"><h3>${name}</h3>
+        <div class="meta">${T.games.home} home · ${T.games.away} road games</div></div>
+      <div class="detail-table tend-table"><table>
+        <thead><tr class="grp"><th></th><th colspan="5" class="vsep">🏠 Home</th><th colspan="5" class="vsep">✈️ Road</th><th colspan="2" class="vsep">League avg</th></tr>
+          <tr><th style="text-align:left">Period</th>${hdr5}${hdr5}<th class="vsep">Total</th><th>Pace</th></tr></thead>
+        <tbody>${TEND_SEGS.map(segRow).join('')}</tbody>
+      </table></div>
+    </div>
+    <div class="splits-card">
+      <div class="splits-card-header"><h3 style="font-size:18px">Tendencies vs league pattern</h3>
+        <div class="meta">Hover a cell for games, p-value and the raw numbers</div></div>
+      <div class="detail-table tend-table"><table>
+        <thead><tr class="grp"><th></th><th colspan="3" class="vsep">🏠 Home</th><th colspan="3" class="vsep">✈️ Road</th><th colspan="3" class="vsep">All games</th></tr>
+          <tr><th style="text-align:left">Comparison</th>${hdr3}${hdr3}${hdr3}</tr></thead>
+        <tbody>${TEND_COMPS.map(tendRow).join('')}</tbody>
+      </table></div>
+      <div style="padding:10px 20px;font-size:11px;color:var(--muted);line-height:1.8;border-top:1px solid var(--border)">
+        Example: Q1 margin <b>+3.0</b> at home means that at home this team's Q1 margin runs 3 points better than its other quarters,
+        beyond what's normal for home teams in Q1. "1H vs 2H" compares the first half with the second half the same way.
+      </div>
+    </div>`;
+}
+
+function tendSentence(s) {
+  const Q = statsData.quarters;
+  const where = VENUE_TXT[s.venue];
+  const stat = STAT_TXT[s.stat];
+  const u = s.stat === 'pace' ? ' poss/40' : '';
+  let what;
+  if (s.comp === '1H-2H') {
+    what = `1st-half ${stat} ${s.mine}${u} vs 2nd half ${s.others}${u}`;
+  } else {
+    what = `${s.comp} ${stat} ${s.stat==='margin'?sgn(s.mine):s.mine}${u} vs ${s.stat==='margin'?sgn(s.others):s.others}${u} in their other quarters`;
+  }
+  const dir = s.stat === 'margin' ? (s.delta > 0 ? 'plays better' : 'plays worse')
+            : s.stat === 'pace' ? (s.delta > 0 ? 'plays faster' : 'plays slower')
+            : (s.delta > 0 ? 'games run higher-scoring (both teams)' : 'games run lower-scoring (both teams)');
+  const when = s.comp === '1H-2H' ? 'in the 1st half than the 2nd' : `in ${s.comp}`;
+  return `<div class="tend-item"><b>${s.team}</b> · ${where}: ${dir} ${when}<br>
+    ${what}. League-wide pattern ${sgn(s.league, 1)}, so the tendency is <b style="font-size:14px;color:var(--accent2)">${sgn(s.delta)}</b>${u}.
+    <span class="sig">${s.n} games · p = ${s.p}</span></div>`;
+}
+
+function renderStandouts() {
+  const Q = statsData.quarters;
+  const out = [];
+  out.push(`<div class="info-box" style="border-left-color:var(--accent2)">
+    <strong>Read with care.</strong> ${Q.tests} comparisons were checked (15 teams × home/road/all × margin/total/pace × Q1–Q4 and 1H vs 2H).
+    ${Q.watch.length + Q.standouts.length} are unusual at the 1% level; pure chance would produce about <strong>${Q.expected_watch_by_chance}</strong>.
+    ${Q.standouts.length
+      ? `<strong>${Q.standouts.length}</strong> survive a correction for testing this many things at once (false-discovery rate ${Math.round(Q.fdr_q*100)}%).`
+      : `None survive a correction for testing this many things at once, so no single item below is proven. The excess over chance suggests some are real, but not which ones.`}
+    One season, ${Math.round(Q.games*2/15/2)} home and ${Math.round(Q.games*2/15/2)} road games per team. Treat these as ideas to track next season, not as edges.
+  </div>`);
+  if (Q.standouts.length) out.push(`<h3 style="font-family:'Barlow Condensed',sans-serif;margin:12px 0 8px">Stand out (survive correction)</h3><div class="tend-list">${Q.standouts.map(tendSentence).join('')}</div>`);
+  if (Q.watch.length) out.push(`<h3 style="font-family:'Barlow Condensed',sans-serif;margin:16px 0 8px;letter-spacing:1px">Strongest signals (p &lt; ${Q.watch_p}, not proven)</h3><div class="tend-list">${Q.watch.map(tendSentence).join('')}</div>`);
+  document.getElementById('tend-standouts').innerHTML = out.join('');
+}
+
 function renderFoulsTable() {
   if (!statsData || !statsData.fouls) return;
   const stretches = statsData.fouls.stretches || [];
