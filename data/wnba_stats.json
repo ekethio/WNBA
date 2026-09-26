@@ -1,1779 +1,1779 @@
 {
-  "updatedAt": "2026-08-04 09:35 UTC",
+  "updatedAt": "2026-09-26 06:38 UTC",
   "season": "2026",
-  "leagueAvgPoints": 175.3,
-  "leagueAvgPace": 80.8,
+  "leagueAvgPoints": 174.1,
+  "leagueAvgPace": 80.9,
   "pointsThreshold": 160,
-  "totalGames": 226,
+  "totalGames": 330,
   "pointsData": [
     {
       "team": "Indiana Fever",
-      "avgPts": 187.2,
-      "homePts": 192.1,
-      "awayPts": 181.5,
-      "l7Pts": 200.7,
-      "adjL7Pts": 204.5,
-      "l3Pts": 206.0,
-      "adjL3Pts": 206.2,
-      "over160": 26,
-      "games": 30,
-      "ptsScore": 190.8
-    },
-    {
-      "team": "Los Angeles Sparks",
-      "avgPts": 184.0,
-      "homePts": 182.4,
-      "awayPts": 185.6,
-      "l7Pts": 189.0,
-      "adjL7Pts": 188.4,
-      "l3Pts": 199.0,
-      "adjL3Pts": 198.5,
-      "over160": 25,
-      "games": 28,
-      "ptsScore": 185.7
+      "avgPts": 186.4,
+      "homePts": 189.6,
+      "awayPts": 183.1,
+      "l7Pts": 185.6,
+      "adjL7Pts": 186.0,
+      "l3Pts": 165.0,
+      "adjL3Pts": 167.2,
+      "over160": 39,
+      "games": 44,
+      "ptsScore": 184.8
     },
     {
       "team": "Toronto Tempo",
-      "avgPts": 181.4,
-      "homePts": 175.8,
-      "awayPts": 189.3,
-      "l7Pts": 180.6,
-      "adjL7Pts": 183.4,
-      "l3Pts": 181.3,
-      "adjL3Pts": 186.0,
-      "over160": 24,
-      "games": 29,
-      "ptsScore": 182.0
-    },
-    {
-      "team": "New York Liberty",
-      "avgPts": 177.6,
-      "homePts": 167.5,
-      "awayPts": 186.6,
-      "l7Pts": 195.9,
-      "adjL7Pts": 193.4,
-      "l3Pts": 189.0,
-      "adjL3Pts": 190.6,
-      "over160": 25,
-      "games": 32,
-      "ptsScore": 180.5
-    },
-    {
-      "team": "Las Vegas Aces",
-      "avgPts": 178.6,
-      "homePts": 178.3,
-      "awayPts": 178.8,
-      "l7Pts": 188.9,
-      "adjL7Pts": 186.7,
-      "l3Pts": 188.7,
-      "adjL3Pts": 186.9,
-      "over160": 29,
-      "games": 31,
-      "ptsScore": 180.2
-    },
-    {
-      "team": "Portland Fire",
-      "avgPts": 178.3,
-      "homePts": 177.8,
-      "awayPts": 178.7,
-      "l7Pts": 185.4,
-      "adjL7Pts": 184.8,
-      "l3Pts": 199.3,
-      "adjL3Pts": 191.4,
-      "over160": 24,
-      "games": 30,
-      "ptsScore": 180.1
+      "avgPts": 180.0,
+      "homePts": 176.1,
+      "awayPts": 183.9,
+      "l7Pts": 175.0,
+      "adjL7Pts": 173.8,
+      "l3Pts": 177.7,
+      "adjL3Pts": 178.3,
+      "over160": 39,
+      "games": 44,
+      "ptsScore": 179.1
     },
     {
       "team": "Chicago Sky",
-      "avgPts": 178.1,
-      "homePts": 182.3,
-      "awayPts": 173.8,
-      "l7Pts": 184.6,
-      "adjL7Pts": 184.8,
-      "l3Pts": 185.3,
-      "adjL3Pts": 188.2,
-      "over160": 24,
-      "games": 30,
-      "ptsScore": 179.7
+      "avgPts": 177.4,
+      "homePts": 181.4,
+      "awayPts": 173.5,
+      "l7Pts": 182.1,
+      "adjL7Pts": 182.2,
+      "l3Pts": 187.7,
+      "adjL3Pts": 187.6,
+      "over160": 36,
+      "games": 44,
+      "ptsScore": 178.8
     },
     {
-      "team": "Minnesota Lynx",
-      "avgPts": 176.1,
-      "homePts": 179.9,
-      "awayPts": 172.0,
-      "l7Pts": 189.0,
-      "adjL7Pts": 185.2,
-      "l3Pts": 192.3,
-      "adjL3Pts": 184.3,
-      "over160": 27,
-      "games": 31,
-      "ptsScore": 177.8
+      "team": "Portland Fire",
+      "avgPts": 177.2,
+      "homePts": 178.3,
+      "awayPts": 176.2,
+      "l7Pts": 172.4,
+      "adjL7Pts": 179.0,
+      "l3Pts": 169.7,
+      "adjL3Pts": 179.4,
+      "over160": 36,
+      "games": 44,
+      "ptsScore": 177.6
     },
     {
-      "team": "Atlanta Dream",
-      "avgPts": 175.4,
-      "homePts": 180.9,
-      "awayPts": 169.4,
-      "l7Pts": 188.6,
-      "adjL7Pts": 185.9,
-      "l3Pts": 182.0,
-      "adjL3Pts": 182.7,
-      "over160": 21,
-      "games": 29,
-      "ptsScore": 177.2
+      "team": "Las Vegas Aces",
+      "avgPts": 177.3,
+      "homePts": 175.6,
+      "awayPts": 179.0,
+      "l7Pts": 175.3,
+      "adjL7Pts": 175.2,
+      "l3Pts": 175.0,
+      "adjL3Pts": 175.3,
+      "over160": 41,
+      "games": 44,
+      "ptsScore": 176.9
     },
     {
-      "team": "Phoenix Mercury",
-      "avgPts": 171.6,
-      "homePts": 173.9,
-      "awayPts": 169.4,
-      "l7Pts": 179.9,
-      "adjL7Pts": 182.3,
-      "l3Pts": 191.0,
-      "adjL3Pts": 194.5,
-      "over160": 23,
-      "games": 31,
-      "ptsScore": 174.7
-    },
-    {
-      "team": "Seattle Storm",
-      "avgPts": 170.8,
-      "homePts": 171.3,
-      "awayPts": 170.2,
-      "l7Pts": 190.9,
-      "adjL7Pts": 186.5,
-      "l3Pts": 188.3,
-      "adjL3Pts": 183.6,
-      "over160": 21,
-      "games": 32,
-      "ptsScore": 173.7
+      "team": "Los Angeles Sparks",
+      "avgPts": 178.4,
+      "homePts": 177.8,
+      "awayPts": 178.9,
+      "l7Pts": 166.4,
+      "adjL7Pts": 169.1,
+      "l3Pts": 169.3,
+      "adjL3Pts": 172.8,
+      "over160": 37,
+      "games": 44,
+      "ptsScore": 176.8
     },
     {
       "team": "Dallas Wings",
-      "avgPts": 174.3,
-      "homePts": 166.6,
-      "awayPts": 181.0,
-      "l7Pts": 174.1,
-      "adjL7Pts": 174.5,
-      "l3Pts": 155.0,
-      "adjL3Pts": 161.4,
-      "over160": 24,
-      "games": 30,
-      "ptsScore": 173.3
+      "avgPts": 174.6,
+      "homePts": 168.5,
+      "awayPts": 180.8,
+      "l7Pts": 173.4,
+      "adjL7Pts": 174.9,
+      "l3Pts": 178.7,
+      "adjL3Pts": 181.1,
+      "over160": 37,
+      "games": 44,
+      "ptsScore": 175.2
+    },
+    {
+      "team": "Atlanta Dream",
+      "avgPts": 175.8,
+      "homePts": 181.0,
+      "awayPts": 170.6,
+      "l7Pts": 168.4,
+      "adjL7Pts": 167.3,
+      "l3Pts": 171.3,
+      "adjL3Pts": 169.0,
+      "over160": 33,
+      "games": 44,
+      "ptsScore": 174.2
+    },
+    {
+      "team": "New York Liberty",
+      "avgPts": 176.0,
+      "homePts": 167.6,
+      "awayPts": 184.3,
+      "l7Pts": 168.1,
+      "adjL7Pts": 166.9,
+      "l3Pts": 167.3,
+      "adjL3Pts": 164.2,
+      "over160": 33,
+      "games": 44,
+      "ptsScore": 174.0
+    },
+    {
+      "team": "Minnesota Lynx",
+      "avgPts": 174.5,
+      "homePts": 177.2,
+      "awayPts": 171.8,
+      "l7Pts": 169.0,
+      "adjL7Pts": 169.5,
+      "l3Pts": 171.7,
+      "adjL3Pts": 165.9,
+      "over160": 37,
+      "games": 44,
+      "ptsScore": 173.2
+    },
+    {
+      "team": "Phoenix Mercury",
+      "avgPts": 172.0,
+      "homePts": 173.9,
+      "awayPts": 170.0,
+      "l7Pts": 172.9,
+      "adjL7Pts": 173.1,
+      "l3Pts": 174.7,
+      "adjL3Pts": 173.3,
+      "over160": 34,
+      "games": 44,
+      "ptsScore": 172.2
+    },
+    {
+      "team": "Seattle Storm",
+      "avgPts": 171.1,
+      "homePts": 172.7,
+      "awayPts": 169.5,
+      "l7Pts": 168.7,
+      "adjL7Pts": 168.6,
+      "l3Pts": 165.3,
+      "adjL3Pts": 169.7,
+      "over160": 32,
+      "games": 44,
+      "ptsScore": 170.7
     },
     {
       "team": "Connecticut Sun",
-      "avgPts": 167.2,
-      "homePts": 166.4,
-      "awayPts": 167.9,
-      "l7Pts": 172.3,
-      "adjL7Pts": 172.6,
-      "l3Pts": 168.0,
-      "adjL3Pts": 171.2,
-      "over160": 22,
-      "games": 30,
-      "ptsScore": 168.2
+      "avgPts": 166.9,
+      "homePts": 166.1,
+      "awayPts": 167.7,
+      "l7Pts": 171.3,
+      "adjL7Pts": 171.8,
+      "l3Pts": 171.3,
+      "adjL3Pts": 171.7,
+      "over160": 31,
+      "games": 44,
+      "ptsScore": 167.9
     },
     {
       "team": "Washington Mystics",
-      "avgPts": 164.0,
-      "homePts": 167.9,
-      "awayPts": 160.1,
-      "l7Pts": 159.7,
-      "adjL7Pts": 163.7,
-      "l3Pts": 177.0,
-      "adjL3Pts": 178.9,
-      "over160": 16,
-      "games": 28,
-      "ptsScore": 165.2
+      "avgPts": 166.7,
+      "homePts": 168.5,
+      "awayPts": 165.0,
+      "l7Pts": 171.9,
+      "adjL7Pts": 170.2,
+      "l3Pts": 170.7,
+      "adjL3Pts": 167.9,
+      "over160": 27,
+      "games": 44,
+      "ptsScore": 167.2
     },
     {
       "team": "Golden State Valkyries",
-      "avgPts": 159.6,
-      "homePts": 159.7,
-      "awayPts": 159.5,
-      "l7Pts": 162.0,
-      "adjL7Pts": 163.5,
-      "l3Pts": 175.7,
-      "adjL3Pts": 178.6,
-      "over160": 17,
-      "games": 29,
-      "ptsScore": 161.6
+      "avgPts": 157.3,
+      "homePts": 157.1,
+      "awayPts": 157.5,
+      "l7Pts": 149.3,
+      "adjL7Pts": 148.5,
+      "l3Pts": 150.0,
+      "adjL3Pts": 148.5,
+      "over160": 22,
+      "games": 44,
+      "ptsScore": 155.5
     }
   ],
   "paceData": [
     {
       "team": "Chicago Sky",
-      "avgPace": 83.4,
-      "homePace": 83.2,
-      "awayPace": 83.5,
-      "l7Pace": 84.9,
-      "adjL7Pace": 84.7,
+      "avgPace": 83.5,
+      "homePace": 83.8,
+      "awayPace": 83.2,
+      "l7Pace": 83.8,
+      "adjL7Pace": 83.8,
       "l3Pace": 85.5,
-      "adjL3Pace": 86.0,
-      "games": 30,
-      "paceScore": 83.8
-    },
-    {
-      "team": "Los Angeles Sparks",
-      "avgPace": 83.2,
-      "homePace": 83.4,
-      "awayPace": 83.0,
-      "l7Pace": 84.0,
-      "adjL7Pace": 84.0,
-      "l3Pace": 84.9,
-      "adjL3Pace": 85.5,
-      "games": 28,
-      "paceScore": 83.5
+      "adjL3Pace": 85.6,
+      "games": 44,
+      "paceScore": 83.7
     },
     {
       "team": "Indiana Fever",
-      "avgPace": 83.0,
-      "homePace": 84.9,
-      "awayPace": 80.8,
-      "l7Pace": 81.9,
-      "adjL7Pace": 82.8,
-      "l3Pace": 80.7,
-      "adjL3Pace": 80.8,
-      "games": 30,
-      "paceScore": 82.8
-    },
-    {
-      "team": "Atlanta Dream",
-      "avgPace": 81.4,
-      "homePace": 83.0,
-      "awayPace": 79.8,
-      "l7Pace": 82.8,
-      "adjL7Pace": 82.2,
-      "l3Pace": 83.3,
-      "adjL3Pace": 83.5,
-      "games": 29,
-      "paceScore": 81.7
-    },
-    {
-      "team": "Toronto Tempo",
-      "avgPace": 80.8,
-      "homePace": 80.4,
-      "awayPace": 81.3,
-      "l7Pace": 80.3,
-      "adjL7Pace": 81.3,
-      "l3Pace": 79.4,
-      "adjL3Pace": 81.4,
-      "games": 29,
-      "paceScore": 80.9
-    },
-    {
-      "team": "Las Vegas Aces",
-      "avgPace": 80.8,
-      "homePace": 79.6,
+      "avgPace": 82.9,
+      "homePace": 83.9,
       "awayPace": 81.8,
-      "l7Pace": 80.9,
-      "adjL7Pace": 80.4,
-      "l3Pace": 82.8,
-      "adjL3Pace": 81.9,
-      "games": 31,
-      "paceScore": 80.8
+      "l7Pace": 82.6,
+      "adjL7Pace": 82.5,
+      "l3Pace": 80.4,
+      "adjL3Pace": 81.1,
+      "games": 44,
+      "paceScore": 82.7
+    },
+    {
+      "team": "Los Angeles Sparks",
+      "avgPace": 82.7,
+      "homePace": 82.9,
+      "awayPace": 82.4,
+      "l7Pace": 82.2,
+      "adjL7Pace": 82.9,
+      "l3Pace": 79.5,
+      "adjL3Pace": 81.4,
+      "games": 44,
+      "paceScore": 82.6
     },
     {
       "team": "Seattle Storm",
-      "avgPace": 80.8,
-      "homePace": 80.1,
-      "awayPace": 81.5,
-      "l7Pace": 82.3,
-      "adjL7Pace": 81.3,
-      "l3Pace": 80.7,
-      "adjL3Pace": 79.9,
-      "games": 32,
-      "paceScore": 80.8
+      "avgPace": 82.1,
+      "homePace": 82.1,
+      "awayPace": 82.1,
+      "l7Pace": 82.9,
+      "adjL7Pace": 83.6,
+      "l3Pace": 80.0,
+      "adjL3Pace": 81.9,
+      "games": 44,
+      "paceScore": 82.3
     },
     {
-      "team": "Portland Fire",
-      "avgPace": 80.7,
-      "homePace": 79.3,
-      "awayPace": 82.0,
-      "l7Pace": 80.0,
-      "adjL7Pace": 79.7,
-      "l3Pace": 82.8,
-      "adjL3Pace": 81.3,
-      "games": 30,
-      "paceScore": 80.6
+      "team": "Atlanta Dream",
+      "avgPace": 82.3,
+      "homePace": 83.1,
+      "awayPace": 81.4,
+      "l7Pace": 81.2,
+      "adjL7Pace": 80.7,
+      "l3Pace": 82.7,
+      "adjL3Pace": 81.9,
+      "games": 44,
+      "paceScore": 82.1
     },
     {
       "team": "Connecticut Sun",
-      "avgPace": 80.4,
-      "homePace": 80.2,
-      "awayPace": 80.6,
-      "l7Pace": 81.3,
-      "adjL7Pace": 81.1,
-      "l3Pace": 81.2,
-      "adjL3Pace": 80.9,
-      "games": 30,
-      "paceScore": 80.5
+      "avgPace": 80.9,
+      "homePace": 80.6,
+      "awayPace": 81.2,
+      "l7Pace": 80.9,
+      "adjL7Pace": 81.5,
+      "l3Pace": 80.7,
+      "adjL3Pace": 81.3,
+      "games": 44,
+      "paceScore": 81.0
     },
     {
-      "team": "New York Liberty",
-      "avgPace": 80.3,
-      "homePace": 79.0,
-      "awayPace": 81.4,
-      "l7Pace": 82.5,
-      "adjL7Pace": 81.8,
-      "l3Pace": 79.8,
-      "adjL3Pace": 80.1,
-      "games": 32,
-      "paceScore": 80.5
+      "team": "Toronto Tempo",
+      "avgPace": 81.0,
+      "homePace": 80.4,
+      "awayPace": 81.6,
+      "l7Pace": 81.6,
+      "adjL7Pace": 80.8,
+      "l3Pace": 82.4,
+      "adjL3Pace": 81.6,
+      "games": 44,
+      "paceScore": 81.0
     },
     {
       "team": "Minnesota Lynx",
-      "avgPace": 80.5,
-      "homePace": 80.2,
+      "avgPace": 80.8,
+      "homePace": 80.7,
       "awayPace": 80.9,
-      "l7Pace": 80.9,
-      "adjL7Pace": 80.3,
-      "l3Pace": 80.2,
-      "adjL3Pace": 79.5,
-      "games": 31,
-      "paceScore": 80.4
+      "l7Pace": 80.6,
+      "adjL7Pace": 80.8,
+      "l3Pace": 81.8,
+      "adjL3Pace": 80.4,
+      "games": 44,
+      "paceScore": 80.8
     },
     {
       "team": "Phoenix Mercury",
-      "avgPace": 79.8,
-      "homePace": 80.0,
-      "awayPace": 79.6,
-      "l7Pace": 81.0,
-      "adjL7Pace": 81.3,
-      "l3Pace": 81.0,
-      "adjL3Pace": 82.0,
-      "games": 31,
-      "paceScore": 80.2
+      "avgPace": 80.6,
+      "homePace": 80.2,
+      "awayPace": 81.0,
+      "l7Pace": 80.7,
+      "adjL7Pace": 81.6,
+      "l3Pace": 81.3,
+      "adjL3Pace": 81.9,
+      "games": 44,
+      "paceScore": 80.8
+    },
+    {
+      "team": "Las Vegas Aces",
+      "avgPace": 80.7,
+      "homePace": 79.6,
+      "awayPace": 81.9,
+      "l7Pace": 81.1,
+      "adjL7Pace": 80.6,
+      "l3Pace": 81.8,
+      "adjL3Pace": 80.9,
+      "games": 44,
+      "paceScore": 80.7
+    },
+    {
+      "team": "New York Liberty",
+      "avgPace": 80.7,
+      "homePace": 79.9,
+      "awayPace": 81.6,
+      "l7Pace": 80.7,
+      "adjL7Pace": 80.3,
+      "l3Pace": 80.1,
+      "adjL3Pace": 79.1,
+      "games": 44,
+      "paceScore": 80.5
     },
     {
       "team": "Dallas Wings",
-      "avgPace": 80.0,
-      "homePace": 79.2,
-      "awayPace": 80.7,
-      "l7Pace": 79.9,
-      "adjL7Pace": 79.3,
-      "l3Pace": 78.3,
-      "adjL3Pace": 78.6,
-      "games": 30,
-      "paceScore": 79.8
+      "avgPace": 80.2,
+      "homePace": 80.0,
+      "awayPace": 80.5,
+      "l7Pace": 80.9,
+      "adjL7Pace": 80.5,
+      "l3Pace": 81.2,
+      "adjL3Pace": 81.0,
+      "games": 44,
+      "paceScore": 80.3
+    },
+    {
+      "team": "Portland Fire",
+      "avgPace": 80.2,
+      "homePace": 80.3,
+      "awayPace": 80.1,
+      "l7Pace": 77.9,
+      "adjL7Pace": 79.6,
+      "l3Pace": 78.7,
+      "adjL3Pace": 81.3,
+      "games": 44,
+      "paceScore": 80.2
     },
     {
       "team": "Washington Mystics",
-      "avgPace": 79.9,
-      "homePace": 82.6,
-      "awayPace": 77.2,
-      "l7Pace": 74.6,
-      "adjL7Pace": 76.3,
-      "l3Pace": 78.7,
-      "adjL3Pace": 79.1,
-      "games": 28,
-      "paceScore": 79.4
+      "avgPace": 79.1,
+      "homePace": 79.9,
+      "awayPace": 78.3,
+      "l7Pace": 80.6,
+      "adjL7Pace": 79.4,
+      "l3Pace": 79.9,
+      "adjL3Pace": 78.3,
+      "games": 44,
+      "paceScore": 79.1
     },
     {
       "team": "Golden State Valkyries",
-      "avgPace": 75.6,
-      "homePace": 75.7,
-      "awayPace": 75.6,
-      "l7Pace": 73.9,
-      "adjL7Pace": 74.0,
-      "l3Pace": 76.4,
-      "adjL3Pace": 77.0,
-      "games": 29,
-      "paceScore": 75.5
+      "avgPace": 76.2,
+      "homePace": 76.5,
+      "awayPace": 76.0,
+      "l7Pace": 75.7,
+      "adjL7Pace": 75.6,
+      "l3Pace": 75.6,
+      "adjL3Pace": 74.8,
+      "games": 44,
+      "paceScore": 76.0
     }
   ],
   "detailData": {
     "Atlanta Dream": [
       {
-        "date": "2026-08-03",
-        "matchup": "ATL vs. LV",
-        "wl": "L",
-        "pts": 87,
-        "total": 196.0,
-        "oppAvg": 178.6,
-        "adjTotal": 192.7,
-        "pace": 80.5,
-        "oppPace": 80.8,
-        "adjPace": 80.5
+        "date": "2026-09-23",
+        "matchup": "ATL @ NYL",
+        "wl": "W",
+        "pts": 83,
+        "total": 148.0,
+        "oppAvg": 176.0,
+        "adjTotal": 146.1,
+        "pace": 76.1,
+        "oppPace": 80.7,
+        "adjPace": 76.3
       },
       {
-        "date": "2026-07-31",
-        "matchup": "ATL vs. SEA",
+        "date": "2026-09-21",
+        "matchup": "ATL @ NYL",
         "wl": "W",
-        "pts": 98,
-        "total": 187.0,
-        "oppAvg": 170.8,
-        "adjTotal": 191.5,
-        "pace": 87.2,
-        "oppPace": 80.8,
-        "adjPace": 87.2
-      },
-      {
-        "date": "2026-07-30",
-        "matchup": "ATL @ DAL",
-        "wl": "W",
-        "pts": 82,
-        "total": 163.0,
-        "oppAvg": 174.3,
-        "adjTotal": 164.0,
-        "pace": 82.1,
-        "oppPace": 80.0,
+        "pts": 95,
+        "total": 179.0,
+        "oppAvg": 176.0,
+        "adjTotal": 177.1,
+        "pace": 82.7,
+        "oppPace": 80.7,
         "adjPace": 82.9
       },
       {
-        "date": "2026-07-19",
+        "date": "2026-09-19",
         "matchup": "ATL vs. CHI",
         "wl": "W",
-        "pts": 93,
-        "total": 184.0,
-        "oppAvg": 178.1,
-        "adjTotal": 181.2,
-        "pace": 81.5,
-        "oppPace": 83.4,
-        "adjPace": 78.9
+        "pts": 106,
+        "total": 187.0,
+        "oppAvg": 177.4,
+        "adjTotal": 183.7,
+        "pace": 89.2,
+        "oppPace": 83.5,
+        "adjPace": 86.6
       },
       {
-        "date": "2026-07-17",
-        "matchup": "ATL @ TOR",
+        "date": "2026-09-17",
+        "matchup": "ATL vs. CON",
         "wl": "W",
-        "pts": 111,
-        "total": 203.0,
-        "oppAvg": 181.4,
-        "adjTotal": 196.9,
-        "pace": 81.0,
+        "pts": 103,
+        "total": 162.0,
+        "oppAvg": 166.9,
+        "adjTotal": 169.2,
+        "pace": 79.9,
+        "oppPace": 80.9,
+        "adjPace": 79.9
+      },
+      {
+        "date": "2026-08-30",
+        "matchup": "ATL vs. MIN",
+        "wl": "W",
+        "pts": 89,
+        "total": 170.0,
+        "oppAvg": 174.5,
+        "adjTotal": 169.6,
+        "pace": 83.8,
         "oppPace": 80.8,
-        "adjPace": 81.0
+        "adjPace": 83.9
       },
       {
-        "date": "2026-07-13",
-        "matchup": "ATL vs. LA",
-        "wl": "W",
-        "pts": 101,
-        "total": 193.0,
-        "oppAvg": 184.0,
-        "adjTotal": 184.3,
-        "pace": 84.9,
-        "oppPace": 83.2,
-        "adjPace": 82.5
-      },
-      {
-        "date": "2026-07-11",
-        "matchup": "ATL vs. POR",
+        "date": "2026-08-28",
+        "matchup": "ATL vs. PDX",
         "wl": "L",
-        "pts": 92,
-        "total": 194.0,
-        "oppAvg": 178.3,
-        "adjTotal": 191.0,
-        "pace": 82.3,
-        "oppPace": 80.7,
-        "adjPace": 82.4
+        "pts": 83,
+        "total": 184.0,
+        "oppAvg": 177.2,
+        "adjTotal": 180.9,
+        "pace": 78.1,
+        "oppPace": 80.2,
+        "adjPace": 78.8
+      },
+      {
+        "date": "2026-08-24",
+        "matchup": "ATL @ LAS",
+        "wl": "W",
+        "pts": 78,
+        "total": 149.0,
+        "oppAvg": 178.4,
+        "adjTotal": 144.7,
+        "pace": 78.4,
+        "oppPace": 82.7,
+        "adjPace": 76.6
       }
     ],
     "Chicago Sky": [
       {
-        "date": "2026-08-04",
-        "matchup": "CHI vs. PHX",
+        "date": "2026-09-24",
+        "matchup": "CHI @ WAS",
         "wl": "L",
-        "pts": 101,
-        "total": 207.0,
-        "oppAvg": 171.6,
-        "adjTotal": 210.7,
-        "pace": 86.0,
-        "oppPace": 79.8,
-        "adjPace": 87.0
-      },
-      {
-        "date": "2026-08-01",
-        "matchup": "CHI vs. LV",
-        "wl": "W",
-        "pts": 84,
-        "total": 167.0,
-        "oppAvg": 178.6,
-        "adjTotal": 163.7,
-        "pace": 85.6,
-        "oppPace": 80.8,
+        "pts": 93,
+        "total": 194.0,
+        "oppAvg": 166.7,
+        "adjTotal": 201.4,
+        "pace": 83.8,
+        "oppPace": 79.1,
         "adjPace": 85.6
       },
       {
-        "date": "2026-07-31",
-        "matchup": "CHI vs. CON",
+        "date": "2026-09-22",
+        "matchup": "CHI vs. TOR",
         "wl": "W",
-        "pts": 94,
+        "pts": 97,
         "total": 182.0,
-        "oppAvg": 167.2,
-        "adjTotal": 190.1,
-        "pace": 84.9,
-        "oppPace": 80.4,
-        "adjPace": 85.3
+        "oppAvg": 180.0,
+        "adjTotal": 176.1,
+        "pace": 83.6,
+        "oppPace": 81.0,
+        "adjPace": 83.5
       },
       {
-        "date": "2026-07-22",
-        "matchup": "CHI @ NY",
-        "wl": "L",
-        "pts": 94,
-        "total": 189.0,
-        "oppAvg": 177.6,
-        "adjTotal": 186.7,
-        "pace": 84.0,
-        "oppPace": 80.3,
-        "adjPace": 84.5
-      },
-      {
-        "date": "2026-07-19",
+        "date": "2026-09-19",
         "matchup": "CHI @ ATL",
         "wl": "L",
-        "pts": 91,
-        "total": 184.0,
-        "oppAvg": 175.4,
-        "adjTotal": 183.9,
-        "pace": 81.5,
-        "oppPace": 81.4,
+        "pts": 81,
+        "total": 187.0,
+        "oppAvg": 175.8,
+        "adjTotal": 185.3,
+        "pace": 89.2,
+        "oppPace": 82.3,
+        "adjPace": 87.8
+      },
+      {
+        "date": "2026-09-17",
+        "matchup": "CHI vs. WAS",
+        "wl": "L",
+        "pts": 80,
+        "total": 190.0,
+        "oppAvg": 166.7,
+        "adjTotal": 197.4,
+        "pace": 86.1,
+        "oppPace": 79.1,
+        "adjPace": 87.9
+      },
+      {
+        "date": "2026-08-29",
+        "matchup": "CHI @ NYL",
+        "wl": "L",
+        "pts": 66,
+        "total": 151.0,
+        "oppAvg": 176.0,
+        "adjTotal": 149.1,
+        "pace": 80.7,
+        "oppPace": 80.7,
         "adjPace": 80.9
       },
       {
-        "date": "2026-07-17",
-        "matchup": "CHI vs. LA",
-        "wl": "W",
-        "pts": 96,
-        "total": 178.0,
-        "oppAvg": 184.0,
-        "adjTotal": 169.3,
-        "pace": 85.4,
-        "oppPace": 83.2,
-        "adjPace": 83.0
+        "date": "2026-08-25",
+        "matchup": "CHI @ CON",
+        "wl": "L",
+        "pts": 81,
+        "total": 168.0,
+        "oppAvg": 166.9,
+        "adjTotal": 175.2,
+        "pace": 79.0,
+        "oppPace": 80.9,
+        "adjPace": 79.0
       },
       {
-        "date": "2026-07-15",
-        "matchup": "CHI vs. SEA",
-        "wl": "W",
-        "pts": 95,
-        "total": 185.0,
-        "oppAvg": 170.8,
-        "adjTotal": 189.5,
-        "pace": 86.9,
-        "oppPace": 80.8,
-        "adjPace": 86.9
+        "date": "2026-08-23",
+        "matchup": "CHI vs. IND",
+        "wl": "L",
+        "pts": 90,
+        "total": 203.0,
+        "oppAvg": 186.4,
+        "adjTotal": 190.7,
+        "pace": 84.0,
+        "oppPace": 82.9,
+        "adjPace": 82.0
       }
     ],
     "Connecticut Sun": [
       {
-        "date": "2026-08-02",
+        "date": "2026-09-24",
+        "matchup": "CON vs. TOR",
+        "wl": "W",
+        "pts": 95,
+        "total": 176.0,
+        "oppAvg": 180.0,
+        "adjTotal": 170.1,
+        "pace": 82.2,
+        "oppPace": 81.0,
+        "adjPace": 82.1
+      },
+      {
+        "date": "2026-09-22",
+        "matchup": "CON @ WAS",
+        "wl": "L",
+        "pts": 69,
+        "total": 148.0,
+        "oppAvg": 166.7,
+        "adjTotal": 155.4,
+        "pace": 77.5,
+        "oppPace": 79.1,
+        "adjPace": 79.3
+      },
+      {
+        "date": "2026-09-20",
+        "matchup": "CON vs. MIN",
+        "wl": "L",
+        "pts": 89,
+        "total": 190.0,
+        "oppAvg": 174.5,
+        "adjTotal": 189.6,
+        "pace": 82.3,
+        "oppPace": 80.8,
+        "adjPace": 82.4
+      },
+      {
+        "date": "2026-09-17",
+        "matchup": "CON @ ATL",
+        "wl": "L",
+        "pts": 59,
+        "total": 162.0,
+        "oppAvg": 175.8,
+        "adjTotal": 160.3,
+        "pace": 79.9,
+        "oppPace": 82.3,
+        "adjPace": 78.5
+      },
+      {
+        "date": "2026-08-30",
         "matchup": "CON @ DAL",
         "wl": "L",
-        "pts": 63,
-        "total": 146.0,
-        "oppAvg": 174.3,
-        "adjTotal": 147.0,
-        "pace": 78.1,
-        "oppPace": 80.0,
-        "adjPace": 78.9
+        "pts": 71,
+        "total": 168.0,
+        "oppAvg": 174.6,
+        "adjTotal": 167.5,
+        "pace": 77.6,
+        "oppPace": 80.2,
+        "adjPace": 78.3
       },
       {
-        "date": "2026-07-31",
-        "matchup": "CON @ CHI",
-        "wl": "L",
-        "pts": 88,
-        "total": 182.0,
-        "oppAvg": 178.1,
-        "adjTotal": 179.2,
-        "pace": 84.9,
-        "oppPace": 83.4,
-        "adjPace": 82.3
-      },
-      {
-        "date": "2026-07-28",
-        "matchup": "CON @ WSH",
-        "wl": "L",
-        "pts": 84,
-        "total": 176.0,
-        "oppAvg": 164.0,
-        "adjTotal": 187.3,
-        "pace": 80.7,
-        "oppPace": 79.9,
-        "adjPace": 81.6
-      },
-      {
-        "date": "2026-07-23",
+        "date": "2026-08-28",
         "matchup": "CON @ IND",
         "wl": "L",
-        "pts": 88,
-        "total": 211.0,
-        "oppAvg": 187.2,
-        "adjTotal": 199.1,
-        "pace": 87.1,
-        "oppPace": 83.0,
-        "adjPace": 84.9
+        "pts": 91,
+        "total": 202.0,
+        "oppAvg": 186.4,
+        "adjTotal": 189.7,
+        "pace": 88.6,
+        "oppPace": 82.9,
+        "adjPace": 86.6
       },
       {
-        "date": "2026-07-19",
-        "matchup": "CON @ PHX",
+        "date": "2026-08-26",
+        "matchup": "CON vs. GSV",
         "wl": "L",
-        "pts": 63,
-        "total": 135.0,
-        "oppAvg": 171.6,
-        "adjTotal": 138.7,
-        "pace": 77.3,
-        "oppPace": 79.8,
-        "adjPace": 78.3
-      },
-      {
-        "date": "2026-07-18",
-        "matchup": "CON @ PHX",
-        "wl": "W",
-        "pts": 96,
-        "total": 179.0,
-        "oppAvg": 171.6,
-        "adjTotal": 182.7,
-        "pace": 82.6,
-        "oppPace": 79.8,
-        "adjPace": 83.6
-      },
-      {
-        "date": "2026-07-14",
-        "matchup": "CON vs. POR",
-        "wl": "W",
-        "pts": 90,
-        "total": 177.0,
-        "oppAvg": 178.3,
-        "adjTotal": 174.0,
-        "pace": 78.2,
-        "oppPace": 80.7,
-        "adjPace": 78.3
+        "pts": 64,
+        "total": 153.0,
+        "oppAvg": 157.3,
+        "adjTotal": 169.8,
+        "pace": 78.3,
+        "oppPace": 76.2,
+        "adjPace": 83.0
       }
     ],
     "Dallas Wings": [
       {
-        "date": "2026-08-02",
+        "date": "2026-09-23",
+        "matchup": "DAL @ SEA",
+        "wl": "W",
+        "pts": 103,
+        "total": 194.0,
+        "oppAvg": 171.1,
+        "adjTotal": 197.0,
+        "pace": 81.5,
+        "oppPace": 82.1,
+        "adjPace": 80.3
+      },
+      {
+        "date": "2026-09-21",
+        "matchup": "DAL @ PHX",
+        "wl": "L",
+        "pts": 86,
+        "total": 173.0,
+        "oppAvg": 172.0,
+        "adjTotal": 175.1,
+        "pace": 78.5,
+        "oppPace": 80.6,
+        "adjPace": 78.8
+      },
+      {
+        "date": "2026-09-19",
+        "matchup": "DAL vs. PHX",
+        "wl": "W",
+        "pts": 87,
+        "total": 169.0,
+        "oppAvg": 172.0,
+        "adjTotal": 171.1,
+        "pace": 83.5,
+        "oppPace": 80.6,
+        "adjPace": 83.8
+      },
+      {
+        "date": "2026-09-17",
+        "matchup": "DAL vs. LAS",
+        "wl": "W",
+        "pts": 97,
+        "total": 174.0,
+        "oppAvg": 178.4,
+        "adjTotal": 169.7,
+        "pace": 89.9,
+        "oppPace": 82.7,
+        "adjPace": 88.1
+      },
+      {
+        "date": "2026-08-30",
         "matchup": "DAL vs. CON",
         "wl": "W",
-        "pts": 83,
-        "total": 146.0,
-        "oppAvg": 167.2,
-        "adjTotal": 154.1,
-        "pace": 78.1,
-        "oppPace": 80.4,
-        "adjPace": 78.5
+        "pts": 97,
+        "total": 168.0,
+        "oppAvg": 166.9,
+        "adjTotal": 175.2,
+        "pace": 77.6,
+        "oppPace": 80.9,
+        "adjPace": 77.6
       },
       {
-        "date": "2026-07-31",
-        "matchup": "DAL @ WSH",
-        "wl": "L",
-        "pts": 75,
-        "total": 156.0,
-        "oppAvg": 164.0,
-        "adjTotal": 167.3,
-        "pace": 74.8,
-        "oppPace": 79.9,
-        "adjPace": 75.7
-      },
-      {
-        "date": "2026-07-30",
-        "matchup": "DAL vs. ATL",
-        "wl": "L",
-        "pts": 81,
-        "total": 163.0,
-        "oppAvg": 175.4,
-        "adjTotal": 162.9,
-        "pace": 82.1,
-        "oppPace": 81.4,
-        "adjPace": 81.5
-      },
-      {
-        "date": "2026-07-23",
-        "matchup": "DAL @ POR",
-        "wl": "W",
-        "pts": 101,
-        "total": 198.0,
-        "oppAvg": 178.3,
-        "adjTotal": 195.0,
-        "pace": 81.6,
-        "oppPace": 80.7,
-        "adjPace": 81.7
-      },
-      {
-        "date": "2026-07-21",
-        "matchup": "DAL vs. NY",
-        "wl": "L",
-        "pts": 98,
-        "total": 197.0,
-        "oppAvg": 177.6,
-        "adjTotal": 194.7,
-        "pace": 81.7,
-        "oppPace": 80.3,
-        "adjPace": 82.2
-      },
-      {
-        "date": "2026-07-19",
-        "matchup": "DAL vs. LA",
-        "wl": "W",
-        "pts": 90,
-        "total": 172.0,
-        "oppAvg": 184.0,
-        "adjTotal": 163.3,
-        "pace": 81.0,
-        "oppPace": 83.2,
-        "adjPace": 78.6
-      },
-      {
-        "date": "2026-07-12",
-        "matchup": "DAL vs. CHI",
+        "date": "2026-08-25",
+        "matchup": "DAL vs. PDX",
         "wl": "W",
         "pts": 96,
-        "total": 187.0,
-        "oppAvg": 178.1,
-        "adjTotal": 184.2,
-        "pace": 79.7,
-        "oppPace": 83.4,
-        "adjPace": 77.1
+        "total": 174.0,
+        "oppAvg": 177.2,
+        "adjTotal": 170.9,
+        "pace": 75.4,
+        "oppPace": 80.2,
+        "adjPace": 76.1
+      },
+      {
+        "date": "2026-08-23",
+        "matchup": "DAL vs. SEA",
+        "wl": "W",
+        "pts": 92,
+        "total": 162.0,
+        "oppAvg": 171.1,
+        "adjTotal": 165.0,
+        "pace": 80.1,
+        "oppPace": 82.1,
+        "adjPace": 78.9
       }
     ],
     "Golden State Valkyries": [
       {
-        "date": "2026-08-03",
-        "matchup": "GS vs. TOR",
+        "date": "2026-09-24",
+        "matchup": "GSV @ LAS",
         "wl": "W",
-        "pts": 96,
-        "total": 175.0,
-        "oppAvg": 181.4,
-        "adjTotal": 168.9,
-        "pace": 75.7,
-        "oppPace": 80.8,
-        "adjPace": 75.7
+        "pts": 76,
+        "total": 151.0,
+        "oppAvg": 178.4,
+        "adjTotal": 146.7,
+        "pace": 78.8,
+        "oppPace": 82.7,
+        "adjPace": 77.0
       },
       {
-        "date": "2026-07-30",
-        "matchup": "GS @ PHX",
-        "wl": "L",
-        "pts": 89,
-        "total": 180.0,
-        "oppAvg": 171.6,
-        "adjTotal": 183.7,
-        "pace": 76.5,
-        "oppPace": 79.8,
-        "adjPace": 77.5
-      },
-      {
-        "date": "2026-07-21",
-        "matchup": "GS vs. WSH",
+        "date": "2026-09-22",
+        "matchup": "GSV @ PDX",
         "wl": "L",
         "pts": 82,
         "total": 172.0,
-        "oppAvg": 164.0,
-        "adjTotal": 183.3,
-        "pace": 77.0,
-        "oppPace": 79.9,
-        "adjPace": 77.9
+        "oppAvg": 177.2,
+        "adjTotal": 168.9,
+        "pace": 74.3,
+        "oppPace": 80.2,
+        "adjPace": 75.0
       },
       {
-        "date": "2026-07-19",
-        "matchup": "GS vs. WSH",
+        "date": "2026-09-19",
+        "matchup": "GSV vs. SEA",
         "wl": "W",
-        "pts": 74,
-        "total": 143.0,
-        "oppAvg": 164.0,
-        "adjTotal": 154.3,
-        "pace": 65.2,
-        "oppPace": 79.9,
-        "adjPace": 66.1
+        "pts": 70,
+        "total": 127.0,
+        "oppAvg": 171.1,
+        "adjTotal": 130.0,
+        "pace": 73.6,
+        "oppPace": 82.1,
+        "adjPace": 72.4
       },
       {
-        "date": "2026-07-16",
-        "matchup": "GS @ IND",
+        "date": "2026-09-18",
+        "matchup": "GSV vs. PDX",
         "wl": "W",
-        "pts": 88,
-        "total": 163.0,
-        "oppAvg": 187.2,
-        "adjTotal": 151.1,
-        "pace": 75.2,
-        "oppPace": 83.0,
-        "adjPace": 73.0
+        "pts": 82,
+        "total": 148.0,
+        "oppAvg": 177.2,
+        "adjTotal": 144.9,
+        "pace": 80.5,
+        "oppPace": 80.2,
+        "adjPace": 81.2
       },
       {
-        "date": "2026-07-10",
-        "matchup": "GS @ CON",
+        "date": "2026-08-30",
+        "matchup": "GSV @ PDX",
         "wl": "W",
-        "pts": 79,
-        "total": 143.0,
-        "oppAvg": 167.2,
-        "adjTotal": 151.1,
-        "pace": 73.7,
-        "oppPace": 80.4,
+        "pts": 86,
+        "total": 155.0,
+        "oppAvg": 177.2,
+        "adjTotal": 151.9,
+        "pace": 73.4,
+        "oppPace": 80.2,
         "adjPace": 74.1
       },
       {
-        "date": "2026-07-08",
-        "matchup": "GS @ TOR",
+        "date": "2026-08-27",
+        "matchup": "GSV @ NYL",
         "wl": "W",
-        "pts": 83,
-        "total": 158.0,
-        "oppAvg": 181.4,
-        "adjTotal": 151.9,
-        "pace": 73.7,
-        "oppPace": 80.8,
-        "adjPace": 73.7
+        "pts": 79,
+        "total": 139.0,
+        "oppAvg": 176.0,
+        "adjTotal": 137.1,
+        "pace": 71.0,
+        "oppPace": 80.7,
+        "adjPace": 71.2
+      },
+      {
+        "date": "2026-08-26",
+        "matchup": "GSV @ CON",
+        "wl": "W",
+        "pts": 89,
+        "total": 153.0,
+        "oppAvg": 166.9,
+        "adjTotal": 160.2,
+        "pace": 78.3,
+        "oppPace": 80.9,
+        "adjPace": 78.3
       }
     ],
     "Indiana Fever": [
       {
-        "date": "2026-08-02",
+        "date": "2026-09-24",
         "matchup": "IND @ MIN",
         "wl": "L",
-        "pts": 100,
-        "total": 208.0,
-        "oppAvg": 176.1,
-        "adjTotal": 207.2,
-        "pace": 78.0,
-        "oppPace": 80.5,
-        "adjPace": 78.3
-      },
-      {
-        "date": "2026-08-01",
-        "matchup": "IND @ POR",
-        "wl": "W",
-        "pts": 112,
-        "total": 210.0,
-        "oppAvg": 178.3,
-        "adjTotal": 207.0,
-        "pace": 86.0,
-        "oppPace": 80.7,
-        "adjPace": 86.1
-      },
-      {
-        "date": "2026-07-29",
-        "matchup": "IND @ SEA",
-        "wl": "W",
-        "pts": 105,
-        "total": 200.0,
-        "oppAvg": 170.8,
-        "adjTotal": 204.5,
-        "pace": 78.1,
+        "pts": 66,
+        "total": 152.0,
+        "oppAvg": 174.5,
+        "adjTotal": 151.6,
+        "pace": 79.9,
         "oppPace": 80.8,
-        "adjPace": 78.1
+        "adjPace": 80.0
       },
       {
-        "date": "2026-07-23",
+        "date": "2026-09-22",
+        "matchup": "IND vs. MIN",
+        "wl": "W",
+        "pts": 96,
+        "total": 173.0,
+        "oppAvg": 174.5,
+        "adjTotal": 172.6,
+        "pace": 83.1,
+        "oppPace": 80.8,
+        "adjPace": 83.2
+      },
+      {
+        "date": "2026-09-20",
+        "matchup": "IND vs. WAS",
+        "wl": "L",
+        "pts": 77,
+        "total": 170.0,
+        "oppAvg": 166.7,
+        "adjTotal": 177.4,
+        "pace": 78.3,
+        "oppPace": 79.1,
+        "adjPace": 80.1
+      },
+      {
+        "date": "2026-09-18",
+        "matchup": "IND @ TOR",
+        "wl": "W",
+        "pts": 103,
+        "total": 188.0,
+        "oppAvg": 180.0,
+        "adjTotal": 182.1,
+        "pace": 79.1,
+        "oppPace": 81.0,
+        "adjPace": 79.0
+      },
+      {
+        "date": "2026-08-28",
         "matchup": "IND vs. CON",
         "wl": "W",
-        "pts": 123,
-        "total": 211.0,
-        "oppAvg": 167.2,
-        "adjTotal": 219.1,
-        "pace": 87.1,
-        "oppPace": 80.4,
-        "adjPace": 87.5
+        "pts": 111,
+        "total": 202.0,
+        "oppAvg": 166.9,
+        "adjTotal": 209.2,
+        "pace": 88.6,
+        "oppPace": 80.9,
+        "adjPace": 88.6
       },
       {
-        "date": "2026-07-19",
-        "matchup": "IND vs. NY",
+        "date": "2026-08-23",
+        "matchup": "IND @ CHI",
         "wl": "W",
-        "pts": 108,
-        "total": 196.0,
-        "oppAvg": 177.6,
-        "adjTotal": 193.7,
-        "pace": 85.6,
-        "oppPace": 80.3,
-        "adjPace": 86.1
+        "pts": 113,
+        "total": 203.0,
+        "oppAvg": 177.4,
+        "adjTotal": 199.7,
+        "pace": 84.0,
+        "oppPace": 83.5,
+        "adjPace": 81.4
       },
       {
-        "date": "2026-07-17",
-        "matchup": "IND vs. SEA",
-        "wl": "W",
-        "pts": 110,
-        "total": 217.0,
-        "oppAvg": 170.8,
-        "adjTotal": 221.5,
-        "pace": 83.3,
-        "oppPace": 80.8,
-        "adjPace": 83.3
-      },
-      {
-        "date": "2026-07-16",
-        "matchup": "IND vs. GS",
+        "date": "2026-08-22",
+        "matchup": "IND @ NYL",
         "wl": "L",
-        "pts": 75,
-        "total": 163.0,
-        "oppAvg": 159.6,
-        "adjTotal": 178.7,
-        "pace": 75.2,
-        "oppPace": 75.6,
-        "adjPace": 80.4
+        "pts": 102,
+        "total": 211.0,
+        "oppAvg": 176.0,
+        "adjTotal": 209.1,
+        "pace": 85.3,
+        "oppPace": 80.7,
+        "adjPace": 85.5
       }
     ],
     "Las Vegas Aces": [
       {
-        "date": "2026-08-03",
-        "matchup": "LV @ ATL",
+        "date": "2026-09-24",
+        "matchup": "LVA @ PHX",
         "wl": "W",
-        "pts": 109,
-        "total": 196.0,
-        "oppAvg": 175.4,
-        "adjTotal": 195.9,
-        "pace": 80.5,
-        "oppPace": 81.4,
-        "adjPace": 79.9
+        "pts": 100,
+        "total": 182.0,
+        "oppAvg": 172.0,
+        "adjTotal": 184.1,
+        "pace": 82.0,
+        "oppPace": 80.6,
+        "adjPace": 82.3
       },
       {
-        "date": "2026-08-01",
-        "matchup": "LV @ CHI",
-        "wl": "L",
-        "pts": 83,
-        "total": 167.0,
-        "oppAvg": 178.1,
-        "adjTotal": 164.2,
-        "pace": 85.6,
-        "oppPace": 83.4,
-        "adjPace": 83.0
-      },
-      {
-        "date": "2026-07-31",
-        "matchup": "LV vs. NY",
+        "date": "2026-09-22",
+        "matchup": "LVA vs. LAS",
         "wl": "W",
-        "pts": 104,
-        "total": 203.0,
-        "oppAvg": 177.6,
-        "adjTotal": 200.7,
-        "pace": 82.2,
-        "oppPace": 80.3,
-        "adjPace": 82.7
+        "pts": 89,
+        "total": 168.0,
+        "oppAvg": 178.4,
+        "adjTotal": 163.7,
+        "pace": 78.4,
+        "oppPace": 82.7,
+        "adjPace": 76.6
       },
       {
-        "date": "2026-07-29",
-        "matchup": "LV vs. POR",
+        "date": "2026-09-20",
+        "matchup": "LVA vs. SEA",
         "wl": "W",
         "pts": 98,
-        "total": 181.0,
-        "oppAvg": 178.3,
+        "total": 175.0,
+        "oppAvg": 171.1,
         "adjTotal": 178.0,
-        "pace": 78.5,
-        "oppPace": 80.7,
-        "adjPace": 78.6
+        "pace": 85.0,
+        "oppPace": 82.1,
+        "adjPace": 83.8
       },
       {
-        "date": "2026-07-22",
-        "matchup": "LV @ WSH",
-        "wl": "L",
-        "pts": 99,
-        "total": 199.0,
-        "oppAvg": 164.0,
-        "adjTotal": 210.3,
-        "pace": 80.7,
-        "oppPace": 79.9,
-        "adjPace": 81.6
-      },
-      {
-        "date": "2026-07-21",
-        "matchup": "LV @ TOR",
+        "date": "2026-09-17",
+        "matchup": "LVA @ SEA",
         "wl": "W",
-        "pts": 109,
-        "total": 192.0,
-        "oppAvg": 181.4,
-        "adjTotal": 185.9,
-        "pace": 80.4,
-        "oppPace": 80.8,
-        "adjPace": 80.4
+        "pts": 114,
+        "total": 191.0,
+        "oppAvg": 171.1,
+        "adjTotal": 194.0,
+        "pace": 85.2,
+        "oppPace": 82.1,
+        "adjPace": 84.0
       },
       {
-        "date": "2026-07-13",
-        "matchup": "LV vs. IND",
-        "wl": "L",
-        "pts": 75,
-        "total": 184.0,
-        "oppAvg": 187.2,
-        "adjTotal": 172.1,
-        "pace": 78.6,
-        "oppPace": 83.0,
-        "adjPace": 76.4
+        "date": "2026-08-28",
+        "matchup": "LVA vs. TOR",
+        "wl": "W",
+        "pts": 93,
+        "total": 166.0,
+        "oppAvg": 180.0,
+        "adjTotal": 160.1,
+        "pace": 80.4,
+        "oppPace": 81.0,
+        "adjPace": 80.3
+      },
+      {
+        "date": "2026-08-23",
+        "matchup": "LVA @ TOR",
+        "wl": "W",
+        "pts": 88,
+        "total": 166.0,
+        "oppAvg": 180.0,
+        "adjTotal": 160.1,
+        "pace": 74.7,
+        "oppPace": 81.0,
+        "adjPace": 74.6
+      },
+      {
+        "date": "2026-08-20",
+        "matchup": "LVA vs. CON",
+        "wl": "W",
+        "pts": 101,
+        "total": 179.0,
+        "oppAvg": 166.9,
+        "adjTotal": 186.2,
+        "pace": 82.3,
+        "oppPace": 80.9,
+        "adjPace": 82.3
       }
     ],
     "Los Angeles Sparks": [
       {
-        "date": "2026-08-02",
-        "matchup": "LA @ POR",
-        "wl": "W",
-        "pts": 106,
-        "total": 207.0,
-        "oppAvg": 178.3,
-        "adjTotal": 204.0,
-        "pace": 83.9,
-        "oppPace": 80.7,
-        "adjPace": 84.0
+        "date": "2026-09-24",
+        "matchup": "LAS vs. GSV",
+        "wl": "L",
+        "pts": 75,
+        "total": 151.0,
+        "oppAvg": 157.3,
+        "adjTotal": 167.8,
+        "pace": 78.8,
+        "oppPace": 76.2,
+        "adjPace": 83.5
       },
       {
-        "date": "2026-07-29",
-        "matchup": "LA vs. NY",
+        "date": "2026-09-22",
+        "matchup": "LAS @ LVA",
         "wl": "L",
-        "pts": 109,
-        "total": 222.0,
-        "oppAvg": 177.6,
-        "adjTotal": 219.7,
-        "pace": 87.0,
-        "oppPace": 80.3,
-        "adjPace": 87.5
-      },
-      {
-        "date": "2026-07-22",
-        "matchup": "LA vs. PHX",
-        "wl": "L",
-        "pts": 82,
+        "pts": 79,
         "total": 168.0,
-        "oppAvg": 171.6,
-        "adjTotal": 171.7,
-        "pace": 83.9,
-        "oppPace": 79.8,
-        "adjPace": 84.9
+        "oppAvg": 177.3,
+        "adjTotal": 164.8,
+        "pace": 78.4,
+        "oppPace": 80.7,
+        "adjPace": 78.6
       },
       {
-        "date": "2026-07-19",
-        "matchup": "LA @ DAL",
-        "wl": "L",
-        "pts": 82,
-        "total": 172.0,
-        "oppAvg": 174.3,
-        "adjTotal": 173.0,
-        "pace": 81.0,
-        "oppPace": 80.0,
-        "adjPace": 81.8
+        "date": "2026-09-20",
+        "matchup": "LAS vs. PDX",
+        "wl": "W",
+        "pts": 105,
+        "total": 189.0,
+        "oppAvg": 177.2,
+        "adjTotal": 185.9,
+        "pace": 81.4,
+        "oppPace": 80.2,
+        "adjPace": 82.1
       },
       {
-        "date": "2026-07-17",
-        "matchup": "LA @ CHI",
+        "date": "2026-09-17",
+        "matchup": "LAS @ DAL",
         "wl": "L",
-        "pts": 82,
-        "total": 178.0,
-        "oppAvg": 178.1,
-        "adjTotal": 175.2,
-        "pace": 85.4,
-        "oppPace": 83.4,
-        "adjPace": 82.8
+        "pts": 77,
+        "total": 174.0,
+        "oppAvg": 174.6,
+        "adjTotal": 173.5,
+        "pace": 89.9,
+        "oppPace": 80.2,
+        "adjPace": 90.6
       },
       {
-        "date": "2026-07-15",
-        "matchup": "LA @ MIN",
-        "wl": "L",
-        "pts": 87,
-        "total": 183.0,
-        "oppAvg": 176.1,
-        "adjTotal": 182.2,
-        "pace": 82.1,
-        "oppPace": 80.5,
-        "adjPace": 82.4
+        "date": "2026-08-30",
+        "matchup": "LAS @ SEA",
+        "wl": "W",
+        "pts": 90,
+        "total": 164.0,
+        "oppAvg": 171.1,
+        "adjTotal": 167.0,
+        "pace": 89.8,
+        "oppPace": 82.1,
+        "adjPace": 88.6
       },
       {
-        "date": "2026-07-13",
-        "matchup": "LA @ ATL",
+        "date": "2026-08-28",
+        "matchup": "LAS vs. WAS",
+        "wl": "W",
+        "pts": 88,
+        "total": 170.0,
+        "oppAvg": 166.7,
+        "adjTotal": 177.4,
+        "pace": 78.4,
+        "oppPace": 79.1,
+        "adjPace": 80.2
+      },
+      {
+        "date": "2026-08-24",
+        "matchup": "LAS vs. ATL",
         "wl": "L",
-        "pts": 92,
-        "total": 193.0,
-        "oppAvg": 175.4,
-        "adjTotal": 192.9,
-        "pace": 84.9,
-        "oppPace": 81.4,
-        "adjPace": 84.3
+        "pts": 71,
+        "total": 149.0,
+        "oppAvg": 175.8,
+        "adjTotal": 147.3,
+        "pace": 78.4,
+        "oppPace": 82.3,
+        "adjPace": 77.0
       }
     ],
     "Minnesota Lynx": [
       {
-        "date": "2026-08-02",
+        "date": "2026-09-24",
         "matchup": "MIN vs. IND",
         "wl": "W",
-        "pts": 108,
-        "total": 208.0,
-        "oppAvg": 187.2,
-        "adjTotal": 196.1,
-        "pace": 78.0,
-        "oppPace": 83.0,
-        "adjPace": 75.8
-      },
-      {
-        "date": "2026-07-31",
-        "matchup": "MIN @ TOR",
-        "wl": "W",
-        "pts": 104,
-        "total": 176.0,
-        "oppAvg": 181.4,
-        "adjTotal": 169.9,
-        "pace": 80.1,
-        "oppPace": 80.8,
-        "adjPace": 80.1
-      },
-      {
-        "date": "2026-07-29",
-        "matchup": "MIN vs. TOR",
-        "wl": "W",
-        "pts": 100,
-        "total": 193.0,
-        "oppAvg": 181.4,
-        "adjTotal": 186.9,
-        "pace": 82.5,
-        "oppPace": 80.8,
-        "adjPace": 82.5
-      },
-      {
-        "date": "2026-07-22",
-        "matchup": "MIN @ SEA",
-        "wl": "W",
         "pts": 86,
-        "total": 162.0,
-        "oppAvg": 170.8,
-        "adjTotal": 166.5,
-        "pace": 81.4,
-        "oppPace": 80.8,
-        "adjPace": 81.4
+        "total": 152.0,
+        "oppAvg": 186.4,
+        "adjTotal": 139.7,
+        "pace": 79.9,
+        "oppPace": 82.9,
+        "adjPace": 77.9
       },
       {
-        "date": "2026-07-21",
-        "matchup": "MIN @ SEA",
-        "wl": "W",
-        "pts": 105,
-        "total": 207.0,
-        "oppAvg": 170.8,
-        "adjTotal": 211.5,
-        "pace": 82.2,
-        "oppPace": 80.8,
-        "adjPace": 82.2
+        "date": "2026-09-22",
+        "matchup": "MIN @ IND",
+        "wl": "L",
+        "pts": 77,
+        "total": 173.0,
+        "oppAvg": 186.4,
+        "adjTotal": 160.7,
+        "pace": 83.1,
+        "oppPace": 82.9,
+        "adjPace": 81.1
       },
       {
-        "date": "2026-07-19",
-        "matchup": "MIN vs. POR",
+        "date": "2026-09-20",
+        "matchup": "MIN @ CON",
         "wl": "W",
         "pts": 101,
-        "total": 194.0,
-        "oppAvg": 178.3,
-        "adjTotal": 191.0,
-        "pace": 80.3,
-        "oppPace": 80.7,
-        "adjPace": 80.4
+        "total": 190.0,
+        "oppAvg": 166.9,
+        "adjTotal": 197.2,
+        "pace": 82.3,
+        "oppPace": 80.9,
+        "adjPace": 82.3
       },
       {
-        "date": "2026-07-15",
-        "matchup": "MIN vs. LA",
+        "date": "2026-09-18",
+        "matchup": "MIN vs. NYL",
+        "wl": "L",
+        "pts": 81,
+        "total": 174.0,
+        "oppAvg": 176.0,
+        "adjTotal": 172.1,
+        "pace": 87.9,
+        "oppPace": 80.7,
+        "adjPace": 88.1
+      },
+      {
+        "date": "2026-08-30",
+        "matchup": "MIN @ ATL",
+        "wl": "L",
+        "pts": 81,
+        "total": 170.0,
+        "oppAvg": 175.8,
+        "adjTotal": 168.3,
+        "pace": 83.8,
+        "oppPace": 82.3,
+        "adjPace": 82.4
+      },
+      {
+        "date": "2026-08-24",
+        "matchup": "MIN vs. GSV",
+        "wl": "L",
+        "pts": 66,
+        "total": 146.0,
+        "oppAvg": 157.3,
+        "adjTotal": 162.8,
+        "pace": 73.2,
+        "oppPace": 76.2,
+        "adjPace": 77.9
+      },
+      {
+        "date": "2026-08-21",
+        "matchup": "MIN @ WAS",
         "wl": "W",
-        "pts": 96,
-        "total": 183.0,
-        "oppAvg": 184.0,
-        "adjTotal": 174.3,
-        "pace": 82.1,
-        "oppPace": 83.2,
-        "adjPace": 79.7
+        "pts": 94,
+        "total": 178.0,
+        "oppAvg": 166.7,
+        "adjTotal": 185.4,
+        "pace": 74.0,
+        "oppPace": 79.1,
+        "adjPace": 75.8
       }
     ],
     "New York Liberty": [
       {
-        "date": "2026-08-03",
-        "matchup": "NY vs. SEA",
-        "wl": "W",
-        "pts": 95,
-        "total": 178.0,
-        "oppAvg": 170.8,
-        "adjTotal": 182.5,
-        "pace": 76.8,
-        "oppPace": 80.8,
-        "adjPace": 76.8
-      },
-      {
-        "date": "2026-08-01",
-        "matchup": "NY @ PHX",
-        "wl": "W",
-        "pts": 94,
-        "total": 186.0,
-        "oppAvg": 171.6,
-        "adjTotal": 189.7,
-        "pace": 80.4,
-        "oppPace": 79.8,
-        "adjPace": 81.4
-      },
-      {
-        "date": "2026-07-31",
-        "matchup": "NY @ LV",
+        "date": "2026-09-23",
+        "matchup": "NYL vs. ATL",
         "wl": "L",
-        "pts": 99,
-        "total": 203.0,
-        "oppAvg": 178.6,
-        "adjTotal": 199.7,
-        "pace": 82.2,
-        "oppPace": 80.8,
-        "adjPace": 82.2
+        "pts": 65,
+        "total": 148.0,
+        "oppAvg": 175.8,
+        "adjTotal": 146.3,
+        "pace": 76.1,
+        "oppPace": 82.3,
+        "adjPace": 74.7
       },
       {
-        "date": "2026-07-29",
-        "matchup": "NY @ LA",
-        "wl": "W",
-        "pts": 113,
-        "total": 222.0,
-        "oppAvg": 184.0,
-        "adjTotal": 213.3,
-        "pace": 87.0,
-        "oppPace": 83.2,
-        "adjPace": 84.6
-      },
-      {
-        "date": "2026-07-22",
-        "matchup": "NY vs. CHI",
-        "wl": "W",
-        "pts": 95,
-        "total": 189.0,
-        "oppAvg": 178.1,
-        "adjTotal": 186.2,
-        "pace": 84.0,
-        "oppPace": 83.4,
-        "adjPace": 81.4
-      },
-      {
-        "date": "2026-07-21",
-        "matchup": "NY @ DAL",
-        "wl": "W",
-        "pts": 99,
-        "total": 197.0,
-        "oppAvg": 174.3,
-        "adjTotal": 198.0,
-        "pace": 81.7,
-        "oppPace": 80.0,
-        "adjPace": 82.5
-      },
-      {
-        "date": "2026-07-19",
-        "matchup": "NY @ IND",
+        "date": "2026-09-21",
+        "matchup": "NYL vs. ATL",
         "wl": "L",
-        "pts": 88,
-        "total": 196.0,
-        "oppAvg": 187.2,
-        "adjTotal": 184.1,
-        "pace": 85.6,
-        "oppPace": 83.0,
-        "adjPace": 83.4
+        "pts": 84,
+        "total": 179.0,
+        "oppAvg": 175.8,
+        "adjTotal": 177.3,
+        "pace": 82.7,
+        "oppPace": 82.3,
+        "adjPace": 81.3
+      },
+      {
+        "date": "2026-09-20",
+        "matchup": "NYL @ TOR",
+        "wl": "W",
+        "pts": 106,
+        "total": 175.0,
+        "oppAvg": 180.0,
+        "adjTotal": 169.1,
+        "pace": 81.4,
+        "oppPace": 81.0,
+        "adjPace": 81.3
+      },
+      {
+        "date": "2026-09-18",
+        "matchup": "NYL @ MIN",
+        "wl": "W",
+        "pts": 93,
+        "total": 174.0,
+        "oppAvg": 174.5,
+        "adjTotal": 173.6,
+        "pace": 87.9,
+        "oppPace": 80.8,
+        "adjPace": 88.0
+      },
+      {
+        "date": "2026-08-29",
+        "matchup": "NYL vs. CHI",
+        "wl": "W",
+        "pts": 85,
+        "total": 151.0,
+        "oppAvg": 177.4,
+        "adjTotal": 147.7,
+        "pace": 80.7,
+        "oppPace": 83.5,
+        "adjPace": 78.1
+      },
+      {
+        "date": "2026-08-27",
+        "matchup": "NYL vs. GSV",
+        "wl": "L",
+        "pts": 60,
+        "total": 139.0,
+        "oppAvg": 157.3,
+        "adjTotal": 155.8,
+        "pace": 71.0,
+        "oppPace": 76.2,
+        "adjPace": 75.7
+      },
+      {
+        "date": "2026-08-22",
+        "matchup": "NYL vs. IND",
+        "wl": "W",
+        "pts": 109,
+        "total": 211.0,
+        "oppAvg": 186.4,
+        "adjTotal": 198.7,
+        "pace": 85.3,
+        "oppPace": 82.9,
+        "adjPace": 83.3
       }
     ],
     "Phoenix Mercury": [
       {
-        "date": "2026-08-04",
-        "matchup": "PHX @ CHI",
+        "date": "2026-09-24",
+        "matchup": "PHX vs. LVA",
+        "wl": "L",
+        "pts": 82,
+        "total": 182.0,
+        "oppAvg": 177.3,
+        "adjTotal": 178.8,
+        "pace": 82.0,
+        "oppPace": 80.7,
+        "adjPace": 82.2
+      },
+      {
+        "date": "2026-09-21",
+        "matchup": "PHX vs. DAL",
         "wl": "W",
-        "pts": 106,
-        "total": 207.0,
-        "oppAvg": 178.1,
-        "adjTotal": 204.2,
-        "pace": 86.0,
-        "oppPace": 83.4,
+        "pts": 87,
+        "total": 173.0,
+        "oppAvg": 174.6,
+        "adjTotal": 172.5,
+        "pace": 78.5,
+        "oppPace": 80.2,
+        "adjPace": 79.2
+      },
+      {
+        "date": "2026-09-19",
+        "matchup": "PHX @ DAL",
+        "wl": "L",
+        "pts": 82,
+        "total": 169.0,
+        "oppAvg": 174.6,
+        "adjTotal": 168.5,
+        "pace": 83.5,
+        "oppPace": 80.2,
+        "adjPace": 84.2
+      },
+      {
+        "date": "2026-09-17",
+        "matchup": "PHX @ PDX",
+        "wl": "W",
+        "pts": 94,
+        "total": 185.0,
+        "oppAvg": 177.2,
+        "adjTotal": 181.9,
+        "pace": 82.0,
+        "oppPace": 80.2,
+        "adjPace": 82.7
+      },
+      {
+        "date": "2026-08-29",
+        "matchup": "PHX vs. TOR",
+        "wl": "W",
+        "pts": 101,
+        "total": 170.0,
+        "oppAvg": 180.0,
+        "adjTotal": 164.1,
+        "pace": 79.2,
+        "oppPace": 81.0,
+        "adjPace": 79.1
+      },
+      {
+        "date": "2026-08-27",
+        "matchup": "PHX vs. WAS",
+        "wl": "L",
+        "pts": 73,
+        "total": 153.0,
+        "oppAvg": 166.7,
+        "adjTotal": 160.4,
+        "pace": 81.6,
+        "oppPace": 79.1,
         "adjPace": 83.4
       },
       {
-        "date": "2026-08-01",
-        "matchup": "PHX vs. NY",
+        "date": "2026-08-25",
+        "matchup": "PHX vs. WAS",
         "wl": "L",
-        "pts": 92,
-        "total": 186.0,
-        "oppAvg": 177.6,
-        "adjTotal": 183.7,
-        "pace": 80.4,
-        "oppPace": 80.3,
-        "adjPace": 80.9
-      },
-      {
-        "date": "2026-07-30",
-        "matchup": "PHX vs. GS",
-        "wl": "W",
-        "pts": 91,
-        "total": 180.0,
-        "oppAvg": 159.6,
-        "adjTotal": 195.7,
-        "pace": 76.5,
-        "oppPace": 75.6,
-        "adjPace": 81.7
-      },
-      {
-        "date": "2026-07-22",
-        "matchup": "PHX @ LA",
-        "wl": "W",
-        "pts": 86,
-        "total": 168.0,
-        "oppAvg": 184.0,
-        "adjTotal": 159.3,
-        "pace": 83.9,
-        "oppPace": 83.2,
-        "adjPace": 81.5
-      },
-      {
-        "date": "2026-07-19",
-        "matchup": "PHX vs. CON",
-        "wl": "W",
-        "pts": 72,
-        "total": 135.0,
-        "oppAvg": 167.2,
-        "adjTotal": 143.1,
-        "pace": 77.3,
-        "oppPace": 80.4,
-        "adjPace": 77.7
-      },
-      {
-        "date": "2026-07-18",
-        "matchup": "PHX vs. CON",
-        "wl": "L",
-        "pts": 83,
-        "total": 179.0,
-        "oppAvg": 167.2,
-        "adjTotal": 187.1,
-        "pace": 82.6,
-        "oppPace": 80.4,
-        "adjPace": 83.0
-      },
-      {
-        "date": "2026-07-14",
-        "matchup": "PHX @ MIN",
-        "wl": "L",
-        "pts": 100,
-        "total": 204.0,
-        "oppAvg": 176.1,
-        "adjTotal": 203.2,
-        "pace": 80.6,
-        "oppPace": 80.5,
-        "adjPace": 80.9
+        "pts": 84,
+        "total": 178.0,
+        "oppAvg": 166.7,
+        "adjTotal": 185.4,
+        "pace": 78.4,
+        "oppPace": 79.1,
+        "adjPace": 80.2
       }
     ],
     "Portland Fire": [
       {
-        "date": "2026-08-02",
-        "matchup": "POR vs. LA",
-        "wl": "L",
-        "pts": 101,
-        "total": 207.0,
-        "oppAvg": 184.0,
-        "adjTotal": 198.3,
-        "pace": 83.9,
-        "oppPace": 83.2,
-        "adjPace": 81.5
-      },
-      {
-        "date": "2026-08-01",
-        "matchup": "POR vs. IND",
-        "wl": "L",
-        "pts": 98,
-        "total": 210.0,
-        "oppAvg": 187.2,
-        "adjTotal": 198.1,
-        "pace": 86.0,
-        "oppPace": 83.0,
-        "adjPace": 83.8
-      },
-      {
-        "date": "2026-07-29",
-        "matchup": "POR @ LV",
-        "wl": "L",
-        "pts": 83,
-        "total": 181.0,
-        "oppAvg": 178.6,
-        "adjTotal": 177.7,
-        "pace": 78.5,
-        "oppPace": 80.8,
-        "adjPace": 78.5
-      },
-      {
-        "date": "2026-07-23",
-        "matchup": "POR vs. DAL",
-        "wl": "L",
-        "pts": 97,
-        "total": 198.0,
-        "oppAvg": 174.3,
-        "adjTotal": 199.0,
-        "pace": 81.6,
-        "oppPace": 80.0,
-        "adjPace": 82.4
-      },
-      {
-        "date": "2026-07-19",
-        "matchup": "POR @ MIN",
-        "wl": "L",
-        "pts": 93,
-        "total": 194.0,
-        "oppAvg": 176.1,
-        "adjTotal": 193.2,
-        "pace": 80.3,
-        "oppPace": 80.5,
-        "adjPace": 80.6
-      },
-      {
-        "date": "2026-07-16",
-        "matchup": "POR @ WSH",
+        "date": "2026-09-22",
+        "matchup": "PDX vs. GSV",
         "wl": "W",
-        "pts": 75,
-        "total": 131.0,
-        "oppAvg": 164.0,
-        "adjTotal": 142.3,
-        "pace": 71.6,
-        "oppPace": 79.9,
-        "adjPace": 72.5
+        "pts": 90,
+        "total": 172.0,
+        "oppAvg": 157.3,
+        "adjTotal": 188.8,
+        "pace": 74.3,
+        "oppPace": 76.2,
+        "adjPace": 79.0
       },
       {
-        "date": "2026-07-14",
-        "matchup": "POR @ CON",
+        "date": "2026-09-20",
+        "matchup": "PDX @ LAS",
         "wl": "L",
-        "pts": 87,
-        "total": 177.0,
-        "oppAvg": 167.2,
-        "adjTotal": 185.1,
-        "pace": 78.2,
-        "oppPace": 80.4,
-        "adjPace": 78.6
+        "pts": 84,
+        "total": 189.0,
+        "oppAvg": 178.4,
+        "adjTotal": 184.7,
+        "pace": 81.4,
+        "oppPace": 82.7,
+        "adjPace": 79.6
+      },
+      {
+        "date": "2026-09-18",
+        "matchup": "PDX @ GSV",
+        "wl": "L",
+        "pts": 66,
+        "total": 148.0,
+        "oppAvg": 157.3,
+        "adjTotal": 164.8,
+        "pace": 80.5,
+        "oppPace": 76.2,
+        "adjPace": 85.2
+      },
+      {
+        "date": "2026-09-17",
+        "matchup": "PDX vs. PHX",
+        "wl": "L",
+        "pts": 91,
+        "total": 185.0,
+        "oppAvg": 172.0,
+        "adjTotal": 187.1,
+        "pace": 82.0,
+        "oppPace": 80.6,
+        "adjPace": 82.3
+      },
+      {
+        "date": "2026-08-30",
+        "matchup": "PDX vs. GSV",
+        "wl": "L",
+        "pts": 69,
+        "total": 155.0,
+        "oppAvg": 157.3,
+        "adjTotal": 171.8,
+        "pace": 73.4,
+        "oppPace": 76.2,
+        "adjPace": 78.1
+      },
+      {
+        "date": "2026-08-28",
+        "matchup": "PDX @ ATL",
+        "wl": "W",
+        "pts": 101,
+        "total": 184.0,
+        "oppAvg": 175.8,
+        "adjTotal": 182.3,
+        "pace": 78.1,
+        "oppPace": 82.3,
+        "adjPace": 76.7
+      },
+      {
+        "date": "2026-08-25",
+        "matchup": "PDX @ DAL",
+        "wl": "L",
+        "pts": 78,
+        "total": 174.0,
+        "oppAvg": 174.6,
+        "adjTotal": 173.5,
+        "pace": 75.4,
+        "oppPace": 80.2,
+        "adjPace": 76.1
       }
     ],
     "Seattle Storm": [
       {
-        "date": "2026-08-03",
-        "matchup": "SEA @ NY",
+        "date": "2026-09-23",
+        "matchup": "SEA vs. DAL",
         "wl": "L",
-        "pts": 83,
-        "total": 178.0,
-        "oppAvg": 177.6,
-        "adjTotal": 175.7,
-        "pace": 76.8,
-        "oppPace": 80.3,
-        "adjPace": 77.3
+        "pts": 91,
+        "total": 194.0,
+        "oppAvg": 174.6,
+        "adjTotal": 193.5,
+        "pace": 81.5,
+        "oppPace": 80.2,
+        "adjPace": 82.2
       },
       {
-        "date": "2026-07-31",
-        "matchup": "SEA @ ATL",
+        "date": "2026-09-20",
+        "matchup": "SEA @ LVA",
         "wl": "L",
-        "pts": 89,
-        "total": 187.0,
-        "oppAvg": 175.4,
-        "adjTotal": 186.9,
-        "pace": 87.2,
-        "oppPace": 81.4,
-        "adjPace": 86.6
+        "pts": 77,
+        "total": 175.0,
+        "oppAvg": 177.3,
+        "adjTotal": 171.8,
+        "pace": 85.0,
+        "oppPace": 80.7,
+        "adjPace": 85.2
       },
       {
-        "date": "2026-07-29",
-        "matchup": "SEA vs. IND",
+        "date": "2026-09-19",
+        "matchup": "SEA @ GSV",
         "wl": "L",
-        "pts": 95,
-        "total": 200.0,
-        "oppAvg": 187.2,
-        "adjTotal": 188.1,
-        "pace": 78.1,
-        "oppPace": 83.0,
-        "adjPace": 75.9
+        "pts": 57,
+        "total": 127.0,
+        "oppAvg": 157.3,
+        "adjTotal": 143.8,
+        "pace": 73.6,
+        "oppPace": 76.2,
+        "adjPace": 78.3
       },
       {
-        "date": "2026-07-22",
-        "matchup": "SEA vs. MIN",
+        "date": "2026-09-17",
+        "matchup": "SEA vs. LVA",
         "wl": "L",
-        "pts": 76,
-        "total": 162.0,
-        "oppAvg": 176.1,
-        "adjTotal": 161.2,
-        "pace": 81.4,
-        "oppPace": 80.5,
-        "adjPace": 81.7
+        "pts": 77,
+        "total": 191.0,
+        "oppAvg": 177.3,
+        "adjTotal": 187.8,
+        "pace": 85.2,
+        "oppPace": 80.7,
+        "adjPace": 85.4
       },
       {
-        "date": "2026-07-21",
-        "matchup": "SEA vs. MIN",
+        "date": "2026-08-30",
+        "matchup": "SEA vs. LAS",
         "wl": "L",
-        "pts": 102,
-        "total": 207.0,
-        "oppAvg": 176.1,
-        "adjTotal": 206.2,
-        "pace": 82.2,
-        "oppPace": 80.5,
-        "adjPace": 82.5
+        "pts": 74,
+        "total": 164.0,
+        "oppAvg": 178.4,
+        "adjTotal": 159.7,
+        "pace": 89.8,
+        "oppPace": 82.7,
+        "adjPace": 88.0
       },
       {
-        "date": "2026-07-17",
-        "matchup": "SEA @ IND",
-        "wl": "L",
-        "pts": 107,
-        "total": 217.0,
-        "oppAvg": 187.2,
-        "adjTotal": 205.1,
-        "pace": 83.3,
-        "oppPace": 83.0,
-        "adjPace": 81.1
-      },
-      {
-        "date": "2026-07-15",
-        "matchup": "SEA @ CHI",
-        "wl": "L",
+        "date": "2026-08-26",
+        "matchup": "SEA vs. TOR",
+        "wl": "W",
         "pts": 90,
-        "total": 185.0,
-        "oppAvg": 178.1,
-        "adjTotal": 182.2,
-        "pace": 86.9,
-        "oppPace": 83.4,
-        "adjPace": 84.3
+        "total": 168.0,
+        "oppAvg": 180.0,
+        "adjTotal": 162.1,
+        "pace": 85.1,
+        "oppPace": 81.0,
+        "adjPace": 85.0
+      },
+      {
+        "date": "2026-08-23",
+        "matchup": "SEA @ DAL",
+        "wl": "L",
+        "pts": 70,
+        "total": 162.0,
+        "oppAvg": 174.6,
+        "adjTotal": 161.5,
+        "pace": 80.1,
+        "oppPace": 80.2,
+        "adjPace": 80.8
       }
     ],
     "Toronto Tempo": [
       {
-        "date": "2026-08-03",
-        "matchup": "TOR @ GS",
+        "date": "2026-09-24",
+        "matchup": "TOR @ CON",
         "wl": "L",
-        "pts": 79,
-        "total": 175.0,
-        "oppAvg": 159.6,
-        "adjTotal": 190.7,
-        "pace": 75.7,
-        "oppPace": 75.6,
-        "adjPace": 80.9
-      },
-      {
-        "date": "2026-07-31",
-        "matchup": "TOR vs. MIN",
-        "wl": "L",
-        "pts": 72,
+        "pts": 81,
         "total": 176.0,
-        "oppAvg": 176.1,
-        "adjTotal": 175.2,
-        "pace": 80.1,
-        "oppPace": 80.5,
-        "adjPace": 80.4
+        "oppAvg": 166.9,
+        "adjTotal": 183.2,
+        "pace": 82.2,
+        "oppPace": 80.9,
+        "adjPace": 82.2
       },
       {
-        "date": "2026-07-29",
-        "matchup": "TOR @ MIN",
+        "date": "2026-09-22",
+        "matchup": "TOR @ CHI",
         "wl": "L",
-        "pts": 93,
-        "total": 193.0,
-        "oppAvg": 176.1,
-        "adjTotal": 192.2,
-        "pace": 82.5,
-        "oppPace": 80.5,
-        "adjPace": 82.8
+        "pts": 85,
+        "total": 182.0,
+        "oppAvg": 177.4,
+        "adjTotal": 178.7,
+        "pace": 83.6,
+        "oppPace": 83.5,
+        "adjPace": 81.0
       },
       {
-        "date": "2026-07-21",
-        "matchup": "TOR vs. LV",
+        "date": "2026-09-20",
+        "matchup": "TOR vs. NYL",
         "wl": "L",
-        "pts": 83,
-        "total": 192.0,
-        "oppAvg": 178.6,
-        "adjTotal": 188.7,
+        "pts": 69,
+        "total": 175.0,
+        "oppAvg": 176.0,
+        "adjTotal": 173.1,
+        "pace": 81.4,
+        "oppPace": 80.7,
+        "adjPace": 81.6
+      },
+      {
+        "date": "2026-09-18",
+        "matchup": "TOR vs. IND",
+        "wl": "L",
+        "pts": 85,
+        "total": 188.0,
+        "oppAvg": 186.4,
+        "adjTotal": 175.7,
+        "pace": 79.1,
+        "oppPace": 82.9,
+        "adjPace": 77.1
+      },
+      {
+        "date": "2026-08-29",
+        "matchup": "TOR @ PHX",
+        "wl": "L",
+        "pts": 69,
+        "total": 170.0,
+        "oppAvg": 172.0,
+        "adjTotal": 172.1,
+        "pace": 79.2,
+        "oppPace": 80.6,
+        "adjPace": 79.5
+      },
+      {
+        "date": "2026-08-28",
+        "matchup": "TOR @ LVA",
+        "wl": "L",
+        "pts": 73,
+        "total": 166.0,
+        "oppAvg": 177.3,
+        "adjTotal": 162.8,
         "pace": 80.4,
-        "oppPace": 80.8,
-        "adjPace": 80.4
+        "oppPace": 80.7,
+        "adjPace": 80.6
       },
       {
-        "date": "2026-07-17",
-        "matchup": "TOR vs. ATL",
+        "date": "2026-08-26",
+        "matchup": "TOR @ SEA",
         "wl": "L",
-        "pts": 92,
-        "total": 203.0,
-        "oppAvg": 175.4,
-        "adjTotal": 202.9,
-        "pace": 81.0,
-        "oppPace": 81.4,
-        "adjPace": 80.4
-      },
-      {
-        "date": "2026-07-14",
-        "matchup": "TOR vs. WSH",
-        "wl": "L",
-        "pts": 62,
-        "total": 141.0,
-        "oppAvg": 164.0,
-        "adjTotal": 152.3,
-        "pace": 72.5,
-        "oppPace": 79.9,
-        "adjPace": 73.4
-      },
-      {
-        "date": "2026-07-12",
-        "matchup": "TOR vs. NY",
-        "wl": "W",
-        "pts": 93,
-        "total": 184.0,
-        "oppAvg": 177.6,
-        "adjTotal": 181.7,
-        "pace": 90.2,
-        "oppPace": 80.3,
-        "adjPace": 90.7
+        "pts": 78,
+        "total": 168.0,
+        "oppAvg": 171.1,
+        "adjTotal": 171.0,
+        "pace": 85.1,
+        "oppPace": 82.1,
+        "adjPace": 83.9
       }
     ],
     "Washington Mystics": [
       {
-        "date": "2026-07-31",
-        "matchup": "WSH vs. DAL",
+        "date": "2026-09-24",
+        "matchup": "WAS vs. CHI",
         "wl": "W",
-        "pts": 81,
-        "total": 156.0,
-        "oppAvg": 174.3,
-        "adjTotal": 157.0,
-        "pace": 74.8,
-        "oppPace": 80.0,
-        "adjPace": 75.6
+        "pts": 101,
+        "total": 194.0,
+        "oppAvg": 177.4,
+        "adjTotal": 190.7,
+        "pace": 83.8,
+        "oppPace": 83.5,
+        "adjPace": 81.2
       },
       {
-        "date": "2026-07-28",
-        "matchup": "WSH vs. CON",
-        "wl": "W",
-        "pts": 92,
-        "total": 176.0,
-        "oppAvg": 167.2,
-        "adjTotal": 184.1,
-        "pace": 80.7,
-        "oppPace": 80.4,
-        "adjPace": 81.1
-      },
-      {
-        "date": "2026-07-22",
-        "matchup": "WSH vs. LV",
-        "wl": "W",
-        "pts": 100,
-        "total": 199.0,
-        "oppAvg": 178.6,
-        "adjTotal": 195.7,
-        "pace": 80.7,
-        "oppPace": 80.8,
-        "adjPace": 80.7
-      },
-      {
-        "date": "2026-07-21",
-        "matchup": "WSH @ GS",
-        "wl": "W",
-        "pts": 90,
-        "total": 172.0,
-        "oppAvg": 159.6,
-        "adjTotal": 187.7,
-        "pace": 77.0,
-        "oppPace": 75.6,
-        "adjPace": 82.2
-      },
-      {
-        "date": "2026-07-19",
-        "matchup": "WSH @ GS",
-        "wl": "L",
-        "pts": 69,
-        "total": 143.0,
-        "oppAvg": 159.6,
-        "adjTotal": 158.7,
-        "pace": 65.2,
-        "oppPace": 75.6,
-        "adjPace": 70.4
-      },
-      {
-        "date": "2026-07-16",
-        "matchup": "WSH vs. POR",
-        "wl": "L",
-        "pts": 56,
-        "total": 131.0,
-        "oppAvg": 178.3,
-        "adjTotal": 128.0,
-        "pace": 71.6,
-        "oppPace": 80.7,
-        "adjPace": 71.7
-      },
-      {
-        "date": "2026-07-14",
-        "matchup": "WSH @ TOR",
+        "date": "2026-09-22",
+        "matchup": "WAS vs. CON",
         "wl": "W",
         "pts": 79,
-        "total": 141.0,
-        "oppAvg": 181.4,
-        "adjTotal": 134.9,
-        "pace": 72.5,
-        "oppPace": 80.8,
-        "adjPace": 72.5
+        "total": 148.0,
+        "oppAvg": 166.9,
+        "adjTotal": 155.2,
+        "pace": 77.5,
+        "oppPace": 80.9,
+        "adjPace": 77.5
+      },
+      {
+        "date": "2026-09-20",
+        "matchup": "WAS @ IND",
+        "wl": "W",
+        "pts": 93,
+        "total": 170.0,
+        "oppAvg": 186.4,
+        "adjTotal": 157.7,
+        "pace": 78.3,
+        "oppPace": 82.9,
+        "adjPace": 76.3
+      },
+      {
+        "date": "2026-09-17",
+        "matchup": "WAS @ CHI",
+        "wl": "W",
+        "pts": 110,
+        "total": 190.0,
+        "oppAvg": 177.4,
+        "adjTotal": 186.7,
+        "pace": 86.1,
+        "oppPace": 83.5,
+        "adjPace": 83.5
+      },
+      {
+        "date": "2026-08-28",
+        "matchup": "WAS @ LAS",
+        "wl": "L",
+        "pts": 82,
+        "total": 170.0,
+        "oppAvg": 178.4,
+        "adjTotal": 165.7,
+        "pace": 78.4,
+        "oppPace": 82.7,
+        "adjPace": 76.6
+      },
+      {
+        "date": "2026-08-27",
+        "matchup": "WAS @ PHX",
+        "wl": "W",
+        "pts": 80,
+        "total": 153.0,
+        "oppAvg": 172.0,
+        "adjTotal": 155.1,
+        "pace": 81.6,
+        "oppPace": 80.6,
+        "adjPace": 81.9
+      },
+      {
+        "date": "2026-08-25",
+        "matchup": "WAS @ PHX",
+        "wl": "W",
+        "pts": 94,
+        "total": 178.0,
+        "oppAvg": 172.0,
+        "adjTotal": 180.1,
+        "pace": 78.4,
+        "oppPace": 80.6,
+        "adjPace": 78.7
       }
     ]
   },
   "league_avg": {
-    "ortg": 108.3,
-    "drtg": 108.3
+    "ortg": 107.6,
+    "drtg": 107.5
   },
   "ratings": {
     "Atlanta Dream": {
       "season": {
-        "ortg": 109.7,
-        "drtg": 105.7,
-        "net": 4.0,
-        "adj_ortg": 109.7,
-        "adj_drtg": 105.3,
-        "adj_net": 4.4,
-        "pace": 81.4,
-        "games": 29
+        "ortg": 111.0,
+        "drtg": 102.7,
+        "net": 8.3,
+        "adj_ortg": 110.4,
+        "adj_drtg": 102.8,
+        "adj_net": 7.6,
+        "pace": 82.3,
+        "games": 44
       },
       "l14": {
-        "ortg": 107.3,
-        "drtg": 108.4,
-        "net": -1.1,
-        "adj_ortg": 107.2,
-        "adj_drtg": 109.7,
-        "adj_net": -2.5,
+        "ortg": 115.5,
+        "drtg": 98.7,
+        "net": 16.8,
+        "adj_ortg": 114.1,
+        "adj_drtg": 99.3,
+        "adj_net": 14.8,
         "pace": 82.4,
         "games": 14
       },
       "l7": {
-        "ortg": 114.6,
-        "drtg": 113.2,
-        "net": 1.4,
-        "adj_ortg": 112.2,
-        "adj_drtg": 113.5,
-        "adj_net": -1.3,
-        "pace": 82.8,
+        "ortg": 112.1,
+        "drtg": 95.4,
+        "net": 16.7,
+        "adj_ortg": 111.1,
+        "adj_drtg": 96.0,
+        "adj_net": 15.1,
+        "pace": 81.2,
         "games": 7
       }
     },
     "Chicago Sky": {
       "season": {
-        "ortg": 105.6,
-        "drtg": 107.9,
-        "net": -2.3,
-        "adj_ortg": 105.2,
-        "adj_drtg": 107.5,
-        "adj_net": -2.3,
-        "pace": 83.4,
-        "games": 30
+        "ortg": 103.9,
+        "drtg": 108.6,
+        "net": -4.7,
+        "adj_ortg": 103.9,
+        "adj_drtg": 108.5,
+        "adj_net": -4.6,
+        "pace": 83.5,
+        "games": 44
       },
       "l14": {
-        "ortg": 112.3,
-        "drtg": 108.4,
-        "net": 3.9,
-        "adj_ortg": 110.9,
-        "adj_drtg": 108.4,
-        "adj_net": 2.5,
-        "pace": 84.2,
+        "ortg": 100.3,
+        "drtg": 109.9,
+        "net": -9.6,
+        "adj_ortg": 101.1,
+        "adj_drtg": 110.3,
+        "adj_net": -9.2,
+        "pace": 83.8,
         "games": 14
       },
       "l7": {
-        "ortg": 110.2,
-        "drtg": 107.2,
-        "net": 3.0,
-        "adj_ortg": 109.5,
-        "adj_drtg": 108.3,
-        "adj_net": 1.2,
-        "pace": 84.9,
+        "ortg": 100.3,
+        "drtg": 117.2,
+        "net": -16.9,
+        "adj_ortg": 100.2,
+        "adj_drtg": 117.2,
+        "adj_net": -17.0,
+        "pace": 83.8,
         "games": 7
       }
     },
     "Connecticut Sun": {
       "season": {
-        "ortg": 99.3,
-        "drtg": 108.6,
-        "net": -9.3,
-        "adj_ortg": 99.3,
-        "adj_drtg": 108.6,
-        "adj_net": -9.3,
-        "pace": 80.4,
-        "games": 30
+        "ortg": 97.5,
+        "drtg": 108.9,
+        "net": -11.4,
+        "adj_ortg": 97.6,
+        "adj_drtg": 108.4,
+        "adj_net": -10.8,
+        "pace": 80.9,
+        "games": 44
       },
       "l14": {
-        "ortg": 101.7,
-        "drtg": 106.1,
-        "net": -4.4,
-        "adj_ortg": 102.6,
-        "adj_drtg": 105.9,
-        "adj_net": -3.3,
-        "pace": 80.5,
+        "ortg": 95.2,
+        "drtg": 111.1,
+        "net": -15.9,
+        "adj_ortg": 95.8,
+        "adj_drtg": 109.8,
+        "adj_net": -14.0,
+        "pace": 80.7,
         "games": 14
       },
       "l7": {
-        "ortg": 100.5,
-        "drtg": 111.4,
-        "net": -10.9,
-        "adj_ortg": 100.2,
-        "adj_drtg": 112.2,
-        "adj_net": -12.0,
-        "pace": 81.3,
+        "ortg": 95.0,
+        "drtg": 116.7,
+        "net": -21.7,
+        "adj_ortg": 96.4,
+        "adj_drtg": 114.1,
+        "adj_net": -17.7,
+        "pace": 80.9,
         "games": 7
       }
     },
@@ -1783,381 +1783,381 @@
         "drtg": 106.3,
         "net": 5.1,
         "adj_ortg": 111.3,
-        "adj_drtg": 106.2,
-        "adj_net": 5.1,
-        "pace": 80.0,
-        "games": 30
+        "adj_drtg": 106.6,
+        "adj_net": 4.7,
+        "pace": 80.2,
+        "games": 44
       },
       "l14": {
-        "ortg": 112.5,
-        "drtg": 108.3,
-        "net": 4.2,
-        "adj_ortg": 111.3,
-        "adj_drtg": 109.3,
-        "adj_net": 2.0,
-        "pace": 80.5,
+        "ortg": 112.1,
+        "drtg": 106.8,
+        "net": 5.3,
+        "adj_ortg": 112.0,
+        "adj_drtg": 107.9,
+        "adj_net": 4.1,
+        "pace": 80.1,
         "games": 14
       },
       "l7": {
-        "ortg": 111.6,
-        "drtg": 106.4,
-        "net": 5.2,
-        "adj_ortg": 111.0,
-        "adj_drtg": 108.6,
-        "adj_net": 2.4,
-        "pace": 79.9,
+        "ortg": 116.2,
+        "drtg": 98.1,
+        "net": 18.1,
+        "adj_ortg": 114.0,
+        "adj_drtg": 102.7,
+        "adj_net": 11.3,
+        "pace": 80.9,
         "games": 7
       }
     },
     "Golden State Valkyries": {
       "season": {
-        "ortg": 109.2,
-        "drtg": 101.7,
-        "net": 7.5,
-        "adj_ortg": 109.2,
-        "adj_drtg": 101.5,
-        "adj_net": 7.7,
-        "pace": 75.6,
-        "games": 29
+        "ortg": 107.8,
+        "drtg": 98.6,
+        "net": 9.2,
+        "adj_ortg": 107.1,
+        "adj_drtg": 98.5,
+        "adj_net": 8.6,
+        "pace": 76.2,
+        "games": 44
       },
       "l14": {
-        "ortg": 108.0,
-        "drtg": 101.8,
-        "net": 6.2,
-        "adj_ortg": 108.6,
-        "adj_drtg": 102.0,
-        "adj_net": 6.6,
-        "pace": 74.1,
+        "ortg": 106.3,
+        "drtg": 93.6,
+        "net": 12.7,
+        "adj_ortg": 105.1,
+        "adj_drtg": 94.2,
+        "adj_net": 10.9,
+        "pace": 75.7,
         "games": 14
       },
       "l7": {
-        "ortg": 114.3,
-        "drtg": 105.0,
-        "net": 9.3,
-        "adj_ortg": 113.0,
-        "adj_drtg": 107.3,
-        "adj_net": 5.7,
-        "pace": 73.9,
+        "ortg": 106.4,
+        "drtg": 90.8,
+        "net": 15.6,
+        "adj_ortg": 103.3,
+        "adj_drtg": 92.9,
+        "adj_net": 10.4,
+        "pace": 75.7,
         "games": 7
       }
     },
     "Indiana Fever": {
       "season": {
-        "ortg": 116.3,
-        "drtg": 109.3,
-        "net": 7.0,
-        "adj_ortg": 116.2,
-        "adj_drtg": 110.4,
-        "adj_net": 5.8,
-        "pace": 83.0,
-        "games": 30
+        "ortg": 115.8,
+        "drtg": 109.1,
+        "net": 6.7,
+        "adj_ortg": 116.0,
+        "adj_drtg": 109.5,
+        "adj_net": 6.5,
+        "pace": 82.9,
+        "games": 44
       },
       "l14": {
-        "ortg": 124.2,
-        "drtg": 112.7,
-        "net": 11.5,
-        "adj_ortg": 123.5,
-        "adj_drtg": 113.4,
-        "adj_net": 10.1,
-        "pace": 81.5,
+        "ortg": 115.6,
+        "drtg": 109.6,
+        "net": 6.0,
+        "adj_ortg": 115.5,
+        "adj_drtg": 108.8,
+        "adj_net": 6.7,
+        "pace": 82.0,
         "games": 14
       },
       "l7": {
-        "ortg": 127.9,
-        "drtg": 117.2,
-        "net": 10.7,
-        "adj_ortg": 128.4,
-        "adj_drtg": 118.9,
-        "adj_net": 9.5,
-        "pace": 81.9,
+        "ortg": 115.5,
+        "drtg": 109.1,
+        "net": 6.4,
+        "adj_ortg": 115.5,
+        "adj_drtg": 109.7,
+        "adj_net": 5.8,
+        "pace": 82.6,
         "games": 7
       }
     },
     "Las Vegas Aces": {
       "season": {
-        "ortg": 113.6,
-        "drtg": 107.4,
-        "net": 6.2,
-        "adj_ortg": 113.3,
-        "adj_drtg": 107.5,
-        "adj_net": 5.8,
-        "pace": 80.8,
-        "games": 31
+        "ortg": 113.3,
+        "drtg": 106.3,
+        "net": 7.0,
+        "adj_ortg": 113.1,
+        "adj_drtg": 106.8,
+        "adj_net": 6.3,
+        "pace": 80.7,
+        "games": 44
       },
       "l14": {
-        "ortg": 116.7,
-        "drtg": 108.4,
-        "net": 8.3,
-        "adj_ortg": 115.7,
-        "adj_drtg": 107.8,
-        "adj_net": 7.9,
-        "pace": 81.3,
+        "ortg": 112.3,
+        "drtg": 104.6,
+        "net": 7.7,
+        "adj_ortg": 111.7,
+        "adj_drtg": 105.4,
+        "adj_net": 6.3,
+        "pace": 80.5,
         "games": 14
       },
       "l7": {
-        "ortg": 119.5,
-        "drtg": 113.9,
-        "net": 5.6,
-        "adj_ortg": 118.3,
-        "adj_drtg": 113.5,
-        "adj_net": 4.8,
-        "pace": 80.9,
+        "ortg": 120.2,
+        "drtg": 95.8,
+        "net": 24.4,
+        "adj_ortg": 116.3,
+        "adj_drtg": 100.3,
+        "adj_net": 16.0,
+        "pace": 81.1,
         "games": 7
       }
     },
     "Los Angeles Sparks": {
       "season": {
-        "ortg": 107.7,
-        "drtg": 113.4,
-        "net": -5.7,
-        "adj_ortg": 107.2,
-        "adj_drtg": 112.4,
-        "adj_net": -5.2,
-        "pace": 83.2,
-        "games": 28
+        "ortg": 105.3,
+        "drtg": 110.5,
+        "net": -5.2,
+        "adj_ortg": 105.5,
+        "adj_drtg": 110.3,
+        "adj_net": -4.8,
+        "pace": 82.7,
+        "games": 44
       },
       "l14": {
-        "ortg": 107.1,
-        "drtg": 115.4,
-        "net": -8.3,
-        "adj_ortg": 106.8,
-        "adj_drtg": 113.4,
-        "adj_net": -6.6,
-        "pace": 85.2,
+        "ortg": 99.9,
+        "drtg": 104.9,
+        "net": -5.0,
+        "adj_ortg": 101.6,
+        "adj_drtg": 105.9,
+        "adj_net": -4.3,
+        "pace": 81.7,
         "games": 14
       },
       "l7": {
-        "ortg": 108.8,
-        "drtg": 116.1,
-        "net": -7.3,
-        "adj_ortg": 109.1,
-        "adj_drtg": 114.8,
-        "adj_net": -5.7,
-        "pace": 84.0,
+        "ortg": 101.7,
+        "drtg": 100.9,
+        "net": 0.8,
+        "adj_ortg": 103.4,
+        "adj_drtg": 100.4,
+        "adj_net": 3.0,
+        "pace": 82.2,
         "games": 7
       }
     },
     "Minnesota Lynx": {
       "season": {
-        "ortg": 115.1,
-        "drtg": 103.5,
-        "net": 11.6,
-        "adj_ortg": 114.5,
-        "adj_drtg": 104.6,
-        "adj_net": 9.9,
-        "pace": 80.5,
-        "games": 31
+        "ortg": 112.5,
+        "drtg": 103.6,
+        "net": 8.9,
+        "adj_ortg": 112.4,
+        "adj_drtg": 103.9,
+        "adj_net": 8.5,
+        "pace": 80.8,
+        "games": 44
       },
       "l14": {
-        "ortg": 117.0,
-        "drtg": 109.2,
-        "net": 7.8,
-        "adj_ortg": 115.1,
-        "adj_drtg": 110.8,
-        "adj_net": 4.3,
-        "pace": 80.5,
+        "ortg": 110.7,
+        "drtg": 107.6,
+        "net": 3.1,
+        "adj_ortg": 111.8,
+        "adj_drtg": 105.3,
+        "adj_net": 6.5,
+        "pace": 79.5,
         "games": 14
       },
       "l7": {
-        "ortg": 123.5,
-        "drtg": 110.0,
-        "net": 13.5,
-        "adj_ortg": 119.0,
-        "adj_drtg": 110.8,
-        "adj_net": 8.2,
-        "pace": 80.9,
+        "ortg": 103.9,
+        "drtg": 105.8,
+        "net": -1.9,
+        "adj_ortg": 105.7,
+        "adj_drtg": 104.2,
+        "adj_net": 1.5,
+        "pace": 80.6,
         "games": 7
       }
     },
     "New York Liberty": {
       "season": {
-        "ortg": 112.2,
-        "drtg": 109.0,
-        "net": 3.2,
-        "adj_ortg": 112.1,
-        "adj_drtg": 109.3,
-        "adj_net": 2.8,
-        "pace": 80.3,
-        "games": 32
+        "ortg": 110.9,
+        "drtg": 107.0,
+        "net": 3.9,
+        "adj_ortg": 110.8,
+        "adj_drtg": 107.1,
+        "adj_net": 3.7,
+        "pace": 80.7,
+        "games": 44
       },
       "l14": {
-        "ortg": 113.2,
-        "drtg": 115.2,
-        "net": -2.0,
-        "adj_ortg": 113.6,
-        "adj_drtg": 113.6,
-        "adj_net": 0.0,
-        "pace": 80.9,
+        "ortg": 110.1,
+        "drtg": 103.5,
+        "net": 6.6,
+        "adj_ortg": 110.3,
+        "adj_drtg": 103.7,
+        "adj_net": 6.6,
+        "pace": 80.7,
         "games": 14
       },
       "l7": {
-        "ortg": 118.2,
-        "drtg": 119.1,
-        "net": -0.9,
-        "adj_ortg": 117.5,
-        "adj_drtg": 118.4,
-        "adj_net": -0.9,
-        "pace": 82.5,
+        "ortg": 106.5,
+        "drtg": 101.8,
+        "net": 4.7,
+        "adj_ortg": 108.0,
+        "adj_drtg": 99.9,
+        "adj_net": 8.1,
+        "pace": 80.7,
         "games": 7
       }
     },
     "Phoenix Mercury": {
       "season": {
-        "ortg": 105.6,
-        "drtg": 109.4,
-        "net": -3.8,
-        "adj_ortg": 105.5,
-        "adj_drtg": 108.4,
-        "adj_net": -2.9,
-        "pace": 79.8,
-        "games": 31
+        "ortg": 104.6,
+        "drtg": 108.6,
+        "net": -4.0,
+        "adj_ortg": 104.6,
+        "adj_drtg": 108.3,
+        "adj_net": -3.7,
+        "pace": 80.6,
+        "games": 44
       },
       "l14": {
-        "ortg": 107.7,
-        "drtg": 111.0,
-        "net": -3.3,
-        "adj_ortg": 107.4,
-        "adj_drtg": 110.2,
-        "adj_net": -2.8,
-        "pace": 80.2,
+        "ortg": 105.3,
+        "drtg": 109.0,
+        "net": -3.7,
+        "adj_ortg": 105.0,
+        "adj_drtg": 109.2,
+        "adj_net": -4.2,
+        "pace": 81.8,
         "games": 14
       },
       "l7": {
-        "ortg": 111.1,
-        "drtg": 110.9,
-        "net": 0.2,
-        "adj_ortg": 111.9,
-        "adj_drtg": 112.3,
-        "adj_net": -0.4,
-        "pace": 81.0,
+        "ortg": 106.7,
+        "drtg": 107.4,
+        "net": -0.7,
+        "adj_ortg": 105.9,
+        "adj_drtg": 106.2,
+        "adj_net": -0.3,
+        "pace": 80.7,
         "games": 7
       }
     },
     "Portland Fire": {
       "season": {
-        "ortg": 106.8,
-        "drtg": 114.1,
-        "net": -7.3,
-        "adj_ortg": 107.2,
+        "ortg": 107.5,
+        "drtg": 113.5,
+        "net": -6.0,
+        "adj_ortg": 108.1,
         "adj_drtg": 113.7,
-        "adj_net": -6.5,
-        "pace": 80.7,
-        "games": 30
+        "adj_net": -5.6,
+        "pace": 80.2,
+        "games": 44
       },
       "l14": {
-        "ortg": 110.2,
-        "drtg": 116.4,
-        "net": -6.2,
-        "adj_ortg": 111.2,
-        "adj_drtg": 117.2,
-        "adj_net": -6.0,
-        "pace": 83.1,
+        "ortg": 107.6,
+        "drtg": 110.7,
+        "net": -3.1,
+        "adj_ortg": 108.7,
+        "adj_drtg": 111.9,
+        "adj_net": -3.2,
+        "pace": 80.2,
         "games": 14
       },
       "l7": {
-        "ortg": 113.2,
-        "drtg": 118.6,
-        "net": -5.4,
-        "adj_ortg": 114.1,
-        "adj_drtg": 117.5,
-        "adj_net": -3.4,
-        "pace": 80.0,
+        "ortg": 106.2,
+        "drtg": 115.2,
+        "net": -9.0,
+        "adj_ortg": 110.4,
+        "adj_drtg": 114.8,
+        "adj_net": -4.4,
+        "pace": 77.9,
         "games": 7
       }
     },
     "Seattle Storm": {
       "season": {
-        "ortg": 102.2,
-        "drtg": 109.1,
-        "net": -6.9,
-        "adj_ortg": 102.5,
-        "adj_drtg": 108.8,
-        "adj_net": -6.3,
-        "pace": 80.8,
-        "games": 32
+        "ortg": 100.1,
+        "drtg": 108.3,
+        "net": -8.2,
+        "adj_ortg": 100.0,
+        "adj_drtg": 107.7,
+        "adj_net": -7.7,
+        "pace": 82.1,
+        "games": 44
       },
       "l14": {
-        "ortg": 105.6,
-        "drtg": 110.1,
-        "net": -4.5,
-        "adj_ortg": 106.1,
-        "adj_drtg": 108.1,
-        "adj_net": -2.0,
-        "pace": 82.8,
+        "ortg": 97.9,
+        "drtg": 109.6,
+        "net": -11.7,
+        "adj_ortg": 97.5,
+        "adj_drtg": 108.3,
+        "adj_net": -10.8,
+        "pace": 83.6,
         "games": 14
       },
       "l7": {
-        "ortg": 111.5,
-        "drtg": 120.5,
-        "net": -9.0,
-        "adj_ortg": 113.0,
-        "adj_drtg": 115.6,
-        "adj_net": -2.6,
-        "pace": 82.3,
+        "ortg": 92.4,
+        "drtg": 111.1,
+        "net": -18.7,
+        "adj_ortg": 92.6,
+        "adj_drtg": 108.9,
+        "adj_net": -16.3,
+        "pace": 82.9,
         "games": 7
       }
     },
     "Toronto Tempo": {
       "season": {
-        "ortg": 108.7,
-        "drtg": 116.0,
-        "net": -7.3,
-        "adj_ortg": 109.6,
-        "adj_drtg": 116.4,
-        "adj_net": -6.8,
-        "pace": 80.8,
-        "games": 29
+        "ortg": 105.8,
+        "drtg": 116.5,
+        "net": -10.7,
+        "adj_ortg": 106.5,
+        "adj_drtg": 116.3,
+        "adj_net": -9.8,
+        "pace": 81.0,
+        "games": 44
       },
       "l14": {
-        "ortg": 108.3,
-        "drtg": 120.3,
-        "net": -12.0,
-        "adj_ortg": 110.5,
-        "adj_drtg": 119.2,
-        "adj_net": -8.7,
-        "pace": 80.0,
+        "ortg": 100.5,
+        "drtg": 118.2,
+        "net": -17.7,
+        "adj_ortg": 100.0,
+        "adj_drtg": 117.2,
+        "adj_net": -17.2,
+        "pace": 81.2,
         "games": 14
       },
       "l7": {
-        "ortg": 102.1,
-        "drtg": 122.7,
-        "net": -20.6,
-        "adj_ortg": 105.4,
-        "adj_drtg": 119.8,
-        "adj_net": -14.4,
-        "pace": 80.3,
+        "ortg": 94.6,
+        "drtg": 120.0,
+        "net": -25.4,
+        "adj_ortg": 94.1,
+        "adj_drtg": 121.1,
+        "adj_net": -27.0,
+        "pace": 81.6,
         "games": 7
       }
     },
     "Washington Mystics": {
       "season": {
-        "ortg": 101.6,
-        "drtg": 103.7,
-        "net": -2.1,
-        "adj_ortg": 101.4,
-        "adj_drtg": 103.4,
-        "adj_net": -2.0,
-        "pace": 79.9,
-        "games": 28
+        "ortg": 106.2,
+        "drtg": 104.6,
+        "net": 1.6,
+        "adj_ortg": 105.7,
+        "adj_drtg": 104.8,
+        "adj_net": 0.9,
+        "pace": 79.1,
+        "games": 44
       },
       "l14": {
-        "ortg": 101.0,
-        "drtg": 100.5,
-        "net": 0.5,
-        "adj_ortg": 102.0,
-        "adj_drtg": 100.5,
-        "adj_net": 1.5,
+        "ortg": 112.3,
+        "drtg": 103.8,
+        "net": 8.5,
+        "adj_ortg": 110.6,
+        "adj_drtg": 104.4,
+        "adj_net": 6.2,
         "pace": 79.4,
         "games": 14
       },
       "l7": {
-        "ortg": 108.5,
-        "drtg": 105.5,
-        "net": 3.0,
-        "adj_ortg": 108.8,
-        "adj_drtg": 105.5,
-        "adj_net": 3.3,
-        "pace": 74.6,
+        "ortg": 113.3,
+        "drtg": 100.0,
+        "net": 13.3,
+        "adj_ortg": 111.8,
+        "adj_drtg": 102.4,
+        "adj_net": 9.4,
+        "pace": 80.6,
         "games": 7
       }
     }
@@ -2195,1388 +2195,2033 @@
       {
         "stretch": "121-150",
         "games": 30,
-        "fouls_per_game": 41.73,
-        "fta_per_game": 44.33,
-        "fta_foul_ratio": 1.062
+        "fouls_per_game": 41.9,
+        "fta_per_game": 44.57,
+        "fta_foul_ratio": 1.064
       },
       {
         "stretch": "151-180",
         "games": 30,
-        "fouls_per_game": 37.97,
-        "fta_per_game": 37.87,
-        "fta_foul_ratio": 0.997
+        "fouls_per_game": 37.5,
+        "fta_per_game": 37.63,
+        "fta_foul_ratio": 1.004
       },
       {
         "stretch": "181-210",
         "games": 30,
-        "fouls_per_game": 37.33,
-        "fta_per_game": 39.33,
-        "fta_foul_ratio": 1.054
+        "fouls_per_game": 38.6,
+        "fta_per_game": 40.6,
+        "fta_foul_ratio": 1.052
       },
       {
-        "stretch": "211-226",
-        "games": 16,
-        "fouls_per_game": 39.25,
-        "fta_per_game": 43.62,
-        "fta_foul_ratio": 1.111
+        "stretch": "211-240",
+        "games": 30,
+        "fouls_per_game": 38.57,
+        "fta_per_game": 41.57,
+        "fta_foul_ratio": 1.078
+      },
+      {
+        "stretch": "241-270",
+        "games": 30,
+        "fouls_per_game": 38.13,
+        "fta_per_game": 39.57,
+        "fta_foul_ratio": 1.038
+      },
+      {
+        "stretch": "271-300",
+        "games": 30,
+        "fouls_per_game": 36.7,
+        "fta_per_game": 38.13,
+        "fta_foul_ratio": 1.039
+      },
+      {
+        "stretch": "301-330",
+        "games": 30,
+        "fouls_per_game": 38.6,
+        "fta_per_game": 40.67,
+        "fta_foul_ratio": 1.054
       }
     ],
     "games": [
       {
-        "game_id": "401856890",
+        "game_id": "1022600001",
         "date": "2026-05-08",
         "total_pf": 48,
         "total_fta": 46
       },
       {
-        "game_id": "401856891",
+        "game_id": "1022600002",
         "date": "2026-05-08",
         "total_pf": 54,
         "total_fta": 57
       },
       {
-        "game_id": "401856892",
-        "date": "2026-05-09",
+        "game_id": "1022600003",
+        "date": "2026-05-08",
         "total_pf": 45,
         "total_fta": 49
       },
       {
-        "game_id": "401856893",
+        "game_id": "1022600004",
         "date": "2026-05-09",
         "total_pf": 53,
         "total_fta": 45
       },
       {
-        "game_id": "401856894",
+        "game_id": "1022600005",
         "date": "2026-05-09",
         "total_pf": 25,
         "total_fta": 23
       },
       {
-        "game_id": "401856899",
-        "date": "2026-05-10",
-        "total_pf": 42,
-        "total_fta": 52
-      },
-      {
-        "game_id": "401856895",
-        "date": "2026-05-10",
+        "game_id": "1022600006",
+        "date": "2026-05-09",
         "total_pf": 41,
         "total_fta": 54
       },
       {
-        "game_id": "401856896",
+        "game_id": "1022600010",
+        "date": "2026-05-09",
+        "total_pf": 42,
+        "total_fta": 52
+      },
+      {
+        "game_id": "1022600007",
         "date": "2026-05-10",
         "total_pf": 50,
         "total_fta": 55
       },
       {
-        "game_id": "401856897",
+        "game_id": "1022600008",
         "date": "2026-05-10",
         "total_pf": 58,
         "total_fta": 57
       },
       {
-        "game_id": "401856898",
+        "game_id": "1022600009",
         "date": "2026-05-10",
         "total_pf": 33,
         "total_fta": 33
       },
       {
-        "game_id": "401856900",
-        "date": "2026-05-11",
+        "game_id": "1022600011",
+        "date": "2026-05-10",
         "total_pf": 42,
         "total_fta": 37
       },
       {
-        "game_id": "401856901",
-        "date": "2026-05-13",
+        "game_id": "1022600012",
+        "date": "2026-05-12",
         "total_pf": 35,
         "total_fta": 31
       },
       {
-        "game_id": "401856902",
-        "date": "2026-05-13",
+        "game_id": "1022600013",
+        "date": "2026-05-12",
         "total_pf": 50,
         "total_fta": 57
       },
       {
-        "game_id": "401856903",
-        "date": "2026-05-13",
+        "game_id": "1022600014",
+        "date": "2026-05-12",
         "total_pf": 37,
         "total_fta": 33
       },
       {
-        "game_id": "401856904",
+        "game_id": "1022600015",
         "date": "2026-05-13",
         "total_pf": 38,
         "total_fta": 35
       },
       {
-        "game_id": "401856905",
-        "date": "2026-05-14",
+        "game_id": "1022600016",
+        "date": "2026-05-13",
         "total_pf": 39,
         "total_fta": 45
       },
       {
-        "game_id": "401856906",
-        "date": "2026-05-14",
+        "game_id": "1022600017",
+        "date": "2026-05-13",
         "total_pf": 38,
         "total_fta": 37
       },
       {
-        "game_id": "401856907",
-        "date": "2026-05-14",
+        "game_id": "1022600018",
+        "date": "2026-05-13",
         "total_pf": 48,
         "total_fta": 44
       },
       {
-        "game_id": "401856908",
-        "date": "2026-05-15",
+        "game_id": "1022600019",
+        "date": "2026-05-14",
         "total_pf": 37,
         "total_fta": 40
       },
       {
-        "game_id": "401856909",
-        "date": "2026-05-15",
+        "game_id": "1022600020",
+        "date": "2026-05-14",
         "total_pf": 41,
         "total_fta": 40
       },
       {
-        "game_id": "401856910",
+        "game_id": "1022600021",
         "date": "2026-05-15",
         "total_pf": 43,
         "total_fta": 47
       },
       {
-        "game_id": "401856911",
+        "game_id": "1022600022",
         "date": "2026-05-15",
         "total_pf": 53,
         "total_fta": 47
       },
       {
-        "game_id": "401856912",
-        "date": "2026-05-16",
+        "game_id": "1022600023",
+        "date": "2026-05-15",
         "total_pf": 42,
         "total_fta": 42
       },
       {
-        "game_id": "401856913",
-        "date": "2026-05-16",
+        "game_id": "1022600024",
+        "date": "2026-05-15",
         "total_pf": 52,
         "total_fta": 67
       },
       {
-        "game_id": "401856915",
-        "date": "2026-05-17",
-        "total_pf": 46,
-        "total_fta": 54
-      },
-      {
-        "game_id": "401856916",
-        "date": "2026-05-17",
-        "total_pf": 45,
-        "total_fta": 49
-      },
-      {
-        "game_id": "401856914",
+        "game_id": "1022600025",
         "date": "2026-05-17",
         "total_pf": 37,
         "total_fta": 37
       },
       {
-        "game_id": "401856917",
+        "game_id": "1022600026",
+        "date": "2026-05-17",
+        "total_pf": 46,
+        "total_fta": 54
+      },
+      {
+        "game_id": "1022600027",
+        "date": "2026-05-17",
+        "total_pf": 45,
+        "total_fta": 49
+      },
+      {
+        "game_id": "1022600028",
         "date": "2026-05-17",
         "total_pf": 59,
         "total_fta": 72
       },
       {
-        "game_id": "401856918",
-        "date": "2026-05-19",
+        "game_id": "1022600029",
+        "date": "2026-05-18",
         "total_pf": 37,
         "total_fta": 37
       },
       {
-        "game_id": "401856919",
-        "date": "2026-05-19",
+        "game_id": "1022600030",
+        "date": "2026-05-18",
         "total_pf": 48,
         "total_fta": 46
       },
       {
-        "game_id": "401856920",
-        "date": "2026-05-20",
+        "game_id": "1022600031",
+        "date": "2026-05-19",
         "total_pf": 43,
         "total_fta": 46
       },
       {
-        "game_id": "401856921",
+        "game_id": "1022600032",
         "date": "2026-05-20",
         "total_pf": 47,
         "total_fta": 46
       },
       {
-        "game_id": "401856922",
-        "date": "2026-05-21",
+        "game_id": "1022600033",
+        "date": "2026-05-20",
         "total_pf": 43,
         "total_fta": 47
       },
       {
-        "game_id": "401856923",
-        "date": "2026-05-21",
+        "game_id": "1022600034",
+        "date": "2026-05-20",
         "total_pf": 34,
         "total_fta": 42
       },
       {
-        "game_id": "401856924",
-        "date": "2026-05-22",
+        "game_id": "1022600035",
+        "date": "2026-05-21",
         "total_pf": 39,
         "total_fta": 41
       },
       {
-        "game_id": "401856925",
-        "date": "2026-05-22",
+        "game_id": "1022600036",
+        "date": "2026-05-21",
         "total_pf": 37,
         "total_fta": 35
       },
       {
-        "game_id": "401856926",
-        "date": "2026-05-22",
+        "game_id": "1022600037",
+        "date": "2026-05-21",
         "total_pf": 49,
         "total_fta": 51
       },
       {
-        "game_id": "401856927",
+        "game_id": "1022600038",
         "date": "2026-05-22",
         "total_pf": 30,
         "total_fta": 25
       },
       {
-        "game_id": "401856928",
+        "game_id": "1022600039",
         "date": "2026-05-22",
         "total_pf": 50,
         "total_fta": 56
       },
       {
-        "game_id": "401856929",
-        "date": "2026-05-23",
+        "game_id": "1022600040",
+        "date": "2026-05-22",
         "total_pf": 36,
         "total_fta": 31
       },
       {
-        "game_id": "401856930",
+        "game_id": "1022600041",
         "date": "2026-05-23",
         "total_pf": 46,
         "total_fta": 51
       },
       {
-        "game_id": "401856931",
+        "game_id": "1022600042",
         "date": "2026-05-23",
         "total_pf": 43,
         "total_fta": 39
       },
       {
-        "game_id": "401856932",
-        "date": "2026-05-24",
+        "game_id": "1022600043",
+        "date": "2026-05-23",
         "total_pf": 44,
         "total_fta": 36
       },
       {
-        "game_id": "401856933",
+        "game_id": "1022600044",
         "date": "2026-05-24",
         "total_pf": 35,
         "total_fta": 40
       },
       {
-        "game_id": "401856934",
+        "game_id": "1022600045",
         "date": "2026-05-24",
         "total_pf": 34,
         "total_fta": 33
       },
       {
-        "game_id": "401856935",
+        "game_id": "1022600046",
         "date": "2026-05-24",
         "total_pf": 54,
         "total_fta": 75
       },
       {
-        "game_id": "401856936",
-        "date": "2026-05-26",
+        "game_id": "1022600047",
+        "date": "2026-05-25",
         "total_pf": 42,
         "total_fta": 40
       },
       {
-        "game_id": "401856937",
-        "date": "2026-05-26",
+        "game_id": "1022600048",
+        "date": "2026-05-25",
         "total_pf": 51,
         "total_fta": 51
       },
       {
-        "game_id": "401856938",
+        "game_id": "1022600049",
         "date": "2026-05-27",
         "total_pf": 41,
         "total_fta": 36
       },
       {
-        "game_id": "401856939",
-        "date": "2026-05-28",
+        "game_id": "1022600050",
+        "date": "2026-05-27",
         "total_pf": 49,
         "total_fta": 59
       },
       {
-        "game_id": "401856940",
-        "date": "2026-05-28",
+        "game_id": "1022600051",
+        "date": "2026-05-27",
         "total_pf": 26,
         "total_fta": 26
       },
       {
-        "game_id": "401856941",
-        "date": "2026-05-28",
+        "game_id": "1022600052",
+        "date": "2026-05-27",
         "total_pf": 43,
         "total_fta": 46
       },
       {
-        "game_id": "401856942",
-        "date": "2026-05-28",
+        "game_id": "1022600053",
+        "date": "2026-05-27",
         "total_pf": 43,
         "total_fta": 35
       },
       {
-        "game_id": "401856943",
-        "date": "2026-05-29",
+        "game_id": "1022600054",
+        "date": "2026-05-28",
         "total_pf": 31,
         "total_fta": 34
       },
       {
-        "game_id": "401856944",
-        "date": "2026-05-29",
+        "game_id": "1022600055",
+        "date": "2026-05-28",
         "total_pf": 46,
         "total_fta": 49
       },
       {
-        "game_id": "401856945",
+        "game_id": "1022600056",
         "date": "2026-05-29",
         "total_pf": 41,
         "total_fta": 39
       },
       {
-        "game_id": "401856946",
+        "game_id": "1022600057",
         "date": "2026-05-29",
         "total_pf": 51,
         "total_fta": 57
       },
       {
-        "game_id": "401856947",
+        "game_id": "1022600058",
         "date": "2026-05-29",
         "total_pf": 36,
         "total_fta": 36
       },
       {
-        "game_id": "401856948",
-        "date": "2026-05-30",
+        "game_id": "1022600059",
+        "date": "2026-05-29",
         "total_pf": 36,
         "total_fta": 28
       },
       {
-        "game_id": "401856949",
+        "game_id": "1022600060",
         "date": "2026-05-30",
         "total_pf": 33,
         "total_fta": 41
       },
       {
-        "game_id": "401856950",
+        "game_id": "1022600061",
         "date": "2026-05-30",
         "total_pf": 53,
         "total_fta": 57
       },
       {
-        "game_id": "401856951",
-        "date": "2026-05-31",
+        "game_id": "1022600062",
+        "date": "2026-05-30",
         "total_pf": 50,
         "total_fta": 55
       },
       {
-        "game_id": "401856952",
+        "game_id": "1022600063",
         "date": "2026-05-31",
         "total_pf": 39,
         "total_fta": 38
       },
       {
-        "game_id": "401856953",
-        "date": "2026-06-02",
+        "game_id": "1022600064",
+        "date": "2026-06-01",
         "total_pf": 37,
         "total_fta": 41
       },
       {
-        "game_id": "401856954",
-        "date": "2026-06-02",
+        "game_id": "1022600065",
+        "date": "2026-06-01",
         "total_pf": 34,
         "total_fta": 40
       },
       {
-        "game_id": "401856955",
+        "game_id": "1022600066",
         "date": "2026-06-02",
         "total_pf": 38,
         "total_fta": 47
       },
       {
-        "game_id": "401856956",
+        "game_id": "1022600067",
         "date": "2026-06-02",
         "total_pf": 38,
         "total_fta": 48
       },
       {
-        "game_id": "401856957",
-        "date": "2026-06-03",
+        "game_id": "1022600068",
+        "date": "2026-06-02",
         "total_pf": 34,
         "total_fta": 34
       },
       {
-        "game_id": "401856958",
-        "date": "2026-06-03",
+        "game_id": "1022600069",
+        "date": "2026-06-02",
         "total_pf": 39,
         "total_fta": 43
       },
       {
-        "game_id": "401856959",
+        "game_id": "1022600070",
         "date": "2026-06-03",
         "total_pf": 30,
         "total_fta": 30
       },
       {
-        "game_id": "401856960",
-        "date": "2026-06-04",
+        "game_id": "1022600071",
+        "date": "2026-06-03",
         "total_pf": 33,
         "total_fta": 32
       },
       {
-        "game_id": "401856961",
+        "game_id": "1022600072",
         "date": "2026-06-04",
         "total_pf": 41,
         "total_fta": 39
       },
       {
-        "game_id": "401856962",
-        "date": "2026-06-05",
+        "game_id": "1022600073",
+        "date": "2026-06-04",
         "total_pf": 33,
         "total_fta": 29
       },
       {
-        "game_id": "401856963",
+        "game_id": "1022600074",
         "date": "2026-06-05",
         "total_pf": 43,
         "total_fta": 43
       },
       {
-        "game_id": "401856964",
-        "date": "2026-06-06",
+        "game_id": "1022600075",
+        "date": "2026-06-05",
         "total_pf": 34,
         "total_fta": 39
       },
       {
-        "game_id": "401856965",
-        "date": "2026-06-06",
+        "game_id": "1022600076",
+        "date": "2026-06-05",
         "total_pf": 38,
         "total_fta": 39
       },
       {
-        "game_id": "401856966",
+        "game_id": "1022600077",
         "date": "2026-06-06",
         "total_pf": 28,
         "total_fta": 24
       },
       {
-        "game_id": "401856967",
+        "game_id": "1022600078",
         "date": "2026-06-06",
         "total_pf": 38,
         "total_fta": 39
       },
       {
-        "game_id": "401856968",
+        "game_id": "1022600079",
         "date": "2026-06-06",
         "total_pf": 52,
         "total_fta": 68
       },
       {
-        "game_id": "401856969",
-        "date": "2026-06-07",
+        "game_id": "1022600080",
+        "date": "2026-06-06",
         "total_pf": 46,
         "total_fta": 55
       },
       {
-        "game_id": "401856970",
+        "game_id": "1022600081",
         "date": "2026-06-07",
         "total_pf": 46,
         "total_fta": 53
       },
       {
-        "game_id": "401856971",
+        "game_id": "1022600082",
         "date": "2026-06-07",
         "total_pf": 43,
         "total_fta": 44
       },
       {
-        "game_id": "401856972",
+        "game_id": "1022600083",
         "date": "2026-06-08",
         "total_pf": 52,
         "total_fta": 52
       },
       {
-        "game_id": "401856973",
+        "game_id": "1022600084",
         "date": "2026-06-08",
         "total_pf": 49,
         "total_fta": 38
       },
       {
-        "game_id": "401856974",
-        "date": "2026-06-09",
+        "game_id": "1022600085",
+        "date": "2026-06-08",
         "total_pf": 36,
         "total_fta": 39
       },
       {
-        "game_id": "401856975",
+        "game_id": "1022600086",
         "date": "2026-06-09",
         "total_pf": 36,
         "total_fta": 41
       },
       {
-        "game_id": "401856976",
-        "date": "2026-06-10",
+        "game_id": "1022600087",
+        "date": "2026-06-09",
         "total_pf": 29,
         "total_fta": 28
       },
       {
-        "game_id": "401856977",
-        "date": "2026-06-10",
+        "game_id": "1022600088",
+        "date": "2026-06-09",
         "total_pf": 41,
         "total_fta": 46
       },
       {
-        "game_id": "401856978",
+        "game_id": "1022600089",
         "date": "2026-06-10",
         "total_pf": 61,
         "total_fta": 80
       },
       {
-        "game_id": "401856979",
-        "date": "2026-06-11",
+        "game_id": "1022600090",
+        "date": "2026-06-10",
         "total_pf": 38,
         "total_fta": 41
       },
       {
-        "game_id": "401856980",
+        "game_id": "1022600091",
         "date": "2026-06-11",
         "total_pf": 52,
         "total_fta": 69
       },
       {
-        "game_id": "401856981",
+        "game_id": "1022600092",
         "date": "2026-06-11",
         "total_pf": 43,
         "total_fta": 55
       },
       {
-        "game_id": "401856982",
-        "date": "2026-06-12",
+        "game_id": "1022600093",
+        "date": "2026-06-11",
         "total_pf": 32,
         "total_fta": 26
       },
       {
-        "game_id": "401856983",
-        "date": "2026-06-12",
+        "game_id": "1022600094",
+        "date": "2026-06-11",
         "total_pf": 40,
         "total_fta": 41
       },
       {
-        "game_id": "401856984",
+        "game_id": "1022600095",
         "date": "2026-06-12",
         "total_pf": 38,
         "total_fta": 44
       },
       {
-        "game_id": "401856985",
-        "date": "2026-06-13",
+        "game_id": "1022600096",
+        "date": "2026-06-12",
         "total_pf": 41,
         "total_fta": 41
       },
       {
-        "game_id": "401856986",
+        "game_id": "1022600097",
         "date": "2026-06-13",
         "total_pf": 38,
         "total_fta": 28
       },
       {
-        "game_id": "401856987",
-        "date": "2026-06-14",
+        "game_id": "1022600098",
+        "date": "2026-06-13",
         "total_pf": 34,
         "total_fta": 37
       },
       {
-        "game_id": "401856988",
-        "date": "2026-06-14",
+        "game_id": "1022600099",
+        "date": "2026-06-13",
         "total_pf": 39,
         "total_fta": 39
       },
       {
-        "game_id": "401856989",
-        "date": "2026-06-14",
+        "game_id": "1022600100",
+        "date": "2026-06-13",
         "total_pf": 42,
         "total_fta": 38
       },
       {
-        "game_id": "401856990",
+        "game_id": "1022600101",
         "date": "2026-06-14",
         "total_pf": 35,
         "total_fta": 38
       },
       {
-        "game_id": "401856991",
+        "game_id": "1022600102",
         "date": "2026-06-14",
         "total_pf": 37,
         "total_fta": 36
       },
       {
-        "game_id": "401856992",
-        "date": "2026-06-16",
+        "game_id": "1022600103",
+        "date": "2026-06-15",
         "total_pf": 32,
         "total_fta": 30
       },
       {
-        "game_id": "401856993",
-        "date": "2026-06-16",
+        "game_id": "1022600104",
+        "date": "2026-06-15",
         "total_pf": 38,
         "total_fta": 33
       },
       {
-        "game_id": "401856994",
-        "date": "2026-06-16",
+        "game_id": "1022600105",
+        "date": "2026-06-15",
         "total_pf": 38,
         "total_fta": 39
       },
       {
-        "game_id": "401856995",
+        "game_id": "1022600106",
         "date": "2026-06-16",
         "total_pf": 45,
         "total_fta": 52
       },
       {
-        "game_id": "401856996",
+        "game_id": "1022600107",
         "date": "2026-06-17",
         "total_pf": 45,
         "total_fta": 53
       },
       {
-        "game_id": "401856997",
-        "date": "2026-06-18",
+        "game_id": "1022600108",
+        "date": "2026-06-17",
         "total_pf": 34,
         "total_fta": 38
       },
       {
-        "game_id": "401856998",
-        "date": "2026-06-18",
+        "game_id": "1022600109",
+        "date": "2026-06-17",
         "total_pf": 34,
         "total_fta": 43
       },
       {
-        "game_id": "401856999",
-        "date": "2026-06-18",
+        "game_id": "1022600110",
+        "date": "2026-06-17",
         "total_pf": 45,
         "total_fta": 46
       },
       {
-        "game_id": "401857000",
-        "date": "2026-06-18",
+        "game_id": "1022600111",
+        "date": "2026-06-17",
         "total_pf": 32,
         "total_fta": 39
       },
       {
-        "game_id": "401857001",
-        "date": "2026-06-18",
+        "game_id": "1022600112",
+        "date": "2026-06-17",
         "total_pf": 36,
         "total_fta": 46
       },
       {
-        "game_id": "401857002",
+        "game_id": "1022600113",
         "date": "2026-06-18",
         "total_pf": 53,
         "total_fta": 64
       },
       {
-        "game_id": "401857003",
+        "game_id": "1022600114",
         "date": "2026-06-19",
         "total_pf": 36,
         "total_fta": 35
       },
       {
-        "game_id": "401857004",
+        "game_id": "1022600115",
         "date": "2026-06-19",
         "total_pf": 49,
         "total_fta": 52
       },
       {
-        "game_id": "401857005",
-        "date": "2026-06-20",
+        "game_id": "1022600116",
+        "date": "2026-06-19",
         "total_pf": 33,
         "total_fta": 40
       },
       {
-        "game_id": "401857006",
+        "game_id": "1022600117",
         "date": "2026-06-20",
         "total_pf": 53,
         "total_fta": 52
       },
       {
-        "game_id": "401857007",
+        "game_id": "1022600118",
         "date": "2026-06-20",
         "total_pf": 37,
         "total_fta": 43
       },
       {
-        "game_id": "401857008",
-        "date": "2026-06-21",
+        "game_id": "1022600119",
+        "date": "2026-06-20",
         "total_pf": 47,
         "total_fta": 50
       },
       {
-        "game_id": "401857009",
+        "game_id": "1022600120",
         "date": "2026-06-21",
         "total_pf": 33,
         "total_fta": 28
       },
       {
-        "game_id": "401857010",
+        "game_id": "1022600121",
         "date": "2026-06-21",
         "total_pf": 41,
         "total_fta": 43
       },
       {
-        "game_id": "401857011",
-        "date": "2026-06-22",
+        "game_id": "1022600122",
+        "date": "2026-06-21",
         "total_pf": 41,
         "total_fta": 31
       },
       {
-        "game_id": "401857012",
+        "game_id": "1022600123",
         "date": "2026-06-22",
         "total_pf": 50,
         "total_fta": 58
       },
       {
-        "game_id": "401857013",
+        "game_id": "1022600124",
         "date": "2026-06-22",
         "total_pf": 49,
         "total_fta": 49
       },
       {
-        "game_id": "401857014",
-        "date": "2026-06-23",
+        "game_id": "1022600125",
+        "date": "2026-06-22",
         "total_pf": 48,
         "total_fta": 50
       },
       {
-        "game_id": "401857015",
-        "date": "2026-06-23",
+        "game_id": "1022600126",
+        "date": "2026-06-22",
         "total_pf": 26,
         "total_fta": 30
       },
       {
-        "game_id": "401857016",
-        "date": "2026-06-24",
+        "game_id": "1022600127",
+        "date": "2026-06-23",
         "total_pf": 26,
         "total_fta": 24
       },
       {
-        "game_id": "401857017",
+        "game_id": "1022600128",
         "date": "2026-06-24",
         "total_pf": 48,
         "total_fta": 52
       },
       {
-        "game_id": "401857018",
+        "game_id": "1022600129",
         "date": "2026-06-24",
         "total_pf": 47,
         "total_fta": 49
       },
       {
-        "game_id": "401857019",
-        "date": "2026-06-25",
+        "game_id": "1022600130",
+        "date": "2026-06-24",
         "total_pf": 41,
         "total_fta": 49
       },
       {
-        "game_id": "401857020",
-        "date": "2026-06-25",
+        "game_id": "1022600131",
+        "date": "2026-06-24",
         "total_pf": 36,
         "total_fta": 34
       },
       {
-        "game_id": "401857021",
+        "game_id": "1022600132",
         "date": "2026-06-25",
         "total_pf": 46,
         "total_fta": 53
       },
       {
-        "game_id": "401857022",
-        "date": "2026-06-26",
+        "game_id": "1022600133",
+        "date": "2026-06-25",
         "total_pf": 45,
         "total_fta": 49
       },
       {
-        "game_id": "401857023",
-        "date": "2026-06-26",
+        "game_id": "1022600134",
+        "date": "2026-06-25",
         "total_pf": 36,
         "total_fta": 35
       },
       {
-        "game_id": "401857024",
+        "game_id": "1022600135",
         "date": "2026-06-26",
         "total_pf": 35,
         "total_fta": 35
       },
       {
-        "game_id": "401857025",
+        "game_id": "1022600136",
         "date": "2026-06-26",
         "total_pf": 42,
         "total_fta": 51
       },
       {
-        "game_id": "401857026",
-        "date": "2026-06-27",
+        "game_id": "1022600137",
+        "date": "2026-06-26",
         "total_pf": 43,
         "total_fta": 52
       },
       {
-        "game_id": "401857027",
+        "game_id": "1022600138",
         "date": "2026-06-27",
         "total_pf": 40,
         "total_fta": 41
       },
       {
-        "game_id": "401857028",
-        "date": "2026-06-28",
+        "game_id": "1022600139",
+        "date": "2026-06-27",
         "total_pf": 47,
         "total_fta": 54
       },
       {
-        "game_id": "401857029",
-        "date": "2026-06-28",
+        "game_id": "1022600140",
+        "date": "2026-06-27",
         "total_pf": 39,
         "total_fta": 46
       },
       {
-        "game_id": "401857030",
+        "game_id": "1022600141",
         "date": "2026-06-28",
         "total_pf": 30,
         "total_fta": 32
       },
       {
-        "game_id": "401857031",
+        "game_id": "1022600142",
         "date": "2026-06-28",
         "total_pf": 62,
         "total_fta": 62
       },
       {
-        "game_id": "401857032",
+        "game_id": "1022600143",
         "date": "2026-06-28",
         "total_pf": 47,
         "total_fta": 62
       },
       {
-        "game_id": "401857033",
+        "game_id": "1022600144",
         "date": "2026-06-28",
         "total_pf": 45,
         "total_fta": 39
       },
       {
-        "game_id": "401857321",
-        "date": "2026-06-30",
-        "total_pf": 43,
-        "total_fta": 43
-      },
-      {
-        "game_id": "401857034",
+        "game_id": "1022600145",
         "date": "2026-07-02",
         "total_pf": 45,
         "total_fta": 37
       },
       {
-        "game_id": "401857035",
-        "date": "2026-07-03",
+        "game_id": "1022600146",
+        "date": "2026-07-02",
         "total_pf": 48,
         "total_fta": 51
       },
       {
-        "game_id": "401857036",
-        "date": "2026-07-03",
+        "game_id": "1022600147",
+        "date": "2026-07-02",
         "total_pf": 30,
         "total_fta": 31
       },
       {
-        "game_id": "401857037",
+        "game_id": "1022600148",
         "date": "2026-07-03",
         "total_pf": 28,
         "total_fta": 27
       },
       {
-        "game_id": "401857038",
-        "date": "2026-07-04",
+        "game_id": "1022600149",
+        "date": "2026-07-03",
         "total_pf": 48,
         "total_fta": 61
       },
       {
-        "game_id": "401857039",
+        "game_id": "1022600150",
         "date": "2026-07-04",
         "total_pf": 48,
         "total_fta": 50
       },
       {
-        "game_id": "401857040",
-        "date": "2026-07-05",
+        "game_id": "1022600151",
+        "date": "2026-07-04",
         "total_pf": 41,
         "total_fta": 43
       },
       {
-        "game_id": "401857041",
+        "game_id": "1022600152",
         "date": "2026-07-05",
         "total_pf": 36,
         "total_fta": 28
       },
       {
-        "game_id": "401857042",
+        "game_id": "1022600153",
         "date": "2026-07-05",
         "total_pf": 37,
         "total_fta": 45
       },
       {
-        "game_id": "401857043",
+        "game_id": "1022600154",
         "date": "2026-07-06",
         "total_pf": 29,
         "total_fta": 19
       },
       {
-        "game_id": "401857044",
-        "date": "2026-07-07",
+        "game_id": "1022600155",
+        "date": "2026-07-06",
         "total_pf": 43,
         "total_fta": 48
       },
       {
-        "game_id": "401857045",
-        "date": "2026-07-07",
+        "game_id": "1022600156",
+        "date": "2026-07-06",
         "total_pf": 33,
         "total_fta": 29
       },
       {
-        "game_id": "401857046",
-        "date": "2026-07-08",
+        "game_id": "1022600157",
+        "date": "2026-07-07",
         "total_pf": 35,
         "total_fta": 34
       },
       {
-        "game_id": "401857047",
-        "date": "2026-07-08",
+        "game_id": "1022600158",
+        "date": "2026-07-07",
         "total_pf": 42,
         "total_fta": 44
       },
       {
-        "game_id": "401857048",
+        "game_id": "1022600159",
         "date": "2026-07-08",
         "total_pf": 40,
         "total_fta": 43
       },
       {
-        "game_id": "401857049",
+        "game_id": "1022600160",
         "date": "2026-07-08",
         "total_pf": 40,
         "total_fta": 54
       },
       {
-        "game_id": "401857050",
-        "date": "2026-07-09",
+        "game_id": "1022600161",
+        "date": "2026-07-08",
         "total_pf": 40,
         "total_fta": 41
       },
       {
-        "game_id": "401857051",
-        "date": "2026-07-10",
+        "game_id": "1022600162",
+        "date": "2026-07-09",
         "total_pf": 38,
         "total_fta": 45
       },
       {
-        "game_id": "401857052",
-        "date": "2026-07-10",
+        "game_id": "1022600163",
+        "date": "2026-07-09",
         "total_pf": 30,
         "total_fta": 20
       },
       {
-        "game_id": "401857053",
-        "date": "2026-07-10",
+        "game_id": "1022600164",
+        "date": "2026-07-09",
         "total_pf": 36,
         "total_fta": 42
       },
       {
-        "game_id": "401857054",
+        "game_id": "1022600165",
         "date": "2026-07-10",
         "total_pf": 41,
         "total_fta": 30
       },
       {
-        "game_id": "401857055",
+        "game_id": "1022600166",
         "date": "2026-07-10",
         "total_pf": 36,
         "total_fta": 35
       },
       {
-        "game_id": "401857056",
-        "date": "2026-07-11",
+        "game_id": "1022600167",
+        "date": "2026-07-10",
         "total_pf": 40,
         "total_fta": 37
       },
       {
-        "game_id": "401857057",
+        "game_id": "1022600168",
         "date": "2026-07-11",
         "total_pf": 34,
         "total_fta": 32
       },
       {
-        "game_id": "401857059",
-        "date": "2026-07-11",
-        "total_pf": 49,
-        "total_fta": 43
-      },
-      {
-        "game_id": "401857058",
+        "game_id": "1022600169",
         "date": "2026-07-11",
         "total_pf": 30,
         "total_fta": 24
       },
       {
-        "game_id": "401857060",
+        "game_id": "1022600170",
+        "date": "2026-07-11",
+        "total_pf": 49,
+        "total_fta": 43
+      },
+      {
+        "game_id": "1022600171",
         "date": "2026-07-12",
         "total_pf": 47,
         "total_fta": 40
       },
       {
-        "game_id": "401857061",
+        "game_id": "1022600172",
         "date": "2026-07-12",
         "total_pf": 42,
         "total_fta": 41
       },
       {
-        "game_id": "401857062",
+        "game_id": "1022600173",
         "date": "2026-07-12",
         "total_pf": 29,
         "total_fta": 32
       },
       {
-        "game_id": "401857063",
-        "date": "2026-07-13",
+        "game_id": "1022600174",
+        "date": "2026-07-12",
         "total_pf": 36,
         "total_fta": 39
       },
       {
-        "game_id": "401857064",
+        "game_id": "1022600175",
         "date": "2026-07-13",
         "total_pf": 40,
         "total_fta": 39
       },
       {
-        "game_id": "401857065",
-        "date": "2026-07-14",
+        "game_id": "1022600176",
+        "date": "2026-07-13",
         "total_pf": 39,
         "total_fta": 47
       },
       {
-        "game_id": "401857066",
+        "game_id": "1022600177",
         "date": "2026-07-14",
         "total_pf": 35,
         "total_fta": 41
       },
       {
-        "game_id": "401857067",
+        "game_id": "1022600178",
         "date": "2026-07-14",
         "total_pf": 39,
         "total_fta": 29
       },
       {
-        "game_id": "401857068",
+        "game_id": "1022600179",
         "date": "2026-07-15",
         "total_pf": 34,
         "total_fta": 42
       },
       {
-        "game_id": "401857069",
+        "game_id": "1022600180",
         "date": "2026-07-15",
         "total_pf": 34,
         "total_fta": 43
       },
       {
-        "game_id": "401857070",
-        "date": "2026-07-16",
+        "game_id": "1022600181",
+        "date": "2026-07-15",
         "total_pf": 35,
         "total_fta": 39
       },
       {
-        "game_id": "401857071",
+        "game_id": "1022600182",
         "date": "2026-07-16",
         "total_pf": 41,
         "total_fta": 32
       },
       {
-        "game_id": "401857073",
+        "game_id": "1022600184",
         "date": "2026-07-17",
         "total_pf": 41,
         "total_fta": 49
       },
       {
-        "game_id": "401857074",
+        "game_id": "1022600185",
         "date": "2026-07-17",
         "total_pf": 49,
         "total_fta": 53
       },
       {
-        "game_id": "401857075",
+        "game_id": "1022600186",
         "date": "2026-07-17",
         "total_pf": 39,
         "total_fta": 39
       },
       {
-        "game_id": "401857076",
-        "date": "2026-07-18",
+        "game_id": "1022600187",
+        "date": "2026-07-17",
         "total_pf": 39,
         "total_fta": 46
       },
       {
-        "game_id": "401857077",
-        "date": "2026-07-19",
+        "game_id": "1022600188",
+        "date": "2026-07-18",
         "total_pf": 48,
         "total_fta": 52
       },
       {
-        "game_id": "401857078",
-        "date": "2026-07-19",
+        "game_id": "1022600189",
+        "date": "2026-07-18",
         "total_pf": 25,
         "total_fta": 20
       },
       {
-        "game_id": "401857079",
-        "date": "2026-07-19",
+        "game_id": "1022600190",
+        "date": "2026-07-18",
         "total_pf": 33,
         "total_fta": 31
       },
       {
-        "game_id": "401857080",
+        "game_id": "1022600191",
         "date": "2026-07-19",
         "total_pf": 44,
         "total_fta": 30
       },
       {
-        "game_id": "401857081",
+        "game_id": "1022600192",
         "date": "2026-07-19",
         "total_pf": 39,
         "total_fta": 48
       },
       {
-        "game_id": "401857082",
+        "game_id": "1022600193",
         "date": "2026-07-19",
         "total_pf": 42,
         "total_fta": 42
       },
       {
-        "game_id": "401857083",
-        "date": "2026-07-21",
-        "total_pf": 25,
-        "total_fta": 25
-      },
-      {
-        "game_id": "401892393",
-        "date": "2026-07-21",
+        "game_id": "1022600183",
+        "date": "2026-07-20",
         "total_pf": 43,
         "total_fta": 42
       },
       {
-        "game_id": "401857084",
-        "date": "2026-07-21",
+        "game_id": "1022600194",
+        "date": "2026-07-20",
+        "total_pf": 25,
+        "total_fta": 25
+      },
+      {
+        "game_id": "1022600195",
+        "date": "2026-07-20",
         "total_pf": 29,
         "total_fta": 32
       },
       {
-        "game_id": "401857085",
-        "date": "2026-07-21",
+        "game_id": "1022600196",
+        "date": "2026-07-20",
         "total_pf": 33,
         "total_fta": 44
       },
       {
-        "game_id": "401857086",
+        "game_id": "1022600197",
         "date": "2026-07-22",
         "total_pf": 44,
         "total_fta": 34
       },
       {
-        "game_id": "401857087",
+        "game_id": "1022600198",
         "date": "2026-07-22",
         "total_pf": 25,
         "total_fta": 32
       },
       {
-        "game_id": "401857088",
+        "game_id": "1022600199",
         "date": "2026-07-22",
         "total_pf": 36,
         "total_fta": 49
       },
       {
-        "game_id": "401857089",
+        "game_id": "1022600200",
         "date": "2026-07-22",
         "total_pf": 47,
         "total_fta": 60
       },
       {
-        "game_id": "401857090",
-        "date": "2026-07-23",
+        "game_id": "1022600201",
+        "date": "2026-07-22",
         "total_pf": 43,
         "total_fta": 42
       },
       {
-        "game_id": "401857091",
-        "date": "2026-07-23",
+        "game_id": "1022600202",
+        "date": "2026-07-22",
         "total_pf": 39,
         "total_fta": 41
       },
       {
-        "game_id": "401857320",
-        "date": "2026-07-26",
-        "total_pf": 10,
-        "total_fta": 5
-      },
-      {
-        "game_id": "401857092",
+        "game_id": "1022600203",
         "date": "2026-07-28",
         "total_pf": 43,
         "total_fta": 51
       },
       {
-        "game_id": "401857093",
-        "date": "2026-07-29",
+        "game_id": "1022600204",
+        "date": "2026-07-28",
         "total_pf": 38,
         "total_fta": 33
       },
       {
-        "game_id": "401857094",
-        "date": "2026-07-29",
+        "game_id": "1022600205",
+        "date": "2026-07-28",
         "total_pf": 43,
         "total_fta": 53
       },
       {
-        "game_id": "401857095",
-        "date": "2026-07-29",
+        "game_id": "1022600206",
+        "date": "2026-07-28",
         "total_pf": 44,
         "total_fta": 51
       },
       {
-        "game_id": "401857096",
-        "date": "2026-07-29",
+        "game_id": "1022600207",
+        "date": "2026-07-28",
         "total_pf": 30,
         "total_fta": 23
       },
       {
-        "game_id": "401857097",
-        "date": "2026-07-30",
+        "game_id": "1022600208",
+        "date": "2026-07-29",
         "total_pf": 39,
         "total_fta": 39
       },
       {
-        "game_id": "401857098",
-        "date": "2026-07-30",
+        "game_id": "1022600209",
+        "date": "2026-07-29",
         "total_pf": 57,
         "total_fta": 62
       },
       {
-        "game_id": "401857099",
-        "date": "2026-07-31",
+        "game_id": "1022600210",
+        "date": "2026-07-30",
         "total_pf": 25,
         "total_fta": 24
       },
       {
-        "game_id": "401857100",
-        "date": "2026-07-31",
+        "game_id": "1022600211",
+        "date": "2026-07-30",
         "total_pf": 43,
         "total_fta": 50
       },
       {
-        "game_id": "401857101",
-        "date": "2026-07-31",
+        "game_id": "1022600212",
+        "date": "2026-07-30",
         "total_pf": 41,
         "total_fta": 52
       },
       {
-        "game_id": "401857102",
+        "game_id": "1022600213",
         "date": "2026-07-31",
         "total_pf": 45,
         "total_fta": 69
       },
       {
-        "game_id": "401857103",
+        "game_id": "1022600214",
         "date": "2026-07-31",
         "total_pf": 38,
         "total_fta": 44
       },
       {
-        "game_id": "401857104",
-        "date": "2026-08-01",
+        "game_id": "1022600215",
+        "date": "2026-07-31",
         "total_pf": 45,
         "total_fta": 52
       },
       {
-        "game_id": "401857105",
+        "game_id": "1022600216",
         "date": "2026-08-01",
         "total_pf": 39,
         "total_fta": 40
       },
       {
-        "game_id": "401857106",
+        "game_id": "1022600217",
         "date": "2026-08-01",
         "total_pf": 44,
         "total_fta": 47
       },
       {
-        "game_id": "401857107",
+        "game_id": "1022600218",
         "date": "2026-08-02",
         "total_pf": 31,
         "total_fta": 30
       },
       {
-        "game_id": "401857108",
+        "game_id": "1022600219",
         "date": "2026-08-02",
         "total_pf": 37,
         "total_fta": 32
       },
       {
-        "game_id": "401857109",
+        "game_id": "1022600220",
         "date": "2026-08-02",
         "total_pf": 33,
         "total_fta": 25
       },
       {
-        "game_id": "401857110",
-        "date": "2026-08-03",
+        "game_id": "1022600221",
+        "date": "2026-08-02",
         "total_pf": 41,
         "total_fta": 37
       },
       {
-        "game_id": "401857111",
+        "game_id": "1022600222",
         "date": "2026-08-03",
         "total_pf": 30,
         "total_fta": 34
       },
       {
-        "game_id": "401857112",
+        "game_id": "1022600223",
         "date": "2026-08-03",
         "total_pf": 32,
         "total_fta": 35
       },
       {
-        "game_id": "401857113",
-        "date": "2026-08-04",
+        "game_id": "1022600224",
+        "date": "2026-08-03",
         "total_pf": 47,
         "total_fta": 65
+      },
+      {
+        "game_id": "1022600225",
+        "date": "2026-08-04",
+        "total_pf": 33,
+        "total_fta": 38
+      },
+      {
+        "game_id": "1022600226",
+        "date": "2026-08-05",
+        "total_pf": 35,
+        "total_fta": 43
+      },
+      {
+        "game_id": "1022600227",
+        "date": "2026-08-05",
+        "total_pf": 32,
+        "total_fta": 32
+      },
+      {
+        "game_id": "1022600228",
+        "date": "2026-08-05",
+        "total_pf": 47,
+        "total_fta": 47
+      },
+      {
+        "game_id": "1022600229",
+        "date": "2026-08-05",
+        "total_pf": 37,
+        "total_fta": 39
+      },
+      {
+        "game_id": "1022600230",
+        "date": "2026-08-06",
+        "total_pf": 40,
+        "total_fta": 34
+      },
+      {
+        "game_id": "1022600231",
+        "date": "2026-08-06",
+        "total_pf": 35,
+        "total_fta": 29
+      },
+      {
+        "game_id": "1022600232",
+        "date": "2026-08-06",
+        "total_pf": 40,
+        "total_fta": 48
+      },
+      {
+        "game_id": "1022600233",
+        "date": "2026-08-07",
+        "total_pf": 45,
+        "total_fta": 43
+      },
+      {
+        "game_id": "1022600234",
+        "date": "2026-08-07",
+        "total_pf": 56,
+        "total_fta": 61
+      },
+      {
+        "game_id": "1022600235",
+        "date": "2026-08-07",
+        "total_pf": 39,
+        "total_fta": 56
+      },
+      {
+        "game_id": "1022600236",
+        "date": "2026-08-08",
+        "total_pf": 31,
+        "total_fta": 28
+      },
+      {
+        "game_id": "1022600237",
+        "date": "2026-08-08",
+        "total_pf": 40,
+        "total_fta": 36
+      },
+      {
+        "game_id": "1022600238",
+        "date": "2026-08-08",
+        "total_pf": 38,
+        "total_fta": 39
+      },
+      {
+        "game_id": "1022600239",
+        "date": "2026-08-09",
+        "total_pf": 31,
+        "total_fta": 35
+      },
+      {
+        "game_id": "1022600240",
+        "date": "2026-08-09",
+        "total_pf": 32,
+        "total_fta": 27
+      },
+      {
+        "game_id": "1022600241",
+        "date": "2026-08-09",
+        "total_pf": 20,
+        "total_fta": 20
+      },
+      {
+        "game_id": "1022600242",
+        "date": "2026-08-09",
+        "total_pf": 33,
+        "total_fta": 18
+      },
+      {
+        "game_id": "1022600243",
+        "date": "2026-08-10",
+        "total_pf": 42,
+        "total_fta": 51
+      },
+      {
+        "game_id": "1022600244",
+        "date": "2026-08-10",
+        "total_pf": 42,
+        "total_fta": 56
+      },
+      {
+        "game_id": "1022600245",
+        "date": "2026-08-11",
+        "total_pf": 35,
+        "total_fta": 32
+      },
+      {
+        "game_id": "1022600246",
+        "date": "2026-08-11",
+        "total_pf": 32,
+        "total_fta": 32
+      },
+      {
+        "game_id": "1022600247",
+        "date": "2026-08-11",
+        "total_pf": 48,
+        "total_fta": 52
+      },
+      {
+        "game_id": "1022600248",
+        "date": "2026-08-12",
+        "total_pf": 44,
+        "total_fta": 44
+      },
+      {
+        "game_id": "1022600249",
+        "date": "2026-08-12",
+        "total_pf": 33,
+        "total_fta": 39
+      },
+      {
+        "game_id": "1022600250",
+        "date": "2026-08-12",
+        "total_pf": 35,
+        "total_fta": 42
+      },
+      {
+        "game_id": "1022600251",
+        "date": "2026-08-13",
+        "total_pf": 47,
+        "total_fta": 61
+      },
+      {
+        "game_id": "1022600252",
+        "date": "2026-08-13",
+        "total_pf": 38,
+        "total_fta": 31
+      },
+      {
+        "game_id": "1022600253",
+        "date": "2026-08-13",
+        "total_pf": 42,
+        "total_fta": 43
+      },
+      {
+        "game_id": "1022600254",
+        "date": "2026-08-14",
+        "total_pf": 40,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600255",
+        "date": "2026-08-14",
+        "total_pf": 35,
+        "total_fta": 34
+      },
+      {
+        "game_id": "1022600256",
+        "date": "2026-08-15",
+        "total_pf": 38,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600257",
+        "date": "2026-08-15",
+        "total_pf": 35,
+        "total_fta": 28
+      },
+      {
+        "game_id": "1022600258",
+        "date": "2026-08-15",
+        "total_pf": 36,
+        "total_fta": 36
+      },
+      {
+        "game_id": "1022600259",
+        "date": "2026-08-16",
+        "total_pf": 41,
+        "total_fta": 47
+      },
+      {
+        "game_id": "1022600260",
+        "date": "2026-08-16",
+        "total_pf": 43,
+        "total_fta": 46
+      },
+      {
+        "game_id": "1022600261",
+        "date": "2026-08-16",
+        "total_pf": 43,
+        "total_fta": 49
+      },
+      {
+        "game_id": "1022600262",
+        "date": "2026-08-17",
+        "total_pf": 30,
+        "total_fta": 29
+      },
+      {
+        "game_id": "1022600263",
+        "date": "2026-08-18",
+        "total_pf": 34,
+        "total_fta": 34
+      },
+      {
+        "game_id": "1022600264",
+        "date": "2026-08-18",
+        "total_pf": 42,
+        "total_fta": 39
+      },
+      {
+        "game_id": "1022600265",
+        "date": "2026-08-18",
+        "total_pf": 33,
+        "total_fta": 35
+      },
+      {
+        "game_id": "1022600266",
+        "date": "2026-08-18",
+        "total_pf": 44,
+        "total_fta": 52
+      },
+      {
+        "game_id": "1022600267",
+        "date": "2026-08-19",
+        "total_pf": 41,
+        "total_fta": 51
+      },
+      {
+        "game_id": "1022600268",
+        "date": "2026-08-19",
+        "total_pf": 36,
+        "total_fta": 27
+      },
+      {
+        "game_id": "1022600269",
+        "date": "2026-08-20",
+        "total_pf": 42,
+        "total_fta": 53
+      },
+      {
+        "game_id": "1022600270",
+        "date": "2026-08-20",
+        "total_pf": 40,
+        "total_fta": 40
+      },
+      {
+        "game_id": "1022600271",
+        "date": "2026-08-20",
+        "total_pf": 43,
+        "total_fta": 48
+      },
+      {
+        "game_id": "1022600272",
+        "date": "2026-08-21",
+        "total_pf": 27,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600273",
+        "date": "2026-08-21",
+        "total_pf": 37,
+        "total_fta": 38
+      },
+      {
+        "game_id": "1022600274",
+        "date": "2026-08-21",
+        "total_pf": 49,
+        "total_fta": 50
+      },
+      {
+        "game_id": "1022600275",
+        "date": "2026-08-22",
+        "total_pf": 47,
+        "total_fta": 51
+      },
+      {
+        "game_id": "1022600276",
+        "date": "2026-08-22",
+        "total_pf": 43,
+        "total_fta": 37
+      },
+      {
+        "game_id": "1022600277",
+        "date": "2026-08-22",
+        "total_pf": 42,
+        "total_fta": 41
+      },
+      {
+        "game_id": "1022600278",
+        "date": "2026-08-23",
+        "total_pf": 28,
+        "total_fta": 26
+      },
+      {
+        "game_id": "1022600279",
+        "date": "2026-08-23",
+        "total_pf": 35,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600280",
+        "date": "2026-08-23",
+        "total_pf": 41,
+        "total_fta": 59
+      },
+      {
+        "game_id": "1022600281",
+        "date": "2026-08-23",
+        "total_pf": 36,
+        "total_fta": 32
+      },
+      {
+        "game_id": "1022600282",
+        "date": "2026-08-24",
+        "total_pf": 27,
+        "total_fta": 26
+      },
+      {
+        "game_id": "1022600283",
+        "date": "2026-08-24",
+        "total_pf": 37,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600284",
+        "date": "2026-08-25",
+        "total_pf": 34,
+        "total_fta": 45
+      },
+      {
+        "game_id": "1022600285",
+        "date": "2026-08-25",
+        "total_pf": 32,
+        "total_fta": 30
+      },
+      {
+        "game_id": "1022600286",
+        "date": "2026-08-25",
+        "total_pf": 40,
+        "total_fta": 37
+      },
+      {
+        "game_id": "1022600287",
+        "date": "2026-08-26",
+        "total_pf": 42,
+        "total_fta": 39
+      },
+      {
+        "game_id": "1022600288",
+        "date": "2026-08-26",
+        "total_pf": 34,
+        "total_fta": 46
+      },
+      {
+        "game_id": "1022600289",
+        "date": "2026-08-27",
+        "total_pf": 29,
+        "total_fta": 27
+      },
+      {
+        "game_id": "1022600290",
+        "date": "2026-08-27",
+        "total_pf": 41,
+        "total_fta": 37
+      },
+      {
+        "game_id": "1022600291",
+        "date": "2026-08-28",
+        "total_pf": 40,
+        "total_fta": 38
+      },
+      {
+        "game_id": "1022600292",
+        "date": "2026-08-28",
+        "total_pf": 40,
+        "total_fta": 45
+      },
+      {
+        "game_id": "1022600293",
+        "date": "2026-08-28",
+        "total_pf": 36,
+        "total_fta": 34
+      },
+      {
+        "game_id": "1022600294",
+        "date": "2026-08-28",
+        "total_pf": 32,
+        "total_fta": 31
+      },
+      {
+        "game_id": "1022600295",
+        "date": "2026-08-29",
+        "total_pf": 43,
+        "total_fta": 40
+      },
+      {
+        "game_id": "1022600296",
+        "date": "2026-08-29",
+        "total_pf": 31,
+        "total_fta": 36
+      },
+      {
+        "game_id": "1022600297",
+        "date": "2026-08-30",
+        "total_pf": 28,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600298",
+        "date": "2026-08-30",
+        "total_pf": 35,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600299",
+        "date": "2026-08-30",
+        "total_pf": 29,
+        "total_fta": 34
+      },
+      {
+        "game_id": "1022600300",
+        "date": "2026-08-30",
+        "total_pf": 43,
+        "total_fta": 52
+      },
+      {
+        "game_id": "1022600301",
+        "date": "2026-09-17",
+        "total_pf": 32,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600302",
+        "date": "2026-09-17",
+        "total_pf": 40,
+        "total_fta": 51
+      },
+      {
+        "game_id": "1022600303",
+        "date": "2026-09-17",
+        "total_pf": 28,
+        "total_fta": 33
+      },
+      {
+        "game_id": "1022600304",
+        "date": "2026-09-17",
+        "total_pf": 49,
+        "total_fta": 58
+      },
+      {
+        "game_id": "1022600305",
+        "date": "2026-09-17",
+        "total_pf": 42,
+        "total_fta": 43
+      },
+      {
+        "game_id": "1022600306",
+        "date": "2026-09-18",
+        "total_pf": 42,
+        "total_fta": 50
+      },
+      {
+        "game_id": "1022600307",
+        "date": "2026-09-18",
+        "total_pf": 45,
+        "total_fta": 36
+      },
+      {
+        "game_id": "1022600308",
+        "date": "2026-09-18",
+        "total_pf": 33,
+        "total_fta": 34
+      },
+      {
+        "game_id": "1022600309",
+        "date": "2026-09-19",
+        "total_pf": 43,
+        "total_fta": 47
+      },
+      {
+        "game_id": "1022600310",
+        "date": "2026-09-19",
+        "total_pf": 39,
+        "total_fta": 46
+      },
+      {
+        "game_id": "1022600311",
+        "date": "2026-09-19",
+        "total_pf": 32,
+        "total_fta": 22
+      },
+      {
+        "game_id": "1022600312",
+        "date": "2026-09-20",
+        "total_pf": 42,
+        "total_fta": 46
+      },
+      {
+        "game_id": "1022600313",
+        "date": "2026-09-20",
+        "total_pf": 41,
+        "total_fta": 31
+      },
+      {
+        "game_id": "1022600314",
+        "date": "2026-09-20",
+        "total_pf": 44,
+        "total_fta": 36
+      },
+      {
+        "game_id": "1022600315",
+        "date": "2026-09-20",
+        "total_pf": 53,
+        "total_fta": 60
+      },
+      {
+        "game_id": "1022600316",
+        "date": "2026-09-20",
+        "total_pf": 40,
+        "total_fta": 47
+      },
+      {
+        "game_id": "1022600317",
+        "date": "2026-09-21",
+        "total_pf": 41,
+        "total_fta": 53
+      },
+      {
+        "game_id": "1022600318",
+        "date": "2026-09-21",
+        "total_pf": 38,
+        "total_fta": 51
+      },
+      {
+        "game_id": "1022600319",
+        "date": "2026-09-22",
+        "total_pf": 37,
+        "total_fta": 37
+      },
+      {
+        "game_id": "1022600320",
+        "date": "2026-09-22",
+        "total_pf": 44,
+        "total_fta": 42
+      },
+      {
+        "game_id": "1022600321",
+        "date": "2026-09-22",
+        "total_pf": 30,
+        "total_fta": 23
+      },
+      {
+        "game_id": "1022600322",
+        "date": "2026-09-22",
+        "total_pf": 29,
+        "total_fta": 25
+      },
+      {
+        "game_id": "1022600323",
+        "date": "2026-09-22",
+        "total_pf": 54,
+        "total_fta": 53
+      },
+      {
+        "game_id": "1022600324",
+        "date": "2026-09-23",
+        "total_pf": 37,
+        "total_fta": 37
+      },
+      {
+        "game_id": "1022600325",
+        "date": "2026-09-23",
+        "total_pf": 34,
+        "total_fta": 42
+      },
+      {
+        "game_id": "1022600326",
+        "date": "2026-09-24",
+        "total_pf": 39,
+        "total_fta": 47
+      },
+      {
+        "game_id": "1022600327",
+        "date": "2026-09-24",
+        "total_pf": 39,
+        "total_fta": 52
+      },
+      {
+        "game_id": "1022600328",
+        "date": "2026-09-24",
+        "total_pf": 31,
+        "total_fta": 26
+      },
+      {
+        "game_id": "1022600329",
+        "date": "2026-09-24",
+        "total_pf": 38,
+        "total_fta": 36
+      },
+      {
+        "game_id": "1022600330",
+        "date": "2026-09-24",
+        "total_pf": 22,
+        "total_fta": 23
       }
     ]
   }
