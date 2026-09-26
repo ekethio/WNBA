@@ -621,6 +621,16 @@ function showTendencies(name) {
     </div>`;
 }
 
+// Share of a team's home/road gap beyond the league's that is credited to its home court.
+// The rest is treated as extra road penalty. Every team starts from the league HCA, so the
+// league still reconciles (each home edge is some visitor's road penalty).
+let hcaShare = 0.5;
+function hcaSplit(c) {
+  const excess = 2 * (c.hca - c.league);           // (home margin - road margin) - 2 x league HCA
+  const home = c.league + hcaShare * excess, road = c.league + (1 - hcaShare) * excess;
+  return { home, road, vsLeague: hcaShare * excess, neutral: c.road_margin + road };
+}
+
 function renderHCA() {
   const Q = statsData.quarters;
   const rows = Object.entries(Q.teams).filter(([, d]) => d.hca && d.hca.Game).sort((a, b) => b[1].hca.Game.hca - a[1].hca.Game.hca);
@@ -628,29 +638,40 @@ function renderHCA() {
   const lg = rows[0][1].hca;
   const cell = (c, sep) => {
     if (!c) return `<td class="${sep ? 'vsep' : ''}">—</td>`;
-    const f = flagClass(c);
-    const tip = `home margin ${sgn(c.home_margin)} · road ${sgn(c.road_margin)} · league ${sgn(c.league, 2)} · ${c.n_home} home / ${c.n_road} road · p = ${c.p}`;
-    return `<td class="${sep ? 'vsep ' : ''}${f}" title="${tip}"><span class="${!f ? (c.delta > 0.05 ? 'pos' : c.delta < -0.05 ? 'neg' : '') : ''}">${sgn(c.delta)}</span></td>`;
+    const f = flagClass(c), v = hcaSplit(c).vsLeague;
+    const tip = `home margin ${sgn(c.home_margin)} · road ${sgn(c.road_margin)} · league HCA ${sgn(c.league, 2)} · ${c.n_home} home / ${c.n_road} road · p = ${c.p}`;
+    return `<td class="${sep ? 'vsep ' : ''}${f}" title="${tip}"><span class="${!f ? (v > 0.05 ? 'pos' : v < -0.05 ? 'neg' : '') : ''}">${sgn(v)}</span></td>`;
   };
+  const opt = (w, label) => `<option value="${w}"${w === hcaShare ? ' selected' : ''}>${label}</option>`;
   document.getElementById('hca-output').innerHTML = `
     <div class="info-box" style="margin-bottom:12px">
-      <strong>HCA</strong> is half the gap between a team's average home margin and its average road margin (the usual definition: the edge each
-      venue gives, so a home favorite's line moves by 2 × HCA from home to road). The <strong>vs league</strong> columns show how much bigger or
-      smaller that edge is than the league's, overall and by period. Schedules are close to balanced, so opponent strength mostly cancels out, but not entirely.
+      Every team starts from the league HCA (${sgn(lg.Game.league, 2)} per game: the average home team's margin over a neutral court).
+      Whatever a team's home/road gap adds beyond the league's is split between a bigger <strong>home edge</strong> and a bigger
+      <strong>road penalty</strong> by the share you choose. <strong>50%</strong> splits it evenly. <strong>100%</strong> credits all of it to the
+      home court and assumes the team faces a normal host edge on the road. <strong>Neutral</strong> is the team's margin against an average team
+      on a neutral court under that split. Share choice doesn't change the p-values, only the size of the numbers.
+      Schedules are close to balanced, so opponent strength mostly cancels out, but not entirely.
+    </div>
+    <div class="detail-picker">
+      <label for="hca-w">Credit to home court</label>
+      <select id="hca-w" onchange="hcaShare=parseFloat(this.value);renderHCA();renderStandouts()" style="min-width:90px">
+        ${opt(0.5, '50%')}${opt(0.75, '75%')}${opt(1, '100%')}
+      </select>
     </div>
     <div class="splits-card"><div class="detail-table tend-table"><table>
       <thead>
-        <tr class="grp"><th></th><th colspan="4" class="vsep">Full game</th><th colspan="6" class="vsep">HCA vs league, by period</th></tr>
-        <tr><th style="text-align:left">Team</th><th class="vsep">Home margin</th><th>Road margin</th><th>HCA</th><th>vs league</th>
+        <tr class="grp"><th></th><th colspan="6" class="vsep">Full game</th><th colspan="6" class="vsep">Home edge vs league, by period</th></tr>
+        <tr><th style="text-align:left">Team</th><th class="vsep">Home margin</th><th>Road margin</th><th>Home edge</th><th>Road penalty</th><th>Neutral</th><th>vs league</th>
           ${HCA_SEGS.slice(1).map((s, i) => `<th class="${i===0?'vsep':''}">${s}</th>`).join('')}</tr>
       </thead>
       <tbody>${rows.map(([name, d]) => {
-        const g = d.hca.Game;
+        const g = d.hca.Game, x = hcaSplit(g);
         return `<tr><td>${name}</td><td class="vsep">${sgn(g.home_margin)}</td><td>${sgn(g.road_margin)}</td>
-          <td style="font-weight:700">${sgn(g.hca, 2)}</td>${cell(g, false)}
+          <td style="font-weight:700">${sgn(x.home, 2)}</td><td>${sgn(x.road, 2)}</td><td>${sgn(x.neutral)}</td>${cell(g, false)}
           ${HCA_SEGS.slice(1).map((s, i) => cell(d.hca[s], i === 0)).join('')}</tr>`;
       }).join('')}
-        <tr class="avg-row"><td>League HCA</td><td class="vsep">${sgn(lg.Game.league)}</td><td>${sgn(-lg.Game.league)}</td><td>${sgn(lg.Game.league, 2)}</td><td>—</td>
+        <tr class="avg-row"><td>League</td><td class="vsep">${sgn(lg.Game.league)}</td><td>${sgn(-lg.Game.league)}</td><td>${sgn(lg.Game.league, 2)}</td>
+          <td>${sgn(lg.Game.league, 2)}</td><td>0.0</td><td>—</td>
           ${HCA_SEGS.slice(1).map((s, i) => `<td class="${i===0?'vsep':''}">${lg[s] ? sgn(lg[s].league, 2) : '—'}</td>`).join('')}</tr>
       </tbody>
     </table></div></div>`;
@@ -659,10 +680,11 @@ function renderHCA() {
 function tendSentence(s) {
   const pv = `<span class="sig">p = ${s.p}</span>`;
   if (s.kind === 'hca') {
-    const where = s.seg === 'Game' ? '' : ` in ${s.seg}`;
+    const where = s.seg === 'Game' ? '' : ` in ${s.seg}`, x = hcaSplit(s);
     return `<div class="tend-item"><b>${s.team}</b> · Home-court advantage${where} ${s.delta > 0 ? 'bigger' : 'smaller'} than the league's<br>
-      Home margin ${sgn(s.home_margin)} vs road ${sgn(s.road_margin)}, so HCA ${sgn(s.hca, 2)} vs league ${sgn(s.league, 2)}:
-      <b style="font-size:14px;color:var(--accent2)">${sgn(s.delta)}</b>. <span class="sig">${s.n_home} home / ${s.n_road} road games ·</span> ${pv}</div>`;
+      Home margin ${sgn(s.home_margin)} vs road ${sgn(s.road_margin)}. With ${Math.round(hcaShare*100)}% credited to home, home edge ${sgn(x.home, 2)}
+      vs league ${sgn(s.league, 2)}: <b style="font-size:14px;color:var(--accent2)">${sgn(x.vsLeague)}</b>.
+      <span class="sig">${s.n_home} home / ${s.n_road} road games ·</span> ${pv}</div>`;
   }
   const where = VENUE_TXT[s.venue];
   const up = s.delta > 0;
