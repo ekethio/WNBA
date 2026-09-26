@@ -1,7 +1,7 @@
 import json
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 
 from nba_api.stats.endpoints import leaguegamelog
 
@@ -349,7 +349,7 @@ for i in range(0, len(fouls_seq), 30):
 print("  " + str(len(stretches)) + " fouls stretches")
 
 output = {
-    'updatedAt': datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC'),
+    'updatedAt': datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC'),
     'season': SEASON,
     'leagueAvgPoints': league_avg_points,
     'leagueAvgPace': league_avg_pace,
