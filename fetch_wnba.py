@@ -373,7 +373,7 @@ print("Computing quarter tendencies...")
 try:
     output['quarters'] = quarter_tendencies.build(WNBA_LEAGUE_ID, SEASON, SEASON_TYPES)
     q = output['quarters']
-    print("  " + str(q['games']) + " games, " + str(q['tests']) + " tests, " + str(len(q['standouts'])) + " standouts")
+    print("  " + str(q['games']) + " games, " + str(q['tests']) + " tests, " + str(sum(1 for s in q['signals'] if s.get('standout'))) + " standouts")
 except Exception as e:
     print("  Quarter tendencies failed: " + str(e))
     output['quarters'] = {'error': str(e)}

@@ -105,7 +105,7 @@
 
   #main { display: none; }
 
-  /* ── Splits ─────────────────────────────────────────────── */
+  /* ── Team picker and cards (Tendencies tab) ─────────────── */
   .team-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
   .team-btn {
     font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px;
@@ -125,53 +125,16 @@
   .splits-card-header h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; letter-spacing: 1px; color: var(--text); }
   .splits-card-header .meta { font-size: 11px; color: var(--muted); letter-spacing: 1px; }
 
-  .splits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-  @media(max-width:700px){ .splits-grid { grid-template-columns: 1fr; } }
-
-  .split-half { padding: 18px 20px; }
-  .split-half:first-child { border-right: 1px solid var(--border); }
-  .split-half-title {
-    font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
-    letter-spacing: 3px; text-transform: uppercase; color: var(--muted);
-    margin-bottom: 14px; padding-bottom: 6px; border-bottom: 1px solid var(--border);
-  }
-
-  .splits-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.04); }
-  .splits-row:last-child { border-bottom: none; }
-  .splits-label { font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
-  .splits-values { display: flex; gap: 20px; }
-  .splits-val { text-align: right; }
-  .splits-val .sv-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 1px; }
-  .splits-val .sv-num { font-size: 15px; font-weight: 700; font-family: 'Barlow Condensed', sans-serif; color: var(--text); }
-  .splits-val .sv-margin { font-size: 12px; font-weight: 600; }
 
   .pos { color: var(--green); }
   .neg { color: var(--red); }
   .neu { color: var(--muted); }
 
-  .special-flags { padding: 12px 20px; border-top: 1px solid var(--border); background: rgba(26,110,245,0.04); display: flex; flex-wrap: wrap; gap: 8px; }
-  .flag {
-    font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
-    padding: 4px 10px; border-radius: 2px;
-    background: rgba(26,110,245,0.1); border: 1px solid rgba(26,110,245,0.3); color: var(--accent);
-  }
-  .flag.home-flag { background: rgba(26,180,90,0.1); border-color: rgba(26,180,90,0.3); color: var(--green); }
-  .flag.road-flag { background: rgba(200,80,30,0.1); border-color: rgba(200,80,30,0.3); color: var(--accent2); }
-
-  .final-margin-row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 12px 20px; border-top: 2px solid var(--border);
-    font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1px;
-  }
-  .final-margin-row .fm-label { color: var(--muted); text-transform: uppercase; }
-  .final-margin-row .fm-vals { display: flex; gap: 28px; }
-  .final-margin-row .fm-item { text-align: right; }
-  .final-margin-row .fm-item span { display: block; font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
-  .hr-diff { font-size: 13px; color: var(--muted); }
   .tend-table th { font-size: 12px; padding: 8px 10px; }
   .tend-table td { font-size: 13px; padding: 7px 10px; }
   .tend-table td:first-child { font-weight: 700; color: var(--text); font-size: 13px; width: auto; }
   .tend-table td:nth-child(2) { font-weight: 400; font-size: 13px; text-align: right; }
+  .tend-table th:nth-child(2) { text-align: right; }
   .tend-table tr.grp th { text-align: center; color: var(--text); border-bottom: 1px solid var(--border); }
   .tend-table .vsep { border-left: 1px solid var(--border); }
   td.flag-watch { background: rgba(224,92,32,0.12); color: var(--accent2); font-weight: 700; }
@@ -181,7 +144,6 @@
   .tend-item:last-child { border-bottom: none; }
   .tend-item b { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; letter-spacing: 0.5px; }
   .tend-item .sig { color: var(--muted); font-size: 11px; }
-  #splits-placeholder { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
 </style>
 </head>
 <body>
@@ -215,7 +177,6 @@
       <button class="view-tab active" onclick="switchTab('points',this)">Points Table</button>
       <button class="view-tab" onclick="switchTab('pace',this)">Pace Table</button>
       <button class="view-tab" onclick="switchTab('detail',this)">Team Detail</button>
-      <button class="view-tab" onclick="switchTab('splits',this)">Splits</button>
       <button class="view-tab" onclick="switchTab('ratings',this)">Ratings</button>
       <button class="view-tab" onclick="switchTab('fouls',this)">Fouls</button>
       <button class="view-tab" onclick="switchTab('tendencies',this)">Tendencies</button>
@@ -272,12 +233,6 @@
     </div>
 
 
-    <div class="tab-panel" id="tab-splits">
-      <div class="section-header"><h2>Team Splits</h2><div class="line"></div><div class="tag">2025-26 Season</div></div>
-      <div class="team-grid" id="splits-team-grid"></div>
-      <div id="splits-output"><div id="splits-placeholder">Select a team above to view splits</div></div>
-    </div>
-
 
     <div class="tab-panel" id="tab-ratings">
       <div class="section-header"><h2>Team Ratings</h2><div class="line"></div><div class="tag">ORTG / DRTG / Net</div></div>
@@ -327,14 +282,25 @@
     <div class="tab-panel" id="tab-tendencies">
       <div class="section-header"><h2>Quarter Tendencies</h2><div class="line"></div><div class="tag" id="tend-tag">—</div></div>
       <div class="info-box" style="margin-bottom:20px">
-        <strong>How to read this:</strong> Each game, a team's quarter is compared with its own other three quarters in that game,
-        then the league's usual pattern for that quarter is subtracted (e.g. every team plays slower in Q4). What's left is the team's
-        <strong>tendency</strong>. Pace is possessions per 40 minutes. <strong>Over %</strong> counts games above the league-average total
-        for that quarter or half, not a betting line. Halves exclude overtime.
-        <span style="color:var(--accent2);font-weight:600">Orange cells</span> are unusual at the 1% level.
+        <strong>How to read this:</strong> Each game, a team's number in one period is compared with another period of the same game,
+        then the league's usual difference is subtracted (e.g. every team plays slower in Q4). What's left is the team's <strong>tendency</strong>.
+        <strong>Margin:</strong> each quarter vs the team's other three, and 1st half vs 2nd half.
+        <strong>Total:</strong> Q1 vs Q2 and Q3 vs Q4 only, so both quarters are played toward the same baskets; half totals aren't compared
+        because they depend on which end a team chooses to shoot at first.
+        <strong>Pace</strong> (possessions per 40 min): each quarter vs the other three.
+        <strong>Over %</strong> counts games above the league-average total for that period, not a betting line. Halves exclude overtime.
+      </div>
+      <div class="detail-picker">
+        <label for="tend-p">Flag when p ≤</label>
+        <select id="tend-p" onchange="renderTendencies()" style="min-width:90px">
+          <option value="0.01">0.01</option><option value="0.05" selected>0.05</option><option value="0.1">0.10</option>
+        </select>
+        <span id="tend-chance" style="font-size:11px;color:var(--muted)"></span>
       </div>
       <div class="team-grid" id="tend-team-grid"></div>
       <div id="tend-output"><div style="text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase">Select a team above to view its quarter tendencies</div></div>
+      <div class="section-header" style="margin-top:32px"><h2>Home-Court Advantage by Team</h2><div class="line"></div></div>
+      <div id="hca-output"></div>
       <div class="section-header" style="margin-top:32px"><h2>Teams That Stand Out</h2><div class="line"></div></div>
       <div id="tend-standouts"></div>
     </div>
@@ -531,136 +497,6 @@ function sortTable(tableId, colIdx, type) {
 
 loadData();
 
-// ── SPLITS DATA (hardcoded 2025-26 season) ────────────────────────────────────
-const SPLITS = {
-  'Atlanta Hawks':           { abbr:'ATL', home:{gp:32, h1t:117.9,h1m:0.2,  h2t:115.7,h2m:-0.7, q1t:59.6,q1m:1.6,  q2t:58.3,q2m:-1.3, q3t:60.8,q3m:-0.5, q4t:54.9,q4m:-0.2, fin:-0.5},  road:{gp:33, h1t:121.3,h1m:0.0,  h2t:114.1,h2m:0.5,  q1t:60.8,q1m:-0.5, q2t:60.5,q2m:0.5,  q3t:56.7,q3m:-0.7, q4t:57.4,q4m:1.2,  fin:0.8},  hrDiff:-1.3, flags:['ROAD: H1-H2 Total Diff 7.2 (H1:121.3 H2:114.1)'] },
-  'Boston Celtics':          { abbr:'BOS', home:{gp:32, h1t:111.1,h1m:5.5,  h2t:110.9,h2m:1.4,  q1t:56.8,q1m:1.5,  q2t:54.3,q2m:4.0,  q3t:54.7,q3m:0.8,  q4t:56.2,q4m:0.5,  fin:6.9},  road:{gp:33, h1t:113.7,h1m:4.8,  h2t:105.5,h2m:3.2,  q1t:57.3,q1m:2.4,  q2t:56.4,q2m:2.4,  q3t:54.9,q3m:1.7,  q4t:50.6,q4m:1.5,  fin:8.1},  hrDiff:-1.2, flags:['HOME: H1-H2 Margin Diff 4.1','ROAD: H1-H2 Total Diff 8.2 (H1:113.7 H2:105.5)'] },
-  'Brooklyn Nets':           { abbr:'BKN', home:{gp:30, h1t:112.3,h1m:-1.3, h2t:111.0,h2m:-3.0, q1t:56.9,q1m:-0.7, q2t:55.4,q2m:-0.6, q3t:57.4,q3m:-2.3, q4t:53.6,q4m:-0.7, fin:-4.4}, road:{gp:34, h1t:114.9,h1m:-9.7, h2t:105.0,h2m:-2.7, q1t:57.4,q1m:-5.9, q2t:57.5,q2m:-3.9, q3t:53.7,q3m:-1.0, q4t:51.3,q4m:-1.7, fin:-12.4}, hrDiff:8.0,  flags:['ROAD: H1-H2 Margin Diff 7.0','ROAD: H1-H2 Total Diff 9.9 (H1:114.9 H2:105.0)'] },
-  'Charlotte Hornets':       { abbr:'CHA', home:{gp:32, h1t:116.3,h1m:1.8,  h2t:109.6,h2m:-0.2, q1t:60.0,q1m:0.4,  q2t:56.3,q2m:1.3,  q3t:56.3,q3m:0.3,  q4t:53.3,q4m:-0.5, fin:1.8},  road:{gp:34, h1t:113.7,h1m:3.5,  h2t:116.7,h2m:2.5,  q1t:61.3,q1m:0.6,  q2t:52.4,q2m:2.9,  q3t:62.3,q3m:3.6,  q4t:54.5,q4m:-1.1, fin:5.8},  hrDiff:-4.0, flags:['HOME: H1-H2 Total Diff 6.7 (H1:116.3 H2:109.6)'] },
-  'Chicago Bulls':           { abbr:'CHI', home:{gp:35, h1t:115.9,h1m:-0.9, h2t:116.1,h2m:-1.7, q1t:61.1,q1m:-0.4, q2t:54.8,q2m:-0.5, q3t:60.1,q3m:-1.5, q4t:56.0,q4m:-0.2, fin:-2.6}, road:{gp:30, h1t:117.1,h1m:-5.2, h2t:121.0,h2m:-0.6, q1t:58.0,q1m:-3.8, q2t:59.1,q2m:-1.4, q3t:62.6,q3m:-0.2, q4t:58.4,q4m:-0.4, fin:-5.9}, hrDiff:3.3,  flags:['ROAD: H1-H2 Margin Diff 4.6'] },
-  'Cleveland Cavaliers':     { abbr:'CLE', home:{gp:34, h1t:116.8,h1m:-1.1, h2t:114.2,h2m:6.1,  q1t:58.1,q1m:1.0,  q2t:58.6,q2m:-2.0, q3t:58.3,q3m:5.0,  q4t:55.9,q4m:1.1,  fin:4.8},  road:{gp:31, h1t:113.7,h1m:1.5,  h2t:120.8,h2m:2.3,  q1t:58.2,q1m:2.8,  q2t:55.5,q2m:-1.3, q3t:61.4,q3m:-0.9, q4t:59.5,q4m:3.1,  fin:3.6},  hrDiff:1.2,  flags:['HOME: H1-H2 Margin Diff 7.2','ROAD: H1-H2 Total Diff 7.1 (H1:113.7 H2:120.8)'] },
-  'Dallas Mavericks':        { abbr:'DAL', home:{gp:33, h1t:112.9,h1m:-2.5, h2t:115.9,h2m:0.4,  q1t:59.2,q1m:-1.7, q2t:53.8,q2m:-0.8, q3t:59.5,q3m:0.5,  q4t:56.3,q4m:-0.2, fin:-2.1}, road:{gp:31, h1t:120.3,h1m:-5.1, h2t:109.5,h2m:-0.4, q1t:60.4,q1m:-3.9, q2t:59.9,q2m:-1.2, q3t:56.6,q3m:-0.9, q4t:52.9,q4m:0.5,  fin:-5.7}, hrDiff:3.6,  flags:['ROAD: H1-H2 Margin Diff 4.7','ROAD: H1-H2 Total Diff 10.8 (H1:120.3 H2:109.5)'] },
-  'Denver Nuggets':          { abbr:'DEN', home:{gp:31, h1t:115.4,h1m:4.3,  h2t:115.3,h2m:-2.3, q1t:58.4,q1m:3.4,  q2t:57.0,q2m:0.9,  q3t:59.0,q3m:-0.1, q4t:56.3,q4m:-2.2, fin:2.3},  road:{gp:35, h1t:117.2,h1m:2.3,  h2t:118.0,h2m:3.1,  q1t:58.6,q1m:1.2,  q2t:58.6,q2m:1.1,  q3t:60.3,q3m:2.7,  q4t:57.7,q4m:0.3,  fin:4.9},  hrDiff:-2.6, flags:['HOME: H1-H2 Margin Diff 6.6'] },
-  'Detroit Pistons':         { abbr:'DET', home:{gp:33, h1t:112.6,h1m:6.1,  h2t:110.7,h2m:3.9,  q1t:55.9,q1m:1.1,  q2t:56.6,q2m:5.0,  q3t:54.7,q3m:0.8,  q4t:55.9,q4m:3.0,  fin:10.1}, road:{gp:31, h1t:117.9,h1m:2.5,  h2t:110.0,h2m:1.3,  q1t:59.5,q1m:0.8,  q2t:58.3,q2m:1.7,  q3t:57.1,q3m:2.3,  q4t:52.9,q4m:-1.1, fin:3.7},  hrDiff:6.4,  flags:['ROAD: H1-H2 Total Diff 7.9 (H1:117.9 H2:110.0)'] },
-  'Golden State Warriors':   { abbr:'GS',  home:{gp:33, h1t:117.5,h1m:0.4,  h2t:113.5,h2m:2.2,  q1t:60.5,q1m:-0.3, q2t:57.0,q2m:0.7,  q3t:59.4,q3m:0.5,  q4t:54.1,q4m:1.7,  fin:2.8},  road:{gp:32, h1t:108.5,h1m:-1.1, h2t:115.2,h2m:0.9,  q1t:53.5,q1m:-1.7, q2t:55.0,q2m:0.7,  q3t:57.8,q3m:0.3,  q4t:57.5,q4m:0.7,  fin:-0.5}, hrDiff:3.3,  flags:['ROAD: H1-H2 Total Diff 6.7 (H1:108.5 H2:115.2)'] },
-  'Houston Rockets':         { abbr:'HOU', home:{gp:29, h1t:112.3,h1m:3.6,  h2t:106.3,h2m:2.8,  q1t:55.9,q1m:1.1,  q2t:56.4,q2m:2.5,  q3t:53.6,q3m:2.4,  q4t:52.8,q4m:0.4,  fin:6.5},  road:{gp:35, h1t:109.7,h1m:2.2,  h2t:114.9,h2m:2.7,  q1t:55.0,q1m:2.3,  q2t:54.6,q2m:-0.1, q3t:57.0,q3m:3.6,  q4t:57.9,q4m:-1.0, fin:4.4},  hrDiff:2.1,  flags:['HOME: H1-H2 Total Diff 6.0 (H1:112.3 H2:106.3)','ROAD: H1-H2 Total Diff 5.2 (H1:109.7 H2:114.9)'] },
-  'Indiana Pacers':          { abbr:'IND', home:{gp:32, h1t:119.4,h1m:-3.6, h2t:112.0,h2m:-1.1, q1t:58.9,q1m:-0.1, q2t:60.4,q2m:-3.4, q3t:57.7,q3m:-0.9, q4t:54.3,q4m:-0.2, fin:-4.8}, road:{gp:32, h1t:112.7,h1m:-5.9, h2t:116.3,h2m:-6.9, q1t:57.1,q1m:-3.0, q2t:55.6,q2m:-2.9, q3t:61.3,q3m:-4.7, q4t:55.0,q4m:-2.2, fin:-12.7},hrDiff:7.9,  flags:['HOME: H1-H2 Total Diff 7.4 (H1:119.4 H2:112.0)'] },
-  'LA Clippers':             { abbr:'LAC', home:{gp:29, h1t:112.3,h1m:4.4,  h2t:112.3,h2m:-1.3, q1t:57.4,q1m:3.8,  q2t:54.9,q2m:0.7,  q3t:58.4,q3m:0.3,  q4t:53.9,q4m:-1.6, fin:3.2},  road:{gp:36, h1t:108.8,h1m:-1.1, h2t:113.6,h2m:-0.5, q1t:56.2,q1m:-2.1, q2t:52.6,q2m:0.9,  q3t:57.7,q3m:0.0,  q4t:55.9,q4m:-0.5, fin:-1.4}, hrDiff:4.6,  flags:['HOME: H1-H2 Margin Diff 5.7'] },
-  'Los Angeles Lakers':      { abbr:'LAL', home:{gp:34, h1t:120.4,h1m:0.3,  h2t:112.2,h2m:1.0,  q1t:61.9,q1m:0.8,  q2t:58.5,q2m:-0.5, q3t:58.0,q3m:0.2,  q4t:54.2,q4m:0.8,  fin:1.3},  road:{gp:33, h1t:116.3,h1m:-0.2, h2t:112.0,h2m:-0.6, q1t:59.4,q1m:-0.1, q2t:56.8,q2m:-0.1, q3t:58.4,q3m:-1.5, q4t:53.6,q4m:0.9,  fin:-0.8}, hrDiff:2.1,  flags:['HOME: H1-H2 Total Diff 8.2 (H1:120.4 H2:112.2)'] },
-  'Memphis Grizzlies':       { abbr:'MEM', home:{gp:31, h1t:118.5,h1m:1.0,  h2t:115.8,h2m:-1.5, q1t:59.3,q1m:0.3,  q2t:59.2,q2m:0.7,  q3t:59.5,q3m:-0.8, q4t:56.3,q4m:-0.7, fin:-0.6}, road:{gp:33, h1t:118.3,h1m:-1.8, h2t:115.2,h2m:-2.2, q1t:60.0,q1m:-0.4, q2t:58.3,q2m:-1.5, q3t:58.6,q3m:-1.1, q4t:56.5,q4m:-1.1, fin:-3.8}, hrDiff:3.2,  flags:[] },
-  'Miami Heat':              { abbr:'MIA', home:{gp:32, h1t:118.7,h1m:3.6,  h2t:119.8,h2m:1.4,  q1t:58.9,q1m:2.6,  q2t:59.8,q2m:1.0,  q3t:59.8,q3m:0.3,  q4t:60.0,q4m:1.1,  fin:5.0},  road:{gp:33, h1t:121.7,h1m:2.9,  h2t:113.6,h2m:-1.5, q1t:62.2,q1m:2.9,  q2t:59.5,q2m:0.0,  q3t:59.2,q3m:-1.6, q4t:54.4,q4m:0.1,  fin:1.4},  hrDiff:3.6,  flags:['ROAD: H1-H2 Margin Diff 4.4','ROAD: H1-H2 Total Diff 8.1 (H1:121.7 H2:113.6)'] },
-  'Milwaukee Bucks':         { abbr:'MIL', home:{gp:32, h1t:118.2,h1m:-4.3, h2t:110.8,h2m:1.0,  q1t:57.9,q1m:-1.7, q2t:60.3,q2m:-2.6, q3t:56.4,q3m:0.4,  q4t:54.5,q4m:0.6,  fin:-3.1}, road:{gp:31, h1t:113.0,h1m:-1.1, h2t:109.5,h2m:-4.2, q1t:56.1,q1m:-0.2, q2t:56.9,q2m:-0.9, q3t:55.6,q3m:-2.7, q4t:53.8,q4m:-1.4, fin:-5.3}, hrDiff:2.2,  flags:['HOME: H1-H2 Margin Diff 5.3','HOME: H1-H2 Total Diff 7.4 (H1:118.2 H2:110.8)','ROAD: H1-H2 Margin Diff 3.1'] },
-  'Minnesota Timberwolves':  { abbr:'MIN', home:{gp:34, h1t:114.7,h1m:2.6,  h2t:110.9,h2m:1.4,  q1t:58.1,q1m:0.5,  q2t:56.6,q2m:2.1,  q3t:56.4,q3m:0.3,  q4t:54.4,q4m:1.0,  fin:4.0},  road:{gp:32, h1t:114.4,h1m:-0.2, h2t:123.7,h2m:3.6,  q1t:57.5,q1m:0.9,  q2t:56.9,q2m:-1.1, q3t:62.1,q3m:2.0,  q4t:61.6,q4m:1.6,  fin:3.4},  hrDiff:0.6,  flags:['ROAD: H1-H2 Margin Diff 3.8','ROAD: H1-H2 Total Diff 9.3 (H1:114.4 H2:123.7)'] },
-  'New Orleans Pelicans':    { abbr:'NO',  home:{gp:33, h1t:118.8,h1m:-2.0, h2t:116.9,h2m:-0.9, q1t:61.2,q1m:-0.9, q2t:57.6,q2m:-1.1, q3t:59.0,q3m:-0.1, q4t:57.9,q4m:-0.8, fin:-3.2}, road:{gp:34, h1t:117.5,h1m:-2.8, h2t:115.4,h2m:-3.9, q1t:58.1,q1m:-2.6, q2t:59.4,q2m:-0.2, q3t:57.6,q3m:-2.7, q4t:57.8,q4m:-1.1, fin:-6.8}, hrDiff:3.6,  flags:[] },
-  'New York Knicks':         { abbr:'NY',  home:{gp:34, h1t:114.0,h1m:2.7,  h2t:112.1,h2m:6.1,  q1t:57.6,q1m:2.8,  q2t:56.4,q2m:-0.1, q3t:59.3,q3m:2.2,  q4t:52.9,q4m:3.9,  fin:8.9},  road:{gp:33, h1t:117.5,h1m:2.7,  h2t:109.5,h2m:1.1,  q1t:59.3,q1m:-0.5, q2t:58.3,q2m:3.2,  q3t:55.6,q3m:-1.0, q4t:53.8,q4m:2.0,  fin:3.8},  hrDiff:5.1,  flags:['HOME: H1-H2 Margin Diff 3.4','ROAD: H1-H2 Total Diff 8.0 (H1:117.5 H2:109.5)'] },
-  'Oklahoma City Thunder':   { abbr:'OKC', home:{gp:34, h1t:112.1,h1m:6.1,  h2t:108.5,h2m:5.0,  q1t:56.4,q1m:3.8,  q2t:55.8,q2m:2.3,  q3t:56.2,q3m:2.9,  q4t:52.3,q4m:2.1,  fin:11.4}, road:{gp:33, h1t:113.8,h1m:5.6,  h2t:112.4,h2m:4.4,  q1t:57.9,q1m:3.5,  q2t:55.9,q2m:2.2,  q3t:58.4,q3m:2.5,  q4t:54.0,q4m:1.9,  fin:10.2}, hrDiff:1.2,  flags:[] },
-  'Orlando Magic':           { abbr:'ORL', home:{gp:33, h1t:112.6,h1m:-0.5, h2t:116.8,h2m:2.4,  q1t:56.8,q1m:0.1,  q2t:55.7,q2m:-0.5, q3t:58.7,q3m:0.5,  q4t:58.1,q4m:1.9,  fin:1.9},  road:{gp:30, h1t:117.9,h1m:0.5,  h2t:108.1,h2m:-0.4, q1t:57.6,q1m:-0.7, q2t:60.3,q2m:1.1,  q3t:57.6,q3m:0.3,  q4t:50.5,q4m:-0.7, fin:-0.1}, hrDiff:2.0,  flags:['ROAD: H1-H2 Total Diff 9.8 (H1:117.9 H2:108.1)'] },
-  'Philadelphia 76ers':      { abbr:'PHI', home:{gp:34, h1t:118.1,h1m:1.0,  h2t:111.5,h2m:-2.8, q1t:60.9,q1m:-0.3, q2t:57.3,q2m:1.3,  q3t:58.0,q3m:-4.9, q4t:53.5,q4m:2.1,  fin:-1.8}, road:{gp:30, h1t:121.0,h1m:4.4,  h2t:108.3,h2m:-2.9, q1t:59.9,q1m:2.0,  q2t:61.1,q2m:2.4,  q3t:55.6,q3m:-3.4, q4t:52.7,q4m:0.5,  fin:2.0},  hrDiff:-3.8, flags:['HOME: H1-H2 Margin Diff 3.8','HOME: H1-H2 Total Diff 6.6 (H1:118.1 H2:111.5)','ROAD: H1-H2 Margin Diff 7.3','ROAD: H1-H2 Total Diff 12.7 (H1:121.0 H2:108.3)'] },
-  'Phoenix Suns':            { abbr:'PHX', home:{gp:35, h1t:109.5,h1m:1.0,  h2t:109.0,h2m:2.1,  q1t:52.9,q1m:0.4,  q2t:56.6,q2m:0.6,  q3t:55.6,q3m:3.2,  q4t:53.4,q4m:-1.1, fin:3.2},  road:{gp:29, h1t:119.0,h1m:-0.4, h2t:107.9,h2m:-1.0, q1t:58.5,q1m:-0.2, q2t:60.5,q2m:-0.2, q3t:55.1,q3m:0.0,  q4t:52.8,q4m:-1.0, fin:-1.6}, hrDiff:4.8,  flags:['ROAD: H1-H2 Total Diff 11.1 (H1:119.0 H2:107.9)'] },
-  'Portland Trail Blazers':  { abbr:'POR', home:{gp:32, h1t:119.7,h1m:-0.4, h2t:115.6,h2m:-0.5, q1t:59.2,q1m:0.2,  q2t:60.5,q2m:-0.7, q3t:59.9,q3m:-1.4, q4t:55.7,q4m:0.9,  fin:-0.9}, road:{gp:34, h1t:117.5,h1m:-3.3, h2t:112.3,h2m:-1.6, q1t:60.3,q1m:-3.9, q2t:57.2,q2m:0.6,  q3t:55.6,q3m:1.6,  q4t:56.7,q4m:-3.2, fin:-5.1}, hrDiff:4.2,  flags:['ROAD: H1-H2 Total Diff 5.2 (H1:117.5 H2:112.3)'] },
-  'Sacramento Kings':        { abbr:'SAC', home:{gp:32, h1t:114.5,h1m:-5.0, h2t:113.7,h2m:-3.5, q1t:57.0,q1m:0.4,  q2t:57.5,q2m:-5.4, q3t:58.5,q3m:-1.5, q4t:55.2,q4m:-2.0, fin:-8.3}, road:{gp:34, h1t:120.5,h1m:-6.8, h2t:110.9,h2m:-6.4, q1t:60.5,q1m:-4.3, q2t:60.0,q2m:-2.5, q3t:57.0,q3m:-2.9, q4t:53.9,q4m:-3.5, fin:-13.3},hrDiff:5.0,  flags:['ROAD: H1-H2 Total Diff 9.6 (H1:120.5 H2:110.9)'] },
-  'San Antonio Spurs':       { abbr:'SA',  home:{gp:30, h1t:117.2,h1m:5.1,  h2t:113.2,h2m:3.9,  q1t:58.4,q1m:4.3,  q2t:58.8,q2m:0.8,  q3t:57.3,q3m:1.6,  q4t:55.9,q4m:2.2,  fin:8.9},  road:{gp:35, h1t:118.2,h1m:5.0,  h2t:110.4,h2m:0.0,  q1t:59.8,q1m:2.8,  q2t:58.4,q2m:2.3,  q3t:57.9,q3m:-0.4, q4t:52.5,q4m:0.4,  fin:5.1},  hrDiff:3.8,  flags:['ROAD: H1-H2 Margin Diff 5.0','ROAD: H1-H2 Total Diff 7.8 (H1:118.2 H2:110.4)'] },
-  'Toronto Raptors':         { abbr:'TOR', home:{gp:33, h1t:116.3,h1m:-0.3, h2t:107.4,h2m:0.2,  q1t:57.0,q1m:0.2,  q2t:59.3,q2m:-0.5, q3t:57.6,q3m:1.5,  q4t:49.8,q4m:-1.3, fin:0.3},  road:{gp:31, h1t:110.5,h1m:1.1,  h2t:114.5,h2m:1.9,  q1t:56.4,q1m:0.8,  q2t:54.1,q2m:0.4,  q3t:60.0,q3m:1.7,  q4t:54.5,q4m:0.2,  fin:2.8},  hrDiff:-2.5, flags:['HOME: H1-H2 Total Diff 8.9 (H1:116.3 H2:107.4)'] },
-  'Utah Jazz':               { abbr:'UTAH',home:{gp:33, h1t:124.9,h1m:-3.3, h2t:121.1,h2m:-3.3, q1t:64.5,q1m:0.5,  q2t:60.5,q2m:-3.8, q3t:61.6,q3m:-2.5, q4t:59.5,q4m:-0.8, fin:-6.2}, road:{gp:32, h1t:115.1,h1m:-5.9, h2t:120.2,h2m:-2.8, q1t:57.9,q1m:-6.2, q2t:57.2,q2m:0.3,  q3t:62.6,q3m:-2.2, q4t:57.7,q4m:-0.5, fin:-8.8}, hrDiff:2.6,  flags:['ROAD: H1-H2 Margin Diff 3.1','ROAD: H1-H2 Total Diff 5.1 (H1:115.1 H2:120.2)'] },
-  'Washington Wizards':      { abbr:'WSH', home:{gp:33, h1t:118.5,h1m:-4.3, h2t:118.0,h2m:-4.5, q1t:58.6,q1m:-1.5, q2t:59.9,q2m:-2.7, q3t:61.6,q3m:-1.1, q4t:56.4,q4m:-3.4, fin:-8.9}, road:{gp:30, h1t:119.5,h1m:-8.9, h2t:112.4,h2m:-4.3, q1t:60.8,q1m:-5.9, q2t:58.7,q2m:-3.0, q3t:57.7,q3m:-1.9, q4t:54.7,q4m:-2.3, fin:-13.2},hrDiff:4.3,  flags:['ROAD: H1-H2 Margin Diff 4.6','ROAD: H1-H2 Total Diff 7.1 (H1:119.5 H2:112.4)'] },
-};
-
-function buildSplitsGrid() {
-  const grid = document.getElementById('splits-team-grid');
-  if (!grid) return;
-  Object.keys(SPLITS).sort().forEach(name => {
-    const d = SPLITS[name];
-    const btn = document.createElement('button');
-    btn.className = 'team-btn';
-    btn.textContent = d.abbr;
-    btn.title = name;
-    btn.onclick = () => showSplits(name, btn);
-    grid.appendChild(btn);
-  });
-}
-
-function fmtM(v) {
-  const s = v >= 0 ? `+${v.toFixed(1)}` : v.toFixed(1);
-  const cls = v > 0 ? 'pos' : v < 0 ? 'neg' : 'neu';
-  return `<span class="${cls} sv-margin">${s}</span>`;
-}
-
-function halfRow(label, tot, margin) {
-  return `<div class="splits-row">
-    <span class="splits-label">${label}</span>
-    <div class="splits-values">
-      <div class="splits-val"><span class="sv-label">Total</span><span class="sv-num">${tot.toFixed(1)}</span></div>
-      <div class="splits-val"><span class="sv-label">Margin</span>${fmtM(margin)}</div>
-    </div>
-  </div>`;
-}
-
-function qRow(label, tot, margin) {
-  return `<div class="splits-row">
-    <span class="splits-label">${label}</span>
-    <div class="splits-values">
-      <div class="splits-val"><span class="sv-label">Total</span><span class="sv-num">${tot.toFixed(1)}</span></div>
-      <div class="splits-val"><span class="sv-label">Margin</span>${fmtM(margin)}</div>
-    </div>
-  </div>`;
-}
-
-function showSplits(name, btn) {
-  document.querySelectorAll('.team-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-
-  const d = SPLITS[name];
-  const h = d.home, r = d.road;
-  const hrCls = d.hrDiff > 0 ? 'pos' : d.hrDiff < 0 ? 'neg' : 'neu';
-
-  const flags = d.flags.length ? `
-    <div class="special-flags">
-      ${d.flags.map(f => {
-        const cls = f.startsWith('HOME') ? 'home-flag' : 'road-flag';
-        return `<span class="flag ${cls}">⚑ ${f}</span>`;
-      }).join('')}
-    </div>` : '';
-
-  document.getElementById('splits-output').innerHTML = `
-    <div class="splits-card">
-      <div class="splits-card-header">
-        <h3>${name}</h3>
-        <div class="meta">2025-26 · ${h.gp} Home / ${r.gp} Road games · As of Mar 8 2026</div>
-      </div>
-      <div class="splits-grid">
-        <div class="split-half">
-          <div class="split-half-title">🏠 Home · ${h.gp} GP</div>
-          ${halfRow('H1', h.h1t, h.h1m)}
-          ${halfRow('H2', h.h2t, h.h2m)}
-          ${qRow('Q1', h.q1t, h.q1m)}
-          ${qRow('Q2', h.q2t, h.q2m)}
-          ${qRow('Q3', h.q3t, h.q3m)}
-          ${qRow('Q4', h.q4t, h.q4m)}
-        </div>
-        <div class="split-half">
-          <div class="split-half-title">✈️ Road · ${r.gp} GP</div>
-          ${halfRow('H1', r.h1t, r.h1m)}
-          ${halfRow('H2', r.h2t, r.h2m)}
-          ${qRow('Q1', r.q1t, r.q1m)}
-          ${qRow('Q2', r.q2t, r.q2m)}
-          ${qRow('Q3', r.q3t, r.q3m)}
-          ${qRow('Q4', r.q4t, r.q4m)}
-        </div>
-      </div>
-      <div class="final-margin-row">
-        <span class="fm-label">Final Margin</span>
-        <div class="fm-vals">
-          <div class="fm-item"><span>Home</span>${fmtM(h.fin)}</div>
-          <div class="fm-item"><span>Road</span>${fmtM(r.fin)}</div>
-          <div class="fm-item"><span>H/R Diff</span><span class="${hrCls} hr-diff">${d.hrDiff >= 0 ? '+' : ''}${d.hrDiff.toFixed(1)}</span></div>
-        </div>
-      </div>
-      ${flags}
-    </div>`;
-}
-
-buildSplitsGrid();
-
 
 let currentRatingsWindow = 'season';
 function switchRatingsWindow(w, btn) {
@@ -693,12 +529,22 @@ function renderRatingsTable() {
     </tr>`).join('') +
     `<tr class="avg-row"><td></td><td>League Average</td><td>—</td><td>${lgO}</td><td>${lgD}</td><td>—</td><td>${lgO}</td><td>${lgD}</td><td>—</td><td>—</td></tr>`;
 }
-// ── QUARTER TENDENCIES ───────────────────────────────────────────────────────
+// ── QUARTER TENDENCIES & HOME-COURT ADVANTAGE ───────────────────────────────
 const TEND_SEGS = ['Q1','Q2','Q3','Q4','1H','2H'];
-const TEND_COMPS = ['Q1','Q2','Q3','Q4','1H-2H'];
+const HCA_SEGS = ['Game','Q1','Q2','Q3','Q4','1H','2H'];
+const TEND_ROWS = [
+  ['margin', 'Q1', 'Q1 vs rest'], ['margin', 'Q2', 'Q2 vs rest'], ['margin', 'Q3', 'Q3 vs rest'], ['margin', 'Q4', 'Q4 vs rest'],
+  ['margin', '1H-2H', '1H vs 2H'],
+  ['total', 'Q1-Q2', 'Q1 vs Q2'], ['total', 'Q3-Q4', 'Q3 vs Q4'],
+  ['pace', 'Q1', 'Q1 vs rest'], ['pace', 'Q2', 'Q2 vs rest'], ['pace', 'Q3', 'Q3 vs rest'], ['pace', 'Q4', 'Q4 vs rest'],
+];
+const STAT_GROUP = { margin: 'Margin', total: 'Total (same half)', pace: 'Pace' };
 const VENUE_TXT = { home: 'At home', away: 'On the road', all: 'All games' };
-const STAT_TXT = { margin: 'margin', total: 'total', pace: 'pace' };
 const sgn = (v, d=1) => (v > 0 ? '+' : '') + Number(v).toFixed(d);
+let tendTeam = null;
+
+function tendP() { return parseFloat(document.getElementById('tend-p').value); }
+function flagClass(c) { return !c ? '' : c.standout ? 'flag-standout' : c.p <= tendP() ? 'flag-watch' : ''; }
 
 function renderTendencies() {
   const Q = statsData && statsData.quarters;
@@ -706,29 +552,34 @@ function renderTendencies() {
   if (!Q || Q.error || !Q.teams) {
     grid.innerHTML = '';
     document.getElementById('tend-output').innerHTML = `<div class="info-box">Quarter data isn't available${Q && Q.error ? ': ' + Q.error : ''}.</div>`;
-    document.getElementById('tend-standouts').innerHTML = '';
+    ['hca-output', 'tend-standouts'].forEach(id => document.getElementById(id).innerHTML = '');
     return;
   }
+  const th = tendP();
   document.getElementById('tend-tag').textContent = `${Q.games} games`;
+  document.getElementById('tend-chance').textContent =
+    `${Q.tests} comparisons, so about ${Math.round(Q.tests*th)} would be flagged by chance alone`;
   const names = Object.keys(Q.teams).sort();
-  grid.innerHTML = names.map(n => `<button class="team-btn" title="${n}" onclick="showTendencies('${n}',this)">${n.split(' ').slice(-1)[0]}</button>`).join('');
+  grid.innerHTML = names.map(n => `<button class="team-btn${n===tendTeam?' active':''}" title="${n}" onclick="showTendencies('${n}')">${n.split(' ').slice(-1)[0]}</button>`).join('');
+  if (tendTeam) showTendencies(tendTeam);
+  renderHCA();
   renderStandouts();
 }
 
-function tendCell(c, stat, sep) {
-  if (!c) return `<td class="${sep ? 'vsep' : ''}">—</td>`;
-  const cls = (sep ? 'vsep ' : '') + (c.flag === 'standout' ? 'flag-standout' : c.flag === 'watch' ? 'flag-watch' : '');
-  const color = !c.flag && stat === 'margin' ? (c.delta > 0.05 ? 'pos' : c.delta < -0.05 ? 'neg' : '') : '';
+function tendCell(c, stat) {
+  if (!c) return `<td class="vsep" style="color:var(--muted)">—</td>`;
+  const f = flagClass(c);
+  const color = !f && stat === 'margin' ? (c.delta > 0.05 ? 'pos' : c.delta < -0.05 ? 'neg' : '') : '';
   const tip = `${c.n} games · p = ${c.p} · team ${c.mine} vs ${c.others} · league pattern ${sgn(c.league, 2)}`;
-  return `<td class="${cls}" title="${tip}"><span class="${color}">${sgn(c.delta)}</span></td>`;
+  return `<td class="vsep ${f}" title="${tip}"><span class="${color}">${sgn(c.delta)}</span></td>`;
 }
 
-function showTendencies(name, btn) {
-  document.querySelectorAll('#tend-team-grid .team-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+function showTendencies(name) {
+  tendTeam = name;
+  document.querySelectorAll('#tend-team-grid .team-btn').forEach(b => b.classList.toggle('active', b.title === name));
   const Q = statsData.quarters, T = Q.teams[name];
   const segRow = s => {
-    const cells = ['home','away'].map((v, vi) => {
+    const cells = ['home','away'].map(v => {
       const x = T.segments[v][s];
       if (!x) return `<td class="vsep">—</td><td>—</td><td>—</td><td>—</td><td>—</td>`;
       return `<td class="vsep"><span class="${x.margin>0?'pos':x.margin<0?'neg':''}">${sgn(x.margin)}</span></td>
@@ -738,10 +589,13 @@ function showTendencies(name, btn) {
     return `<tr${s==='1H'?' style="border-top:2px solid var(--border)"':''}><td>${s}</td>${cells}
       <td class="vsep" style="color:var(--muted)">${lg.total.toFixed(1)}</td><td style="color:var(--muted)">${lg.pace.toFixed(1)}</td></tr>`;
   };
-  const tendRow = c => `<tr${c==='1H-2H'?' style="border-top:2px solid var(--border)"':''}><td>${c==='1H-2H'?'1H vs 2H':c+' vs rest'}</td>` +
-    ['home','away','all'].map(v => ['margin','total','pace'].map((st, i) => tendCell((T.tendencies[v][c]||{})[st], st, i===0)).join('')).join('') + '</tr>';
+  let lastStat = null;
+  const tendRows = TEND_ROWS.map(([st, c, label]) => {
+    const head = st !== lastStat ? `<tr class="grp"><th colspan="4" style="text-align:left;padding-top:14px">${STAT_GROUP[st]}</th></tr>` : '';
+    lastStat = st;
+    return head + `<tr><td>${label}</td>` + ['home','away','all'].map(v => tendCell(((T.tendencies[v]||{})[st]||{})[c], st)).join('') + '</tr>';
+  }).join('');
   const hdr5 = '<th class="vsep">Margin</th><th>Total</th><th>Pace</th><th>Won</th><th>Over %</th>';
-  const hdr3 = '<th class="vsep">Margin</th><th>Total</th><th>Pace</th>';
 
   document.getElementById('tend-output').innerHTML = `
     <div class="splits-card">
@@ -756,51 +610,99 @@ function showTendencies(name, btn) {
     <div class="splits-card">
       <div class="splits-card-header"><h3 style="font-size:18px">Tendencies vs league pattern</h3>
         <div class="meta">Hover a cell for games, p-value and the raw numbers</div></div>
-      <div class="detail-table tend-table"><table>
-        <thead><tr class="grp"><th></th><th colspan="3" class="vsep">🏠 Home</th><th colspan="3" class="vsep">✈️ Road</th><th colspan="3" class="vsep">All games</th></tr>
-          <tr><th style="text-align:left">Comparison</th>${hdr3}${hdr3}${hdr3}</tr></thead>
-        <tbody>${TEND_COMPS.map(tendRow).join('')}</tbody>
+      <div class="detail-table tend-table"><table style="min-width:520px">
+        <thead><tr><th style="text-align:left">Comparison</th><th class="vsep">🏠 Home</th><th class="vsep">✈️ Road</th><th class="vsep">All games</th></tr></thead>
+        <tbody>${tendRows}</tbody>
       </table></div>
       <div style="padding:10px 20px;font-size:11px;color:var(--muted);line-height:1.8;border-top:1px solid var(--border)">
-        Example: Q1 margin <b>+3.0</b> at home means that at home this team's Q1 margin runs 3 points better than its other quarters,
-        beyond what's normal for home teams in Q1. "1H vs 2H" compares the first half with the second half the same way.
+        Example: Q1 vs rest margin <b>+3.0</b> at home means that at home this team's Q1 margin runs 3 points better than its other quarters,
+        beyond what's normal for home teams in Q1. Q1 vs Q2 total <b>+2.0</b> means Q1 runs 2 points higher-scoring than Q2, beyond the league's usual gap.
       </div>
     </div>`;
 }
 
-function tendSentence(s) {
+function renderHCA() {
   const Q = statsData.quarters;
-  const where = VENUE_TXT[s.venue];
-  const stat = STAT_TXT[s.stat];
-  const u = s.stat === 'pace' ? ' poss/40' : '';
-  let what;
-  if (s.comp === '1H-2H') {
-    what = `1st-half ${stat} ${s.mine}${u} vs 2nd half ${s.others}${u}`;
-  } else {
-    what = `${s.comp} ${stat} ${s.stat==='margin'?sgn(s.mine):s.mine}${u} vs ${s.stat==='margin'?sgn(s.others):s.others}${u} in their other quarters`;
+  const rows = Object.entries(Q.teams).filter(([, d]) => d.hca && d.hca.Game).sort((a, b) => b[1].hca.Game.hca - a[1].hca.Game.hca);
+  if (!rows.length) { document.getElementById('hca-output').innerHTML = ''; return; }
+  const lg = rows[0][1].hca;
+  const cell = (c, sep) => {
+    if (!c) return `<td class="${sep ? 'vsep' : ''}">—</td>`;
+    const f = flagClass(c);
+    const tip = `home margin ${sgn(c.home_margin)} · road ${sgn(c.road_margin)} · league ${sgn(c.league, 2)} · ${c.n_home} home / ${c.n_road} road · p = ${c.p}`;
+    return `<td class="${sep ? 'vsep ' : ''}${f}" title="${tip}"><span class="${!f ? (c.delta > 0.05 ? 'pos' : c.delta < -0.05 ? 'neg' : '') : ''}">${sgn(c.delta)}</span></td>`;
+  };
+  document.getElementById('hca-output').innerHTML = `
+    <div class="info-box" style="margin-bottom:12px">
+      <strong>HCA</strong> is half the gap between a team's average home margin and its average road margin (the usual definition: the edge each
+      venue gives, so a home favorite's line moves by 2 × HCA from home to road). The <strong>vs league</strong> columns show how much bigger or
+      smaller that edge is than the league's, overall and by period. Schedules are close to balanced, so opponent strength mostly cancels out, but not entirely.
+    </div>
+    <div class="splits-card"><div class="detail-table tend-table"><table>
+      <thead>
+        <tr class="grp"><th></th><th colspan="4" class="vsep">Full game</th><th colspan="6" class="vsep">HCA vs league, by period</th></tr>
+        <tr><th style="text-align:left">Team</th><th class="vsep">Home margin</th><th>Road margin</th><th>HCA</th><th>vs league</th>
+          ${HCA_SEGS.slice(1).map((s, i) => `<th class="${i===0?'vsep':''}">${s}</th>`).join('')}</tr>
+      </thead>
+      <tbody>${rows.map(([name, d]) => {
+        const g = d.hca.Game;
+        return `<tr><td>${name}</td><td class="vsep">${sgn(g.home_margin)}</td><td>${sgn(g.road_margin)}</td>
+          <td style="font-weight:700">${sgn(g.hca, 2)}</td>${cell(g, false)}
+          ${HCA_SEGS.slice(1).map((s, i) => cell(d.hca[s], i === 0)).join('')}</tr>`;
+      }).join('')}
+        <tr class="avg-row"><td>League HCA</td><td class="vsep">${sgn(lg.Game.league)}</td><td>${sgn(-lg.Game.league)}</td><td>${sgn(lg.Game.league, 2)}</td><td>—</td>
+          ${HCA_SEGS.slice(1).map((s, i) => `<td class="${i===0?'vsep':''}">${lg[s] ? sgn(lg[s].league, 2) : '—'}</td>`).join('')}</tr>
+      </tbody>
+    </table></div></div>`;
+}
+
+function tendSentence(s) {
+  const pv = `<span class="sig">p = ${s.p}</span>`;
+  if (s.kind === 'hca') {
+    const where = s.seg === 'Game' ? '' : ` in ${s.seg}`;
+    return `<div class="tend-item"><b>${s.team}</b> · Home-court advantage${where} ${s.delta > 0 ? 'bigger' : 'smaller'} than the league's<br>
+      Home margin ${sgn(s.home_margin)} vs road ${sgn(s.road_margin)}, so HCA ${sgn(s.hca, 2)} vs league ${sgn(s.league, 2)}:
+      <b style="font-size:14px;color:var(--accent2)">${sgn(s.delta)}</b>. <span class="sig">${s.n_home} home / ${s.n_road} road games ·</span> ${pv}</div>`;
   }
-  const dir = s.stat === 'margin' ? (s.delta > 0 ? 'plays better' : 'plays worse')
-            : s.stat === 'pace' ? (s.delta > 0 ? 'plays faster' : 'plays slower')
-            : (s.delta > 0 ? 'games run higher-scoring (both teams)' : 'games run lower-scoring (both teams)');
-  const when = s.comp === '1H-2H' ? 'in the 1st half than the 2nd' : `in ${s.comp}`;
-  return `<div class="tend-item"><b>${s.team}</b> · ${where}: ${dir} ${when}<br>
-    ${what}. League-wide pattern ${sgn(s.league, 1)}, so the tendency is <b style="font-size:14px;color:var(--accent2)">${sgn(s.delta)}</b>${u}.
-    <span class="sig">${s.n} games · p = ${s.p}</span></div>`;
+  const where = VENUE_TXT[s.venue];
+  const up = s.delta > 0;
+  let head, what;
+  if (s.stat === 'margin' && s.comp === '1H-2H') {
+    head = `plays ${up ? 'better' : 'worse'} in the 1st half than the 2nd`;
+    what = `1st-half margin ${sgn(s.mine)} vs 2nd half ${sgn(s.others)}`;
+  } else if (s.stat === 'margin') {
+    head = `plays ${up ? 'better' : 'worse'} in ${s.comp}`;
+    what = `${s.comp} margin ${sgn(s.mine)} vs ${sgn(s.others)} in their other quarters`;
+  } else if (s.stat === 'total') {
+    const [a, b] = s.comp.split('-');
+    head = `${a} runs ${up ? 'higher' : 'lower'}-scoring than ${b} (both teams)`;
+    what = `${a} total ${s.mine} vs ${b} ${s.others}`;
+  } else {
+    head = `plays ${up ? 'faster' : 'slower'} in ${s.comp}`;
+    what = `${s.comp} pace ${s.mine} vs ${s.others} poss/40 in their other quarters`;
+  }
+  return `<div class="tend-item"><b>${s.team}</b> · ${where}: ${head}<br>
+    ${what}. League-wide pattern ${sgn(s.league)}, so the tendency is <b style="font-size:14px;color:var(--accent2)">${sgn(s.delta)}</b>.
+    <span class="sig">${s.n} games ·</span> ${pv}</div>`;
 }
 
 function renderStandouts() {
-  const Q = statsData.quarters;
-  const out = [];
-  out.push(`<div class="info-box" style="border-left-color:var(--accent2)">
-    <strong>Read with care.</strong> ${Q.tests} comparisons were checked (15 teams × home/road/all × margin/total/pace × Q1–Q4 and 1H vs 2H).
-    ${Q.watch.length + Q.standouts.length} are unusual at the 1% level; pure chance would produce about <strong>${Q.expected_watch_by_chance}</strong>.
-    ${Q.standouts.length
-      ? `<strong>${Q.standouts.length}</strong> survive a correction for testing this many things at once (false-discovery rate ${Math.round(Q.fdr_q*100)}%).`
-      : `None survive a correction for testing this many things at once, so no single item below is proven. The excess over chance suggests some are real, but not which ones.`}
-    One season, ${Math.round(Q.games*2/15/2)} home and ${Math.round(Q.games*2/15/2)} road games per team. Treat these as ideas to track next season, not as edges.
-  </div>`);
-  if (Q.standouts.length) out.push(`<h3 style="font-family:'Barlow Condensed',sans-serif;margin:12px 0 8px">Stand out (survive correction)</h3><div class="tend-list">${Q.standouts.map(tendSentence).join('')}</div>`);
-  if (Q.watch.length) out.push(`<h3 style="font-family:'Barlow Condensed',sans-serif;margin:16px 0 8px;letter-spacing:1px">Strongest signals (p &lt; ${Q.watch_p}, not proven)</h3><div class="tend-list">${Q.watch.map(tendSentence).join('')}</div>`);
+  const Q = statsData.quarters, th = tendP();
+  const shown = Q.signals.filter(s => s.p <= th).sort((a, b) => a.p - b.p);
+  const survivors = Q.signals.filter(s => s.standout);
+  const expected = Q.tests * th;
+  const verdict = shown.length > expected * 1.5
+    ? `That's well above chance, so some of these are probably real, though the list can't say which.`
+    : `That's about what chance alone produces, so as a group these look like noise; any single one could still be real.`;
+  const out = [`<div class="info-box" style="border-left-color:var(--accent2)">
+    <strong>Read with care.</strong> ${Q.tests} comparisons were checked. <strong>${shown.length}</strong> have p ≤ ${th};
+    about <strong>${expected.toFixed(0)}</strong> would by chance alone. ${verdict}
+    ${survivors.length
+      ? `<strong>${survivors.length}</strong> survive a correction for testing this many things at once (false-discovery rate ${Math.round(Q.fdr_q*100)}%) and are marked in darker orange.`
+      : `None survive a correction for testing this many things at once.`}
+    One season of games. Treat these as ideas to track next season, not as edges.
+  </div>`];
+  if (shown.length) out.push(`<div class="tend-list">${shown.map(tendSentence).join('')}</div>`);
   document.getElementById('tend-standouts').innerHTML = out.join('');
 }
 
