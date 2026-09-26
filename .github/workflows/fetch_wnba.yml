@@ -1,13 +1,11 @@
 name: Fetch WNBA Stats
- 
+
+# Daily updates now run from the owner's PC (update_from_pc.ps1 via Windows
+# Task Scheduler), because stats.wnba.com doesn't answer GitHub's servers.
+# This workflow is kept for manual runs only.
 on:
-  schedule:
-    - cron: '0 7 * * *'
-  push:
-    paths:
-      - 'fetch_wnba.py'
   workflow_dispatch:
- 
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -31,4 +29,3 @@ jobs:
           git add data/wnba_stats.json
           git diff --staged --quiet || git commit -m "Update WNBA stats $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
- 
